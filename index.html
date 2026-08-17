@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Telugu Daily</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <header class="topbar">
+    <button class="back" id="backBtn" aria-label="Back">‹</button>
+    <div class="top-info">
+      <div class="top-title" id="courseTitle">Telugu / Chapter 1</div>
+      <div class="top-sub">Daily practice</div>
+    </div>
+    <div class="streak" id="streak">🔥 1 day</div>
+  </header>
+
+  <div class="progress-wrap">
+    <div class="progress"><span id="progressBar"></span></div>
+  </div>
+
+  <div class="steps">
+    <div class="step active"><div class="dot"></div>Words</div>
+    <div class="step"><div class="dot"></div>Recall</div>
+    <div class="step"><div class="dot"></div>Sentences</div>
+    <div class="step"><div class="dot"></div>Final quiz</div>
+  </div>
+
+  <!-- CHAPTER DASHBOARD -->
+  <main class="dashboard" id="dashboard">
+    <section class="hero">
+      <div class="hero-label">TODAY'S CHAPTER</div>
+      <h1 id="heroTitle">Useful everyday words</h1>
+      <p id="heroDescription">Build your Telugu word bank</p>
+      <div class="hero-icon" id="heroIcon">☀️</div>
+      <button class="start" id="startLesson">Start lesson&nbsp; →</button>
+    </section>
+
+    <h2 class="section-title">Your path</h2>
+    <section class="chapter-list" id="chapterList"></section>
+
+    <h2 class="section-title">How it works</h2>
+    <section class="how" id="howList"></section>
+  </main>
+
+  <!-- WORD LESSON -->
+  <main class="lesson" id="lesson">
+    <div class="eyebrow" id="lessonChapter">CHAPTER 1</div>
+    <div class="eyebrow" id="wordCounter" style="margin-top:12px">WORD 1 OF 20</div>
+    <h1 id="lessonTitle">Useful everyday words</h1>
+    <p class="instruction" id="lessonInstruction">Learn useful words and phrases.</p>
+
+    <section class="card" id="wordCard" aria-label="Word card. Swipe left for next word or right for previous word.">
+      <button class="audio" id="audioBtn" aria-label="Play pronunciation">🔊</button>
+      <div class="word" id="word">దగ్గర</div>
+      <div class="translit" id="translit">दग्गर</div>
+      <div class="meaning" id="meaning">Near / with</div>
+
+      <div class="example" id="example">
+        <div class="example-label">IN A SENTENCE</div>
+        <div class="example-hindi" id="exampleHindi">मेरे पास समय नही है</div>
+        <div class="example-telugu" id="exampleTelugu">నా దగ్గర సమయం లేదు</div>
+        <div class="example-translit" id="exampleTranslit">ना दग्गर समयम् लेदु</div>
+      </div>
+
+      <div class="word-notes" id="notes">
+        <div class="notes-label">NOTES</div>
+        <div class="notes-text" id="wordNotes"></div>
+      </div>
+
+      <div class="swipe-hint">
+        <span>‹ Previous</span>
+        <span>Swipe</span>
+        <span>Next ›</span>
+      </div>
+    </section>
+
+    <div class="progress-wrap" style="margin-top:20px;padding:0;background:transparent">
+      <div class="progress"><span id="lessonProgress"></span></div>
+    </div>
+
+    <button class="primary" onclick="startQuiz()">I'm ready for the recall quiz&nbsp; →</button>
+  </main>
+
+  <!-- RECALL QUIZ -->
+  <main class="lesson quiz" id="quiz">
+    <div class="eyebrow" id="quizCounter">RECALL 1 OF 5</div>
+    <h1>What does it mean?</h1>
+    <div class="quiz-box">
+      <div class="eyebrow">TELUGU</div>
+      <div class="quiz-word" id="quizWord">దగ్గర</div>
+      <div class="quiz-translit" id="quizTranslit">दग्गर</div>
+      <div class="options" id="options"></div>
+      <div class="result" id="result"></div>
+    </div>
+    <button class="primary" id="nextQuiz">Next question&nbsp; →</button>
+    <button class="secondary" id="backFromQuiz">← Back to words</button>
+  </main>
+
+  <!-- COMPLETION -->
+  <main class="lesson finish" id="finish">
+    <div class="finish-icon">🎉</div>
+    <h2>Chapter complete!</h2>
+    <p id="finishText">Great work.</p>
+    <button class="primary" id="restart">Practice again</button>
+  </main>
+
+</div>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
