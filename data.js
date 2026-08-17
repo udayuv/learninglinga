@@ -1163,7 +1163,7 @@ window.APP_DATA = {
         "telugu": "లో",
         "hindiTransliteration": "लो",
         "category": "location",
-        "notes": "इल्लु = घर; case marker लगने पर इंटि/इन्टि रूप आता है।",
+        "notes": "घर को तेलुगु में इल्लु कहते हैं लेकिन जब भी घर (इल्लु ) के बाद कोई भी कारक चिन्ह आए तो उसे इंटि कहेंगे",
         "examples": [
           {
             "hindi": "मैं घर में हूँ",

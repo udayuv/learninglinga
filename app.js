@@ -55,8 +55,6 @@ function renderDashboard() {
     </div>
   `).join("");
 
-  // Progress is based on the selected day only in this version.
-  $("progressBar").style.width = "12%";
 }
 
 function openChapter(id) {
@@ -77,7 +75,40 @@ function openChapter(id) {
   $("lessonInstruction").textContent =
     `आज ${currentChapter.lessonCount} शब्द/रूप सीखें और फिर recall quiz दें।`;
 
+  // Reset to current word tab
+  switchTab('current');
+
   renderWord();
+  renderAllWordsTable();
+}
+
+function switchTab(tab) {
+  if (tab === 'current') {
+    $("tabPanelCurrent").style.display = "block";
+    $("tabPanelAll").style.display = "none";
+    $("tabCurrentWord").classList.add("active");
+    $("tabAllWords").classList.remove("active");
+  } else {
+    $("tabPanelCurrent").style.display = "none";
+    $("tabPanelAll").style.display = "block";
+    $("tabCurrentWord").classList.remove("active");
+    $("tabAllWords").classList.add("active");
+    renderAllWordsTable();
+  }
+}
+
+function renderAllWordsTable() {
+  const items = getCurrentItems();
+  const tbody = $("allWordsBody");
+  if (!tbody) return;
+  tbody.innerHTML = items.map((item, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td class="tbl-hindi">${escapeHtml(item.hindi)}</td>
+      <td class="tbl-telugu">${escapeHtml(item.telugu)}</td>
+      <td class="tbl-translit">${escapeHtml(item.hindiTransliteration)}</td>
+    </tr>
+  `).join("");
 }
 
 function getCurrentItems() {
@@ -89,33 +120,42 @@ function renderWord() {
   if (!items.length) return;
 
   const current = items[currentWord];
-  const example = current.examples?.[0] || null;
 
   $("wordCounter").textContent =
     `WORD ${currentWord + 1} OF ${items.length}`;
 
   $("word").textContent = current.telugu;
   $("translit").textContent = current.hindiTransliteration;
-
   $("meaning").textContent = current.hindi;
 
-  if (example) {
-    $("exampleHindi").textContent = example.hindi || "";
-    $("exampleTelugu").textContent = example.telugu || "";
-    $("exampleTranslit").textContent =
-      example.hindiTransliteration || "";
-  } else {
-    $("exampleHindi").textContent = current.hindi;
-    $("exampleTelugu").textContent = current.telugu;
-    $("exampleTranslit").textContent =
-      current.hindiTransliteration || "";
-  }
-  if(current.notes){
-    $("notes").style.display = "block";
+  // Notes shown as info banner before examples
+  if (current.notes) {
+    $("notes").style.display = "flex";
     $("wordNotes").textContent = current.notes;
   } else {
     $("notes").style.display = "none";
     $("wordNotes").textContent = "";
+  }
+
+  // Render all examples — label appears once, all examples stacked below
+  const examplesContainer = $("examplesContainer");
+  const examples = current.examples || [];
+  if (examples.length) {
+    const exRows = examples.map(ex => `
+      <div class="example-row">
+        <div class="example-hindi">${escapeHtml(ex.hindi || "")}</div>
+        <div class="example-telugu">${escapeHtml(ex.telugu || "")}</div>
+        <div class="example-translit">${escapeHtml(ex.hindiTransliteration || "")}</div>
+      </div>
+    `).join("");
+    examplesContainer.innerHTML = `
+      <div class="example">
+        <div class="example-label">IN A SENTENCE</div>
+        ${exRows}
+      </div>
+    `;
+  } else {
+    examplesContainer.innerHTML = "";
   }
 
   $("lessonProgress").style.width =
@@ -215,11 +255,7 @@ function renderQuiz() {
     button.className = "option";
     button.type = "button";
 
-    button.innerHTML = `
-      <span>${escapeHtml(option.hindi)}</span>
-      <span class="quiz-option-telugu">${escapeHtml(option.telugu)}</span>
-      <span class="quiz-option-translit">${escapeHtml(option.transliteration)}</span>
-    `;
+    button.innerHTML = `<span>${escapeHtml(option.hindi)}</span>`;
 
     button.addEventListener("click", () => {
       document.querySelectorAll(".option").forEach(x => x.disabled = true);

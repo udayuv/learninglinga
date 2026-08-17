@@ -18,17 +18,6 @@
     <div class="streak" id="streak">🔥 1 day</div>
   </header>
 
-  <div class="progress-wrap">
-    <div class="progress"><span id="progressBar"></span></div>
-  </div>
-
-  <div class="steps">
-    <div class="step active"><div class="dot"></div>Words</div>
-    <div class="step"><div class="dot"></div>Recall</div>
-    <div class="step"><div class="dot"></div>Sentences</div>
-    <div class="step"><div class="dot"></div>Final quiz</div>
-  </div>
-
   <!-- CHAPTER DASHBOARD -->
   <main class="dashboard" id="dashboard">
     <section class="hero">
@@ -53,36 +42,57 @@
     <h1 id="lessonTitle">Useful everyday words</h1>
     <p class="instruction" id="lessonInstruction">Learn useful words and phrases.</p>
 
-    <section class="card" id="wordCard" aria-label="Word card. Swipe left for next word or right for previous word.">
-      <button class="audio" id="audioBtn" aria-label="Play pronunciation">🔊</button>
-      <div class="word" id="word">దగ్గర</div>
-      <div class="translit" id="translit">दग्गर</div>
-      <div class="meaning" id="meaning">Near / with</div>
-
-      <div class="example" id="example">
-        <div class="example-label">IN A SENTENCE</div>
-        <div class="example-hindi" id="exampleHindi">मेरे पास समय नही है</div>
-        <div class="example-telugu" id="exampleTelugu">నా దగ్గర సమయం లేదు</div>
-        <div class="example-translit" id="exampleTranslit">ना दग्गर समयम् लेदु</div>
-      </div>
-
-      <div class="word-notes" id="notes">
-        <div class="notes-label">NOTES</div>
-        <div class="notes-text" id="wordNotes"></div>
-      </div>
-
-      <div class="swipe-hint">
-        <span>‹ Previous</span>
-        <span>Swipe</span>
-        <span>Next ›</span>
-      </div>
-    </section>
-
-    <div class="progress-wrap" style="margin-top:20px;padding:0;background:transparent">
-      <div class="progress"><span id="lessonProgress"></span></div>
+    <div class="lesson-tabs">
+      <button class="lesson-tab active" id="tabCurrentWord" onclick="switchTab('current')">Current Word</button>
+      <button class="lesson-tab" id="tabAllWords" onclick="switchTab('all')">All Words</button>
     </div>
 
-    <button class="primary" onclick="startQuiz()">I'm ready for the recall quiz&nbsp; →</button>
+    <!-- Current Word Tab -->
+    <div id="tabPanelCurrent">
+      <section class="card" id="wordCard" aria-label="Word card. Swipe left for next word or right for previous word.">
+        <button class="audio" id="audioBtn" aria-label="Play pronunciation">🔊</button>
+        <div class="word" id="word">దగ్గర</div>
+        <div class="translit" id="translit">दग्गर</div>
+        <div class="meaning" id="meaning">Near / with</div>
+
+        <div class="word-notes" id="notes" style="display:none">
+          <div class="notes-info-icon">ℹ️</div>
+          <div class="notes-text" id="wordNotes"></div>
+        </div>
+
+        <div id="examplesContainer"></div>
+
+        <div class="swipe-hint">
+          <button class="swipe-nav-btn" id="prevWordBtn" onclick="previousWord()">‹ Previous</button>
+          <span>Swipe</span>
+          <button class="swipe-nav-btn" id="nextWordBtn" onclick="nextWord()">Next ›</button>
+        </div>
+      </section>
+
+      <div class="progress-wrap" style="margin-top:20px;padding:0;background:transparent">
+        <div class="progress"><span id="lessonProgress"></span></div>
+      </div>
+
+      <button class="primary" onclick="startQuiz()">I'm ready for the recall quiz&nbsp; →</button>
+    </div>
+
+    <!-- All Words Tab -->
+    <div id="tabPanelAll" style="display:none">
+      <div class="all-words-table-wrap">
+        <table class="all-words-table" id="allWordsTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Hindi</th>
+              <th>Telugu</th>
+              <th>Transliteration</th>
+            </tr>
+          </thead>
+          <tbody id="allWordsBody"></tbody>
+        </table>
+      </div>
+      <button class="primary" onclick="startQuiz()">I'm ready for the recall quiz&nbsp; →</button>
+    </div>
   </main>
 
   <!-- RECALL QUIZ -->
