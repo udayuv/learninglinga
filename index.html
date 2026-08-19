@@ -16,7 +16,14 @@
       <div class="top-sub">Daily practice</div>
     </div>
     <div class="streak" id="streak">🔥 1 day</div>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">🌙</button>
   </header>
+
+  <!-- SECTION TABS (Words / Theory) — shown only for chapters with theory -->
+  <div id="sectionTabs" style="display:none" class="section-tabs">
+    <button class="section-tab active" id="tabSectionWords" onclick="switchSectionTab('words')">Words</button>
+    <button class="section-tab" id="tabSectionTheory" onclick="switchSectionTab('theory')">Theory</button>
+  </div>
 
   <!-- CHAPTER DASHBOARD -->
   <main class="dashboard" id="dashboard">
@@ -24,8 +31,10 @@
       <div class="hero-label">TODAY'S CHAPTER</div>
       <h1 id="heroTitle">Useful everyday words</h1>
       <p id="heroDescription">Build your Telugu word bank</p>
-      <div class="hero-icon" id="heroIcon">☀️</div>
-      <button class="start" id="startLesson">Start lesson&nbsp; →</button>
+      <div class="hero-bottom">
+        <button class="start" id="startLesson">Start lesson&nbsp; →</button>
+        <div class="hero-icon" id="heroIcon">☀️</div>
+      </div>
     </section>
 
     <h2 class="section-title">Your path</h2>
@@ -94,6 +103,9 @@
       <button class="primary" onclick="startQuiz()">I'm ready for the recall quiz&nbsp; →</button>
     </div>
   </main>
+
+  <!-- THEORY VIEW -->
+  <main class="theory-view" id="theory" style="display:none"></main>
 
   <!-- RECALL QUIZ -->
   <main class="lesson quiz" id="quiz">

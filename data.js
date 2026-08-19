@@ -134,6 +134,21 @@ window.APP_DATA = {
       "lessonCount": 16
     },
     {
+      "id": 7,
+      "number": 7,
+      "title": "Tense Chart Pronouns",
+      "displayTitle": "काल चार्ट के सर्वनाम",
+      "description": "काल चार्ट बनाने के लिए ज़रूरी 7 सर्वनाम और तीनों कालों में क्रिया रूप",
+      "themeIcon": "📅",
+      "status": "available",
+      "progress": 0,
+      "sections": [
+        "Words",
+        "Theory"
+      ],
+      "lessonCount": 7
+    },
+    {
       "id": 10,
       "number": 10,
       "title": "Case Markers & Postpositions",
@@ -193,14 +208,14 @@ window.APP_DATA = {
         "id": 2,
         "hindi": "मेरा (My / Mine)",
         "telugu": "నా / నా యొక్క / నాది",
-        "hindiTransliteration": "ना / ना योक्का / नादि",
+        "hindiTransliteration": "ना / ना योक्क / नादि",
         "category": "possessive",
-        "notes": "योक्का अधिक किताबी/औपचारिक रूप है।",
+        "notes": "योक्क अधिक किताबी/औपचारिक रूप है।",
         "examples": [
           {
             "hindi": "यह मेरी पुस्तक है",
             "telugu": "ఇది నా / నా యొక్క పుస్తకం",
-            "hindiTransliteration": "इदि ना / ना योक्का पुस्तकम्"
+            "hindiTransliteration": "इदि ना / ना योक्क पुस्तकम्"
           },
           {
             "hindi": "यह पुस्तक मेरी है",
@@ -242,14 +257,14 @@ window.APP_DATA = {
         "id": 5,
         "hindi": "तुम्हारा (Your / Yours)",
         "telugu": "నీ / నీ యొక్క / నీది",
-        "hindiTransliteration": "नी / नी योक्का / नीदि",
+        "hindiTransliteration": "नी / नी योक्क / नीदि",
         "category": "possessive",
-        "notes": "योक्का अधिक किताबी/औपचारिक रूप है।",
+        "notes": "योक्क अधिक किताबी/औपचारिक रूप है।",
         "examples": [
           {
             "hindi": "तुम्हारा घर कहाँ है?",
             "telugu": "నీ / నీ యొక్క ఇల్లు ఎక్కడ ఉంది?",
-            "hindiTransliteration": "नी / नी योक्का इल्लु एक्कड उन्दि"
+            "hindiTransliteration": "नी / नी योक्क इल्लु एक्कड उन्दि"
           },
           {
             "hindi": "यह घर तुम्हारा है",
@@ -295,14 +310,14 @@ window.APP_DATA = {
         "id": 8,
         "hindi": "आपका (Your / Yours - formal)",
         "telugu": "మీ / మీ యొక్క / మీది",
-        "hindiTransliteration": "मी / मी योक्का / मीदि",
+        "hindiTransliteration": "मी / मी योक्क / मीदि",
         "category": "possessive",
-        "notes": "योक्का अधिक किताबी/औपचारिक रूप है।",
+        "notes": "योक्क अधिक किताबी/औपचारिक रूप है।",
         "examples": [
           {
             "hindi": "आपका घर कहाँ है?",
             "telugu": "మీ / మీ యొక్క ఇల్లు ఎక్కడ ఉంది?",
-            "hindiTransliteration": "मी / मी योक्का इल्लु एक्कड उन्दि"
+            "hindiTransliteration": "मी / मी योक्क इल्लु एक्कड उन्दि"
           },
           {
             "hindi": "यह घर आपका है",
@@ -349,18 +364,18 @@ window.APP_DATA = {
         "id": 11,
         "hindi": "हमारा (Our)",
         "telugu": "మా / మా యొక్క / మాది",
-        "hindiTransliteration": "मा / मा योक्का / मादि",
+        "hindiTransliteration": "मा / मा योक्क / मादि",
         "category": "possessive",
         "examples": [
           {
             "hindi": "यह हमारी कार है",
             "telugu": "ఇది మా / మా యొక్క కారు",
-            "hindiTransliteration": "इदि मा / मा योक्का कार"
+            "hindiTransliteration": "इदि मा / मा योक्क कारु"
           },
           {
             "hindi": "यह कार हमारी है",
             "telugu": "ఈ కారు మాది",
-            "hindiTransliteration": "ई कार मादि"
+            "hindiTransliteration": "ई कारु मादि"
           }
         ]
       },
@@ -368,19 +383,19 @@ window.APP_DATA = {
         "id": 12,
         "hindi": "हमलोग का (Ours)",
         "telugu": "మన / మన యొక్క / మనది",
-        "hindiTransliteration": "मना / मना योक्का / मंदी",
+        "hindiTransliteration": "मन / मन योक्क / मनदि",
         "category": "possessive",
         "notes": "मनము के साथ 'మన' का प्रयोग होता है।",
         "examples": [
           {
             "hindi": "यह हमलोग की कार है",
             "telugu": "ఇది మన / మన యొక్క కారు",
-            "hindiTransliteration": "इदि मना / मना योक्का कार"
+            "hindiTransliteration": "इदि मन / मन योक्क कारु"
           },
           {
             "hindi": "यह कार हमलोगों की है",
             "telugu": "ఈ కారు మనది",
-            "hindiTransliteration": "ई कार मंदी"
+            "hindiTransliteration": "ई कारु मनदि"
           }
         ]
       },
@@ -408,38 +423,82 @@ window.APP_DATA = {
       {
         "id": 1,
         "hindi": "यह — पुरुष, formal/respectful, पास",
-        "telugu": "ఇతను / ఇతడు / వీడు",
-        "hindiTransliteration": "इतनु / इतडु / वीडु",
-        "category": "demonstrative",
-        "examples": [
-          {
-            "hindi": "यह मेरा दोस्त है",
-            "telugu": "ఇతను నా స్నేహితుడు",
-            "hindiTransliteration": "(इतनु / इतडु / वीडु) ना स्नेहितुडु"
-          }
-        ]
+        "telugu": "ఇతను",
+        "hindiTransliteration": "इतनु",
+        "category": "demonstrative"
       },
       {
         "id": 2,
         "hindi": "वह — पुरुष, formal/respectful, दूर",
-        "telugu": "అతను / అతడు / వాడు",
-        "hindiTransliteration": "अतनु / अतडु / वाडु",
+        "telugu": "అతను",
+        "hindiTransliteration": "अतनु",
+        "category": "demonstrative"
+      },
+      {
+        "id": 3,
+        "hindi": "यह — पुरुष, informal, पास",
+        "telugu": "ఇతడు",
+        "hindiTransliteration": "इतडु",
+        "category": "demonstrative"
+      },
+      {
+        "id": 4,
+        "hindi": "वह — पुरुष, informal, दूर",
+        "telugu": "అతడు",
+        "hindiTransliteration": "अतडु",
+        "category": "demonstrative"
+      },
+      {
+        "id": 5,
+        "hindi": "यह लड़का/यह व्यक्ति — बहुत informal",
+        "telugu": "వీడు",
+        "hindiTransliteration": "वीडु",
         "category": "demonstrative",
+        "notes": "वीडु/वाडु बहुत informal हैं; सामान्य बातचीत में सावधानी से प्रयोग करें।",
         "examples": [
           {
-            "hindi": "वह मेरा छोटा भाई है",
-            "telugu": "వాడు నా తమ్ముడు",
-            "hindiTransliteration": "(अतनु / अतडु / वाडु) ना तम्मुडु"
+            "hindi": "यह मेरा दोस्त है",
+            "telugu": "వీడు నా స్నేహితుడు",
+            "hindiTransliteration": "वीडु ना स्नेहितुडु"
           }
         ]
       },
       {
-        "id": 3,
+        "id": 6,
+        "hindi": "वह लड़का/वह व्यक्ति — बहुत informal",
+        "telugu": "వాడు",
+        "hindiTransliteration": "वाडु",
+        "category": "demonstrative",
+        "notes": "वीडु/वाडु बहुत informal हैं और फिल्मों/दोस्तों/बच्चों के संदर्भ में अधिक सुनाई देते हैं।",
+        "examples": [
+          {
+            "hindi": "वह मेरा छोटा भाई है",
+            "telugu": "వాడు నా తమ్ముడు",
+            "hindiTransliteration": "वाडु ना तम्मुडु"
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "hindi": "यह मेरा दोस्त है",
+        "telugu": "ఇతను నా స్నేహితుడు / ఇతడు నా స్నేహితుడు / వీడు నా స్నేహితుడు",
+        "hindiTransliteration": "इतनु ना स्नेहितुडु / इतडु ना स्नेहितुडु / वीडु ना स्नेहितुडु",
+        "category": "sentence"
+      },
+      {
+        "id": 8,
+        "hindi": "वह मेरा छोटा भाई है",
+        "telugu": "అతను నా తమ్ముడు / అతడు నా తమ్ముడు / వాడు నా తమ్ముడు",
+        "hindiTransliteration": "अतनु ना तम्मुडु / अतडु ना तम्मुडु / वाडु ना तम्मुडु",
+        "category": "sentence"
+      },
+      {
+        "id": 9,
         "hindi": "इसका",
         "telugu": "ఇతడి / ఇతడి యొక్క / ఇతడిది / వీడి యొక్క / వీడి / వీడిది",
-        "hindiTransliteration": "इतडि / इतडि योक्का / इतडिदि / वीडि योक्का / वीडि / वीडिदि",
+        "hindiTransliteration": "इतडि / इतडि योक्क / इतडिदि / वीडि योक्क / वीडि / वीडिदि",
         "category": "possessive",
-        "notes": "యొక్క किताबी/औपचारिक रूप है। निर्जीव चीज़ों के स्वामित्व में अक्सर 'दि' वाला रूप आता है।",
+        "notes": "యొక్క किताबी/औपचारिक रूप है। निर्जीव चीज़ों के स्वामित्व में अक्सर 'ది' वाला रूप आता है।",
         "examples": [
           {
             "hindi": "इसका नाम मोहित है",
@@ -449,12 +508,12 @@ window.APP_DATA = {
         ]
       },
       {
-        "id": 4,
+        "id": 10,
         "hindi": "उसका",
         "telugu": "అతడి / అతడి యొక్క / అతడిది / వాడి యొక్క / వాడి / వాడిది",
-        "hindiTransliteration": "अतडि / अतडि योक्का / अतडिदि / वाडि योक्का / वाडि / वाडिदि",
+        "hindiTransliteration": "अतडि / अतडि योक्क / अतडिदि / वाडि योक्क / वाडि / वाडिदि",
         "category": "possessive",
-        "notes": "योक्का किताबी/औपचारिक रूप है।",
+        "notes": "योक्क किताबी/औपचारिक रूप है।",
         "examples": [
           {
             "hindi": "उसका नाम मोहित है",
@@ -464,10 +523,10 @@ window.APP_DATA = {
         ]
       },
       {
-        "id": 5,
+        "id": 11,
         "hindi": "इनका (पुरुष/बहुवचन)",
         "telugu": "ఇతని యొక్క / ఇతని / ఇతనిది / వీరి యొక్క / వీరి / వీరిది",
-        "hindiTransliteration": "इतनि योक्का / इतनि / इतनिदि / वीरि योक्का / वीरि / वीरिदि",
+        "hindiTransliteration": "इतनि योक्क / इतनि / इतनिदि / वीरि योक्क / वीरि / वीरिदि",
         "category": "possessive",
         "examples": [
           {
@@ -483,10 +542,10 @@ window.APP_DATA = {
         ]
       },
       {
-        "id": 6,
+        "id": 12,
         "hindi": "उनका (पुरुष/बहुवचन)",
         "telugu": "అతని యొక్క / అతని / అతనిది / వారి యొక్క / వారి / వారిది",
-        "hindiTransliteration": "अतनि योक्का / अतनि / अतनिदि / वारि योक्का / वारि / वारिदि",
+        "hindiTransliteration": "अतनि योक्क / अतनि / अतनिदि / वारि योक्क / वारि / वारिदि",
         "category": "possessive",
         "examples": [
           {
@@ -502,60 +561,60 @@ window.APP_DATA = {
         ]
       },
       {
-        "id": 7,
+        "id": 13,
         "hindi": "इसको / इसे (पुरुष)",
         "telugu": "ఇతడికి / ఇతడిని / వీడికి / వీడిని",
         "hindiTransliteration": "इतडिकि / इतडिनि / वीडिकि / वीडिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "इसको | इसे जाने दो",
-            "telugu": "ఇతడికి / ఇతడిని వెళ్లనివ్వు / వీడికి / వీడిని వెళ్లనివ్వు",
-            "hindiTransliteration": "(इतडिकि / इतडिनि / वीडिकि / वीडिनि) वेल्लनिव्वु"
-          }
-        ]
+        "category": "object"
       },
       {
-        "id": 8,
+        "id": 14,
         "hindi": "उसको / उसे (पुरुष)",
         "telugu": "అతడికి / అతడిని / వాడికి / వాడిని",
         "hindiTransliteration": "अतडिकि / अतडिनि / वाडिकि / वाडिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "उसको | उसे जाने दो",
-            "telugu": "అతడికి / అతడిని వెళ్లనివ్వు / వాడికి / వాడిని వెళ్లనివ్వు",
-            "hindiTransliteration": "(अतडिकि / अतडिनि / वाडिकि / वाडिनि) वेल्लनिव्वु"
-          }
-        ]
+        "category": "object"
       },
       {
-        "id": 9,
+        "id": 15,
+        "hindi": "इसको / इसे जाने दो",
+        "telugu": "ఇతడికి / ఇతడిని వెళ్లనివ్వు / వీడికి / వీడిని వెళ్లనివ్వు",
+        "hindiTransliteration": "इतडिकि / इतडिनि वेल्लनिव्वु / वीडिकि / वीडिनि वेल्लनिव्वु",
+        "category": "sentence"
+      },
+      {
+        "id": 16,
+        "hindi": "उसको / उसे जाने दो",
+        "telugu": "అతడికి / అతడిని వెళ్లనివ్వు / వాడికి / వాడిని వెళ్లనివ్వు",
+        "hindiTransliteration": "अतडिकि / अतडिनि वेल्लनिव्वु / वाडिकि / वाडिनि वेल्लनिव्वु",
+        "category": "sentence"
+      },
+      {
+        "id": 17,
         "hindi": "इनको / इन्हें (पुरुष/बहुवचन)",
         "telugu": "ఇతనికి / ఇతనిని / వీరికి / వీరిని",
         "hindiTransliteration": "इतनिकि / इतनिनि / वीरिकि / वीरिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "इनको अंदर आने दीजिए",
-            "telugu": "(ఇతనికి / ఇతనిని / వీరికి / వీరిని) లోపలికి రానివ్వండి",
-            "hindiTransliteration": "(इतनिकि / इतनिनि / वीरिकि / वीरिनि) लोपलिकि रानिव्वन्डि",
-          }
-        ]
+        "category": "object"
       },
       {
-        "id": 10,
+        "id": 18,
         "hindi": "उनको / उन्हें (पुरुष/बहुवचन)",
         "telugu": "అతనికి / అతనిని / వారికి / వారిని",
         "hindiTransliteration": "अतनिकि / अतनिनि / वारिकि / वारिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "उनको अंदर आने दीजिए",
-            "telugu": "(అతనికి / అతనిని / వారికి / వారిని) లోపలికి రానివ్వండి",
-            "hindiTransliteration": "(अतनिकि / अतनिनि / वारिकि / वारिनि) लोपलिकि रानिव्वन्डि",
-          }
-        ]
+        "category": "object"
+      },
+      {
+        "id": 19,
+        "hindi": "इनको अंदर आने दीजिए",
+        "telugu": "ఇతనికి / ఇతనిని లోపలికి రానివ్వండి / వీరికి / వీరిని లోపలికి రానివ్వండి",
+        "hindiTransliteration": "इतनिकि / इतनिनि लोपलिकि रानिव्वन्डि / वीरिकि / वीरिनि लोपलिकि रानिव्वन्डि",
+        "category": "sentence"
+      },
+      {
+        "id": 20,
+        "hindi": "उनको अंदर आने दीजिए",
+        "telugu": "అతనికి / అతనిని లోపలికి రానివ్వండి / వారికి / వారిని లోపలికి రానివ్వండి",
+        "hindiTransliteration": "अतनिकि / अतनिनि लोपलिकि रानिव्वन्डि / वारिकि / वारिनि लोपलिकि रानिव्वन्डि",
+        "category": "sentence"
       }
     ],
     "3": [
@@ -564,74 +623,34 @@ window.APP_DATA = {
         "hindi": "यह (स्त्री)",
         "telugu": "ఈమె / ఈవిడ / ఇది",
         "hindiTransliteration": "ईमे / ईविड / इदि",
-        "category": "demonstrative",
-        "examples": [
-          {
-            "hindi": "यह सीता है",
-            "telugu": "ఈమె సీత / ఈవిడ సీత / ఇది సీత",
-            "hindiTransliteration": "ईमे सीता / ईविड सीता / इदि सीता",
-          }
-        ]
+        "category": "demonstrative"
       },
       {
         "id": 2,
         "hindi": "वह (स्त्री)",
         "telugu": "ఆమె / ఆవిడ / అది",
         "hindiTransliteration": "आमे / आविड / अदि",
-        "category": "demonstrative",
-        "examples": [
-          {
-            "hindi": "वह सीता है",
-            "telugu": "ఆమె సీత / ఆవిడ సీత / అది సీత",
-            "hindiTransliteration": "आमे सीता / आविड सीता / अदि सीता",
-          }
-        ]
+        "category": "demonstrative"
       },
       {
         "id": 3,
-        "hindi": "इसकी (स्त्री)",
-        "telugu": "దీని / దీని యొక్క / దీనిది",
-        "hindiTransliteration": "दीनि / दीनि योक्का / दीनिदि",
-        "category": "demonstrative",
-        "notes":"\" इसकी \" के लिए \"दीनि \" या \"दीनिदि \"का उपयोग दोस्तो में या अपनो से छोटों के लिए किया जाता है। लेकिन मै आपको ये सुझाव दूंगी कि आप \"इसकी\" \"दीनि \" या \"दीनिदि \" के स्थान पर \"इनकी\" \"इविड / इविडदि \"या \"ईमे / ईमेदि \" का उपयोग करे तो उपयुक्त होगा। इसलिए मैने इस क्लास की विडियो में इस शब्द का अर्थ नहीं बताया है।",
-        "examples": [
-          {
-            "hindi": "इसकी घडी कहां है ?",
-            "telugu": "దీని గడియారం ఎక్కడ ఉంది?",
-            "hindiTransliteration": "दीनि / दीनि योक्का गडियारम् एक्कड़ उन्दि?",
-          },
-          {
-            "hindi": "यह घडी इसकी है",
-            "telugu": "ఈ గడియారం దీనిది",
-            "hindiTransliteration": "ई गडियारम् दीनिदि",
-          }
-        ]
+        "hindi": "यह सीता है",
+        "telugu": "ఈమె సీత / ఈవిడ సీత / ఇది సీత",
+        "hindiTransliteration": "ईमे सीता / ईविड सीता / इदि सीता",
+        "category": "sentence"
       },
       {
         "id": 4,
-        "hindi": "उसकी (स्त्री)",
-        "telugu": "దాని / దాని యొక్క / దానిది",
-        "hindiTransliteration": "दानि / दानि योक्का / दानिदि",
-        "category": "demonstrative",
-        "notes":"नोट : - \" उसकी \" के लिए \" दानि \" या \" दानिदि \"का उपयोग दोस्तो में या अपनो से छोटो के लिए किया जाता है। लेकिन मै आपको ये सुझाव ढुंगी कि आप \"उसकी\" \" दानि \" या \"दानिदि \" के स्थान पर आप \"उनकी\" \" आविड / आविडदि \"या \" आमे / आमेदि \" का उपयोग करे तो उपयुक्त होगा। इसलिए मैने इस क्लास की विडियो में इस शब्द का अर्थ नहीं बताया है।",
-        "examples": [
-          {
-            "hindi": "उसकी घडी कहां है ?",
-            "telugu": "దాని గడియారం ఎక్కడ ఉంది?",
-            "hindiTransliteration": "दानि गडियारम् एक्कड़ उन्दि?",
-          },
-          {
-            "hindi": "यह घडी उसकी है",
-            "telugu": "ఈ గడియారం దానిది",
-            "hindiTransliteration": "ई गडियारम् दानिदि",
-          }
-        ]
+        "hindi": "वह सीता है",
+        "telugu": "ఆమె సీత / ఆవిడ సీత / అది సీత",
+        "hindiTransliteration": "आमे सीता / आविड सीता / अदि सीता",
+        "category": "sentence"
       },
       {
         "id": 5,
         "hindi": "इनकी (स्त्री)",
         "telugu": "ఈమె / ఈమె యొక్క / ఈమేది / ఈవిడ / ఈవిడ యొక్క / ఈవిడది",
-        "hindiTransliteration": "ईमे / ईमे योक्का / ईमेदि / ईविड / ईविड योक्का / ईविडदि",
+        "hindiTransliteration": "ईमे / ईमे योक्क / ईमेदि / ईविड / ईविड योक्क / ईविडदि",
         "category": "possessive",
         "examples": [
           {
@@ -650,7 +669,7 @@ window.APP_DATA = {
         "id": 6,
         "hindi": "उनकी (स्त्री)",
         "telugu": "ఆమె / ఆమె యొక్క / ఆమేది / ఆవిడ / ఆవిడ యొక్క / ఆవిడది",
-        "hindiTransliteration": "आमे / आमे योक्का / आमेदि / आविड / आविड योक्का / आविडदि",
+        "hindiTransliteration": "आमे / आमे योक्क / आमेदि / आविड / आविड योक्क / आविडदि",
         "category": "possessive",
         "examples": [
           {
@@ -667,38 +686,9 @@ window.APP_DATA = {
       },
       {
         "id": 7,
-        "hindi": "इसको / इसे (स्त्री)",
-        "telugu": "దీనికి / దీన్ని",
-        "hindiTransliteration": "दीनिकि / दीन्नि",
-        "category": "object",
-        "notes":"\" इसको \" के लिए \"दीनिकि \" या \"दीन्नि \"का उपयोग दोस्तो में या अपनो से छोटो के लिए किया जाता है। लेकिन मै आपको ये सुझाव ढुंगी कि आप इसको \"दीनिकि \" या \"दीन्नि \" के स्थान पर इनको \"इविडकि / इविडनि \"या \"ईमेकि / ईमेनि \" का उपयोग करे तो उपयुक्त होगा। इसलिए मैने इस क्लास की विडियो में इस शब्द का अर्थ नहीं बताया है।",
-        "examples": [
-          {
-            "hindi": "इसको / इसे किसने बुलाया ?",
-            "telugu": "దీనికి / దీన్ని ఎవరు పిలిచారు?",
-            "hindiTransliteration": "दीनिकि / दीन्नि एवरु पिलिचारु?"
-          }
-        ]
-      },
-      {
-        "id": 8,
-        "hindi": "उसको / उसे (स्त्री)",
-        "telugu": "దానికి / దాన్ని",
-        "hindiTransliteration": "दानिकि / दान्नि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "उसको / उसे किसने बुलाया ?",
-            "telugu": "దానికి / దాన్ని ఎవరు పిలిచారు?",
-            "hindiTransliteration": "दानिकि / दान्नि एवरु पिलिचारु?"
-          }
-        ]
-      },
-      {
-        "id": 7,
         "hindi": "इनको / इन्हें (स्त्री)",
         "telugu": "ఈమెకి / ఈమెని / ఈవిడకి / ఈవిడని",
-        "hindiTransliteration": "ईमेकि / ईमेनि / ईविडकि / ईविडनि",
+        "hindiTransliteration": "ईमेकि / ईमेनु / ईविडकि / ईविडनि",
         "category": "object",
         "examples": [
           {
@@ -709,7 +699,7 @@ window.APP_DATA = {
           {
             "hindi": "इन्हें किसने बुलाया?",
             "telugu": "ఈమెని ఎవరు పిలిచారు? / ఈవిడని ఎవరు పిలిచారు?",
-            "hindiTransliteration": "ईमेनि एवरु पिलिचारु? / ईविडनि एवरु पिलिचारु?"
+            "hindiTransliteration": "ईमेनु एवरु पिलिचारु? / ईविडनि एवरु पिलिचारु?"
           }
         ]
       },
@@ -717,7 +707,7 @@ window.APP_DATA = {
         "id": 8,
         "hindi": "उनको / उन्हें (स्त्री)",
         "telugu": "ఆమెకి / ఆమెని / ఆవిడకి / ఆవిడని",
-        "hindiTransliteration": "आमेकि / आमेनि / आविडकि / आविडनि",
+        "hindiTransliteration": "आमेकि / आमेनु / आविडकि / आविडनि",
         "category": "object",
         "examples": [
           {
@@ -728,7 +718,7 @@ window.APP_DATA = {
           {
             "hindi": "उन्हें किसने बुलाया?",
             "telugu": "ఆమెని ఎవరు పిలిచారు? / ఆవిడని ఎవరు పిలిచారు?",
-            "hindiTransliteration": "आमेनि एवरु पिलिचारु? / आविडनि एवरु पिलिचारु?"
+            "hindiTransliteration": "आमेनु एवरु पिलिचारु? / आविडनि एवरु पिलिचारु?"
           }
         ]
       },
@@ -737,45 +727,45 @@ window.APP_DATA = {
         "hindi": "यह (निर्जीव)",
         "telugu": "ఈ / ఇది",
         "hindiTransliteration": "ई / इदि",
-        "category": "nonLiving",
-        "examples": [
-          {
-            "hindi": "यह मेरी कार है",
-            "telugu": "ఈ కారు నాది / ఇది నా కారు",
-            "hindiTransliteration": "ई कार नादि / इदि ना कार",
-          }
-        ]
+        "category": "nonLiving"
       },
       {
         "id": 10,
         "hindi": "वह (निर्जीव)",
         "telugu": "ఆ / అది",
         "hindiTransliteration": "आ / अदि",
-        "category": "nonLiving",
-        "examples": [
-          {
-            "hindi": "वह मेरी कार है",
-            "telugu": "ఆ కారు నాది / అది నా కారు",
-            "hindiTransliteration": "आ कार नादि / अदि ना कार",
-          }
-        ]
+        "category": "nonLiving"
       },
       {
         "id": 11,
-        "hindi": "इसका (निर्जीव)",
-        "telugu": "దీని యొక్క / దీని / దీనిది",
-        "hindiTransliteration": "दीनि योक्का / दीनि / दीनिदि",
-        "category": "possessive"
+        "hindi": "यह मेरी कार है",
+        "telugu": "ఈ కారు నాది / ఇది నా కారు",
+        "hindiTransliteration": "ई कारु नादि / इदि ना कारु",
+        "category": "sentence"
       },
       {
         "id": 12,
-        "hindi": "उसका (निर्जीव)",
-        "telugu": "దాని యొక్క / దాని / దానిది",
-        "hindiTransliteration": "दानि योक्का / दानि / दानिदि",
-        "category": "possessive"
+        "hindi": "वह मेरी कार है",
+        "telugu": "ఆ కారు నాది / అది నా కారు",
+        "hindiTransliteration": "आ कारु नादि / अदि ना कारु",
+        "category": "sentence"
       },
       {
         "id": 13,
+        "hindi": "इसका (निर्जीव)",
+        "telugu": "దీని యొక్క / దీని / దీనిది",
+        "hindiTransliteration": "दीनि योक्क / दीनि / दीनिदि",
+        "category": "possessive"
+      },
+      {
+        "id": 14,
+        "hindi": "उसका (निर्जीव)",
+        "telugu": "దాని యొక్క / దాని / దానిది",
+        "hindiTransliteration": "दानि योक्क / दानि / दानिदि",
+        "category": "possessive"
+      },
+      {
+        "id": 15,
         "hindi": "इसको / इसे (निर्जीव)",
         "telugu": "దీనికి / దీన్ని",
         "hindiTransliteration": "दीनिकि / दीन्नि",
@@ -789,7 +779,7 @@ window.APP_DATA = {
         ]
       },
       {
-        "id": 14,
+        "id": 16,
         "hindi": "उसको / उसे (निर्जीव)",
         "telugu": "దానికి / దాన్ని",
         "hindiTransliteration": "दानिकि / दान्नि",
@@ -799,34 +789,6 @@ window.APP_DATA = {
             "hindi": "उसे वहाँ रखो",
             "telugu": "దానికి / దాన్ని అక్కడ పెట్టు",
             "hindiTransliteration": "दानिकि / दान्नि अक्कड पेट्टु"
-          }
-        ]
-      },
-      {
-        "id": 15,
-        "hindi": "इनको / इन्हें (नपुं)",
-        "telugu": "దానికి / దాన్ని",
-        "hindiTransliteration": "वीटिकि/ वीटिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "इनको/ इन्हें यहां रखो।",
-            "telugu": "దానికి / దాన్ని ఇక్కడ పెట్టు",
-            "hindiTransliteration": "वीटिकि / वीटिनि इक्कड पेट्टु"
-          }
-        ]
-      },
-      {
-        "id": 16,
-        "hindi": "उनको / उन्हें (नपुं)",
-        "telugu": "దానికి / దాన్ని",
-        "hindiTransliteration": "वाटिकि/ वाटिनि",
-        "category": "object",
-        "examples": [
-          {
-            "hindi": "उसको / उन्हें वहां रखो।",
-            "telugu": "దానికి / దాన్ని అక్కడ పెట్టు",
-            "hindiTransliteration": "वाटिकि / वाटिनि अक्कड पेट्टु"
           }
         ]
       }
@@ -1083,6 +1045,118 @@ window.APP_DATA = {
         ]
       }
     ],
+    "7": {
+      "words": [
+        { "id": 1, "hindi": "मैं", "telugu": "నేను", "hindiTransliteration": "नेनु", "category": "pronoun" },
+        { "id": 2, "hindi": "हम", "telugu": "మేము", "hindiTransliteration": "मेमु", "category": "pronoun", "notes": "मेमु = हम (सुनने वाला शामिल नहीं); मनमु = हम (सुनने वाला भी शामिल)" },
+        { "id": 3, "hindi": "आप", "telugu": "మీరు", "hindiTransliteration": "मीरु", "category": "pronoun" },
+        { "id": 4, "hindi": "तुम", "telugu": "నువ్వు", "hindiTransliteration": "नुव्वु", "category": "pronoun" },
+        { "id": 5, "hindi": "वह (पुं)", "telugu": "అతడు", "hindiTransliteration": "अतडु", "category": "pronoun" },
+        { "id": 6, "hindi": "वह (स्त्री)", "telugu": "ఆమె", "hindiTransliteration": "आमे", "category": "pronoun", "notes": "बोलचाल में आमे; अदि केवल काल चार्ट के लिए।" },
+        { "id": 7, "hindi": "वे", "telugu": "వారు", "hindiTransliteration": "वारु", "category": "pronoun" }
+      ],
+      "theory": {
+        "intro": "तेलुगु में सर्वनाम का अंतिम अक्षर = क्रिया का अंत।",
+        "tenses": [
+          {
+            "id": "present",
+            "title": "वर्तमान काल",
+            "subtitle": "Present Tense",
+            "teluguTitle": "వర్తమాన కాలం",
+            "formula": "क्रिया-मूल + तुन्न + प्रत्यय",
+            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
+            "conjugations": [
+              { "hindi": "मैं", "pronoun": "नेनु", "ending": "नु", "full": "आडुतुन्नानु", "telugu": "నేను ఆడుతున్నాను", "hindiSentence": "मैं खेल रहा / रही हूं", "breakdown": "आडु + तुन्नानु", "roman": "Nenu aadutunnanu" },
+              { "hindi": "हम", "pronoun": "मेमु", "ending": "मु", "full": "आडुतुन्नामु", "telugu": "మేము ఆడుతున్నాము", "hindiSentence": "हम खेल रहे / रही हैं", "breakdown": "आडु + तुन्नामु", "roman": "Memu aadutunnamu" },
+              { "hindi": "तुम", "pronoun": "नुव्वु", "ending": "वु", "full": "आडुतुन्नावु", "telugu": "నువ్వు ఆడుతున్నావు", "hindiSentence": "तुम खेल रहे / रही हो", "breakdown": "आडु + तुन्नावु", "roman": "Nuvvu aadutunnavu" },
+              { "hindi": "आप", "pronoun": "मीरु", "ending": "रु", "full": "आडुतुन्नारु", "telugu": "మీరు ఆడుతున్నారు", "hindiSentence": "आप खेल रहे / रही हैं", "breakdown": "आडु + तुन्नारु", "roman": "Meeru aadutunnaru" },
+              { "hindi": "वह (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडुतुन्नाडु", "telugu": "అతడు ఆడుతున్నాడు", "hindiSentence": "वह खेल रहा है", "breakdown": "आडु + तुन्नाडु", "roman": "Atadu aadutunnaadu" },
+              { "hindi": "वह (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडुतुन्दि", "telugu": "ఆమె ఆడుతుంది", "hindiSentence": "वह खेल रही है", "breakdown": "आडु + तुन्दि", "roman": "Aame aadutundi" },
+              { "hindi": "वे", "pronoun": "वारु", "ending": "रु", "full": "आडुतुन्नारु", "telugu": "వారు ఆడుతున్నారు", "hindiSentence": "वे खेल रहे / रही हैं", "breakdown": "आडु + तुन्नारु", "roman": "Vaaru aadutunnaru" }
+            ],
+            "example2": {
+              "verb": "जाना", "root": "वेल्लु",
+              "rows": [
+                { "pronoun": "नेनु", "full": "वेल्लुतुन्नानु", "hindiSentence": "मैं जा रहा / रही हूं" },
+                { "pronoun": "मेमु", "full": "वेल्लुतुन्नामु", "hindiSentence": "हम जा रहे / रही हैं" },
+                { "pronoun": "मीरु", "full": "वेल्लुतुन्नारु", "hindiSentence": "आप जा रहे / रही हैं" },
+                { "pronoun": "नुव्वु", "full": "वेल्लुतुन्नावु", "hindiSentence": "तुम जा रहे / रही हो" },
+                { "pronoun": "अतडु", "full": "वेल्लुतुन्नाडु", "hindiSentence": "वह जा रहा है" },
+                { "pronoun": "आमे", "full": "वेल्लुतुन्दि", "hindiSentence": "वह जा रही है" },
+                { "pronoun": "वारु", "full": "वेल्लुतुन्नारु", "hindiSentence": "वे जा रहे / रही हैं" }
+              ]
+            },
+            "notes": ["बोलचाल की भाषा में वह (स्त्री) के लिए अदि का उपयोग न करें।"],
+            "highlights": ["क्रिया-मूल + तुन्न + प्रत्यय"],
+            "shortcut": "नेनु→नु · मेमु→मु · नुव्वु→वु · मीरु/वारु→रु · अतडु→डु · आमे→दि"
+          },
+          {
+            "id": "past",
+            "title": "भूतकाल",
+            "subtitle": "Past Tense",
+            "teluguTitle": "",
+            "formula": "क्रिया-मूल(आ) + प्रत्यय  |  आमे: अलग stem + न्दि",
+            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
+            "conjugations": [
+              { "hindi": "मैंने", "pronoun": "नेनु", "ending": "नु", "full": "आडानु", "telugu": "నేను ఆడాను", "hindiSentence": "मैंने खेला / खेली", "breakdown": "आडा + नु", "roman": "Nenu aadaanu" },
+              { "hindi": "हमने", "pronoun": "मेमु", "ending": "मु", "full": "आडामु", "telugu": "మేము ఆడాము", "hindiSentence": "हमने खेला / खेली", "breakdown": "आडा + मु", "roman": "Memu aadaamu" },
+              { "hindi": "तुमने", "pronoun": "नुव्वु", "ending": "वु", "full": "आडावु", "telugu": "నువ్వు ఆడావు", "hindiSentence": "तुमने खेला / खेली", "breakdown": "आडा + वु", "roman": "Nuvvu aadaavu" },
+              { "hindi": "आपने", "pronoun": "मीरु", "ending": "रु", "full": "आडारु", "telugu": "మీరు ఆడారు", "hindiSentence": "आपने खेला / खेली", "breakdown": "आडा + रु", "roman": "Meeru aadaaru" },
+              { "hindi": "उसने (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडाडु", "telugu": "అతడు ఆడాడు", "hindiSentence": "उसने खेला", "breakdown": "आडा + डु", "roman": "Atadu aadaadu" },
+              { "hindi": "उसने (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडिन्दि ⚠️", "telugu": "ఆమె ఆడింది", "hindiSentence": "उसने खेली", "breakdown": "आडि + न्दि", "roman": "Aame aadindi" },
+              { "hindi": "उन्होंने", "pronoun": "वारु", "ending": "रु", "full": "आडारु", "telugu": "వారు ఆడారు", "hindiSentence": "उन्होंने खेला / खेली", "breakdown": "आडा + रु", "roman": "Vaaru aadaaru" }
+            ],
+            "example2": {
+              "verb": "जाना", "root": "वेल्ला / वेल्लि",
+              "rows": [
+                { "pronoun": "नेनु", "full": "वेल्लानु", "hindiSentence": "मैं गया / गई" },
+                { "pronoun": "मेमु", "full": "वेल्लामु", "hindiSentence": "हम गए / गईं" },
+                { "pronoun": "मीरु", "full": "वेल्लारु", "hindiSentence": "आप गए / गईं" },
+                { "pronoun": "नुव्वु", "full": "वेल्लावु", "hindiSentence": "तुम गए / गई" },
+                { "pronoun": "अतडु", "full": "वेल्लाडु", "hindiSentence": "वह गया" },
+                { "pronoun": "आमे", "full": "वेल्लिन्दि ⚠️", "hindiSentence": "वह गई" },
+                { "pronoun": "वारु", "full": "वेल्लारु", "hindiSentence": "वे गए / गईं" }
+              ]
+            },
+            "notes": ["आमे/अदि के भूतकाल में stem बदलता है: आडा→आडि, वेल्ला→वेल्लि।", "बोलचाल में अदि का उपयोग न करें।"],
+            "highlights": ["6 सर्वनाम: मूल(आ) + प्रत्यय", "आमे: अलग stem + न्दि"],
+            "shortcut": "⚠️ आमे भूतकाल में stem बदलता है — आडा→आडि, वेल्ला→वेल्लि"
+          },
+          {
+            "id": "future",
+            "title": "भविष्य काल",
+            "subtitle": "Future Tense",
+            "teluguTitle": "భవిష్యత్ కాలం",
+            "formula": "क्रिया-मूल + ता + प्रत्यय",
+            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
+            "conjugations": [
+              { "hindi": "मैं", "pronoun": "नेनु", "ending": "नु", "full": "आडतानु", "telugu": "నేను ఆడతాను", "hindiSentence": "मैं खेलूंगा / खेलूंगी", "breakdown": "आड + तानु", "roman": "Nenu aadataanu" },
+              { "hindi": "हम", "pronoun": "मेमु", "ending": "मु", "full": "आडतामु", "telugu": "మేము ఆడతాము", "hindiSentence": "हम खेलेंगे / खेलेंगी", "breakdown": "आड + तामु", "roman": "Memu aadataamu" },
+              { "hindi": "तुम", "pronoun": "नुव्वु", "ending": "वु", "full": "आडतावु", "telugu": "నువ్వు ఆడతావు", "hindiSentence": "तुम खेलोगे / खेलोगी", "breakdown": "आड + तावु", "roman": "Nuvvu aadataavu" },
+              { "hindi": "आप", "pronoun": "मीरु", "ending": "रु", "full": "आडतारु", "telugu": "మీరు ఆడతారు", "hindiSentence": "आप खेलेंगे / खेलेंगी", "breakdown": "आड + तारु", "roman": "Meeru aadataaru" },
+              { "hindi": "वह (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडताडु", "telugu": "అతడు ఆడతాడు", "hindiSentence": "वह खेलेगा", "breakdown": "आड + ताडु", "roman": "Atadu aadataadu" },
+              { "hindi": "वह (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडतादि", "telugu": "ఆమె ఆడతాది", "hindiSentence": "वह खेलेगी", "breakdown": "आड + तादि", "roman": "Aame aadataadi" },
+              { "hindi": "वे", "pronoun": "वारु", "ending": "रु", "full": "आडतारु", "telugu": "వారు ఆడతారు", "hindiSentence": "वे खेलेंगे / खेलेंगी", "breakdown": "आड + तारु", "roman": "Vaaru aadataaru" }
+            ],
+            "example2": {
+              "verb": "जाना", "root": "वेल्ल",
+              "rows": [
+                { "pronoun": "नेनु", "full": "वेल्लतानु", "hindiSentence": "मैं जाऊंगा / जाऊंगी" },
+                { "pronoun": "मेमु", "full": "वेल्लतामु", "hindiSentence": "हम जाएंगे / जाएंगी" },
+                { "pronoun": "मीरु", "full": "वेल्लतारु", "hindiSentence": "आप जाएंगे / जाएंगी" },
+                { "pronoun": "नुव्वु", "full": "वेल्लतावु", "hindiSentence": "तुम जाओगे / जाओगी" },
+                { "pronoun": "अतडु", "full": "वेल्लताडु", "hindiSentence": "वह जाएगा" },
+                { "pronoun": "आमे", "full": "वेल्लतादि", "hindiSentence": "वह जाएगी" },
+                { "pronoun": "वारु", "full": "वेल्लतारु", "hindiSentence": "वे जाएंगे / जाएंगी" }
+              ]
+            },
+            "notes": ["बोलचाल में अदि का उपयोग न करें।"],
+            "highlights": ["तीनों कालों में प्रत्यय एक ही रहते हैं!"],
+            "shortcut": "भविष्य काल सबसे आसान — कोई stem बदलाव नहीं"
+          }
+        ]
+      }
+    },
     "10": [
       {
         "id": 1,
