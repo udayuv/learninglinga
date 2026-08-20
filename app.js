@@ -147,8 +147,49 @@ function switchSectionTab(tab) {
 function renderTheory() {
   const theory = getTheoryContent();
   if (!theory) return;
-  const words = getCurrentItems();
   const view = $("theory");
+
+  if (theory.type === 'sentences') {
+    const sentHtml = theory.sentences.map(s => {
+      const bd = (arr) => (arr || []).map(w =>
+        `<span class="sent-chip"><span class="sent-chip-hi">${escapeHtml(w.hindi)}</span><span class="sent-chip-sep">→</span><span class="sent-chip-te">${escapeHtml(w.telugu)}</span></span>`
+      ).join("");
+
+      const altHtml = s.alt ? `
+        <div class="sent-alt">
+          <span class="sent-alt-label">या</span>
+          ${s.alt.hindi ? `<div class="sent-alt-hindi">${escapeHtml(s.alt.hindi)}</div>` : ""}
+          <div class="sent-translit">${escapeHtml(s.alt.transliteration)}</div>
+          <div class="sent-telugu">${escapeHtml(s.alt.telugu)}</div>
+          ${s.alt.roman ? `<div class="sent-roman">${escapeHtml(s.alt.roman)}</div>` : ""}
+          ${s.alt.wordBreakdown ? `<div class="sent-breakdown">${bd(s.alt.wordBreakdown)}</div>` : ""}
+        </div>` : "";
+
+      return `
+        <div class="sent-card">
+          <div class="sent-num">${s.id}</div>
+          <div class="sent-body">
+            <div class="sent-hindi">${escapeHtml(s.hindi)}</div>
+            <div class="sent-translit">${escapeHtml(s.transliteration)}</div>
+            <div class="sent-telugu">${escapeHtml(s.telugu)}</div>
+            ${s.roman ? `<div class="sent-roman">${escapeHtml(s.roman)}</div>` : ""}
+            ${s.wordBreakdown ? `<div class="sent-breakdown">${bd(s.wordBreakdown)}</div>` : ""}
+            ${altHtml}
+            ${s.note ? `<div class="sent-note">💡 ${escapeHtml(s.note)}</div>` : ""}
+          </div>
+        </div>`;
+    }).join("");
+
+    view.innerHTML = `
+      <div class="theory-inner">
+        <div class="theory-intro">${escapeHtml(theory.intro)}</div>
+        ${theory.teluguTitle ? `<div class="theory-telugu-title">${escapeHtml(theory.teluguTitle)}</div>` : ""}
+        ${sentHtml}
+      </div>`;
+    return;
+  }
+
+  const words = getCurrentItems();
 
   const wordsRows = words.map((w, i) => `
     <tr>
@@ -232,7 +273,7 @@ function renderTheory() {
         <div class="shortcut-label">⚡ SHORTCUT — याद रखें</div>
         ${shortcutsHtml}
       </div>
-      <button class="primary" onclick="startQuiz()">Recall Quiz लें →</button>
+      ${words.length ? `<button class="primary" onclick="startQuiz()">Recall Quiz लें →</button>` : ""}
     </div>`;
 }
 

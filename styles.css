@@ -435,7 +435,38 @@ button{font:inherit}
 .theory-section-label{font-size:11px;font-weight:900;letter-spacing:1.4px;color:#7880a0;text-transform:uppercase;margin-bottom:10px}
 .ex2-wrap{margin-top:14px;padding-top:14px;border-top:1px solid #eef0f5}
 
-/* Conjugation example cards */
+/* Sentence cards (Chapter 8 type) */
+.theory-telugu-title{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:13px;color:#7880a0;text-align:center;margin:-12px 0 18px}
+.sent-card{display:flex;gap:12px;background:#fff;border-radius:16px;padding:14px;margin-bottom:10px;box-shadow:0 4px 14px rgba(26,40,77,.05)}
+.sent-num{width:24px;height:24px;border-radius:50%;background:var(--primary);color:#fff;display:grid;place-items:center;font-size:11px;font-weight:850;flex-shrink:0;margin-top:2px}
+.sent-body{flex:1;min-width:0}
+.sent-hindi{font-size:15px;font-weight:750;color:#111a32;margin-bottom:4px}
+.sent-translit{font-size:13px;color:var(--primary);font-weight:700;margin-bottom:3px}
+.sent-telugu{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:17px;color:#333;margin-bottom:3px}
+.sent-roman{font-size:12px;color:#7b879e;font-style:italic;margin-bottom:5px}
+.sent-breakdown{display:flex;flex-wrap:wrap;gap:6px;margin:7px 0 4px}
+.sent-chip{display:flex;align-items:center;background:#f0f2ff;border-radius:8px;padding:3px 8px;font-size:11px;gap:4px}
+.sent-chip-hi{color:#44516a;font-weight:700}
+.sent-chip-sep{color:#a0aab8}
+.sent-chip-te{color:var(--primary);font-weight:750}
+.sent-alt{margin-top:8px;padding-top:8px;border-top:1px dashed #e0e4f0}
+.sent-alt-label{font-size:10px;font-weight:800;letter-spacing:.8px;color:#9ba5b6;text-transform:uppercase;margin-bottom:4px;display:block}
+.sent-alt-hindi{font-size:13px;font-weight:750;color:#4a5a70;margin-bottom:3px}
+.sent-note{font-size:11px;color:#5a7a9a;background:#eef6ff;border-radius:8px;padding:6px 9px;line-height:1.5;margin-top:6px}
+
+/* Dark theme for sentence cards */
+body[data-theme="dark"] .theory-telugu-title{color:#565f89}
+body[data-theme="dark"] .sent-card{background:#1e2030;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+body[data-theme="dark"] .sent-hindi{color:#c0caf5}
+body[data-theme="dark"] .sent-translit{color:#9d9ef8}
+body[data-theme="dark"] .sent-telugu{color:#a9b8e0}
+body[data-theme="dark"] .sent-roman{color:#565f89}
+body[data-theme="dark"] .sent-chip{background:#2d2f50}
+body[data-theme="dark"] .sent-chip-hi{color:#8fa3c0}
+body[data-theme="dark"] .sent-chip-te{color:#9d9ef8}
+body[data-theme="dark"] .sent-alt{border-color:#2d3048}
+body[data-theme="dark"] .sent-alt-hindi{color:#8fa3c0}
+body[data-theme="dark"] .sent-note{background:#1f2c40;color:#7a9bbf}
 .conj-card{background:#f8f9fc;border-radius:14px;padding:13px 14px;margin-bottom:10px;border-left:3px solid var(--primary)}
 .conj-card-sentence{font-size:14px;font-weight:750;color:#3a4a60;margin-bottom:7px}
 .conj-card-main{display:flex;align-items:center;gap:8px;margin-bottom:4px}
