@@ -202,6 +202,14 @@ function renderTheory() {
       <div class="theory-inner">
         <div class="theory-intro">${escapeHtml(theory.intro)}</div>
         ${theory.teluguTitle ? `<div class="theory-telugu-title">${escapeHtml(theory.teluguTitle)}</div>` : ""}
+        ${theory.shortcutTable ? `
+        <div class="shortcut-table-wrap">
+          <div class="shortcut-table-title">${escapeHtml(theory.shortcutTable.title)}</div>
+          <table class="shortcut-table ${theory.shortcutTable.tableClass || ''}">
+            <thead><tr>${theory.shortcutTable.headers.map(h => `<th>${escapeHtml(h)}</th>`).join("")}</tr></thead>
+            <tbody>${theory.shortcutTable.rows.map(row => `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody>
+          </table>
+        </div>` : ""}
         ${sentHtml}
         <button class="primary" onclick="startQuiz()">Recall Quiz लें →</button>
       </div>`;

@@ -437,6 +437,27 @@ body[data-theme="dark"] .sent-chip-te{color:#9d9ef8}
 body[data-theme="dark"] .sent-alt{border-color:#2d3048}
 body[data-theme="dark"] .sent-alt-hindi{color:#8fa3c0}
 body[data-theme="dark"] .sent-note{background:#1f2c40;color:#7a9bbf}
+/* Shortcut table */
+.shortcut-table-wrap{margin:16px 0 20px;background:#f5f8ff;border-radius:12px;padding:14px 16px;border:1px solid #dde8f8}
+.shortcut-table-title{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#5a7a9a;margin-bottom:10px}
+.shortcut-table{width:100%;border-collapse:collapse;font-size:13px}
+.shortcut-table th{background:#e2ecff;color:#2d4a6e;font-weight:700;padding:7px 10px;text-align:left;border-bottom:2px solid #c8d8f0}
+.shortcut-table td{padding:6px 10px;border-bottom:1px solid #dde8f8;color:#2d3a4a}
+.shortcut-table tr:last-child td{border-bottom:none}
+.shortcut-table--ability td:nth-child(3){color:#1a7a40;font-weight:600}
+.shortcut-table--ability td:nth-child(4){color:#c0392b;font-weight:600}
+.shortcut-table--tense td:nth-child(2){color:#0070c0;font-weight:600}
+.shortcut-table--tense td:nth-child(3){color:#8a4a00;font-weight:600}
+.shortcut-table--tense td:nth-child(4){color:#1a7a40;font-weight:600}
+body[data-theme="dark"] .shortcut-table-wrap{background:#1a2535;border-color:#2d3f58}
+body[data-theme="dark"] .shortcut-table-title{color:#7a9bbf}
+body[data-theme="dark"] .shortcut-table th{background:#1f3050;color:#9ab8e0;border-bottom-color:#2d3f58}
+body[data-theme="dark"] .shortcut-table td{color:#c8d8ea;border-bottom-color:#2d3f58}
+body[data-theme="dark"] .shortcut-table--ability td:nth-child(3){color:#4caf80}
+body[data-theme="dark"] .shortcut-table--ability td:nth-child(4){color:#e07070}
+body[data-theme="dark"] .shortcut-table--tense td:nth-child(2){color:#5aabff}
+body[data-theme="dark"] .shortcut-table--tense td:nth-child(3){color:#e0a050}
+body[data-theme="dark"] .shortcut-table--tense td:nth-child(4){color:#4caf80}
 /* Theme toggle button */
 .theme-toggle{border:0;background:#f0f2f8;font-size:17px;cursor:pointer;padding:0;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;line-height:1;flex-shrink:0}
 
