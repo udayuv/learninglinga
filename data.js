@@ -151,6 +151,23 @@ window.APP_DATA = {
       "lessonCount": 45
     },
     {
+      "id": 6,
+      "number": 6,
+      "title": "Everyday Verbs II",
+      "displayTitle": "रोज़मर्रा की क्रियाएँ — भाग 2",
+      "description": "55 और तेलुगु क्रियाएँ (46-100) और वर्तमान काल में वाक्य",
+      "themeIcon": "💪",
+      "status": "available",
+      "progress": 0,
+      "sections": [
+        "Words",
+        "Recall",
+        "Sentences",
+        "Final quiz"
+      ],
+      "lessonCount": 55
+    },
+    {
       "id": 7,
       "number": 7,
       "title": "Tense Chart Pronouns",
@@ -1236,6 +1253,167 @@ window.APP_DATA = {
       ]},
       { "id": 45, "hindi": "चलना", "telugu": "నడవడం", "hindiTransliteration": "नडवडम्", "category": "verb", "examples": [
         { "hindi": "मैं चल रहा / रही हूं", "telugu": "నేను నడుస్తున్నాను", "hindiTransliteration": "नेनु नडुस्तुन्नानु" }
+      ]}
+    ],
+    "6": [
+      { "id": 1, "hindi": "काम करना", "telugu": "పని చేయడం", "hindiTransliteration": "पनि चेयडम्", "category": "verb", "examples": [
+        { "hindi": "मैं काम कर रहा / रही हूं", "telugu": "నేను పని చేస్తున్నాను", "hindiTransliteration": "नेनु पनि चेस्तुन्नानु" }
+      ]},
+      { "id": 2, "hindi": "धोना", "telugu": "కడగడం", "hindiTransliteration": "कडगडम्", "category": "verb", "examples": [
+        { "hindi": "मैं हाथ धो रहा / रही हूं", "telugu": "నేను చేతులు కడుగుతున్నాను", "hindiTransliteration": "नेनु चेतुलु कडुगुतुन्नानु" }
+      ]},
+      { "id": 3, "hindi": "लड़ना", "telugu": "గొడవ పడడం", "hindiTransliteration": "गोडव पडडम्", "category": "verb", "examples": [
+        { "hindi": "मैं लड़ रहा / रही हूं", "telugu": "నేను గొడవ పడుతున్నాను", "hindiTransliteration": "नेनु गोडव पडुतुन्नानु" }
+      ]},
+      { "id": 4, "hindi": "जीतना", "telugu": "గెలవడం", "hindiTransliteration": "गेलवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं जीत रहा / रही हूं", "telugu": "నేను గెలుస్తున్నాను", "hindiTransliteration": "नेनु गेलुस्तुन्नानु" }
+      ]},
+      { "id": 5, "hindi": "हारना", "telugu": "ఓడిపోవడం", "hindiTransliteration": "ओडिपोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं हार रहा / रही हूं", "telugu": "నేను ఓడిపోతున్నాను", "hindiTransliteration": "नेनु ओडिपोतुन्नानु" }
+      ]},
+      { "id": 6, "hindi": "तारीफ करना", "telugu": "మెచ్చుకోవడం", "hindiTransliteration": "मेच्चुकोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं तारीफ कर रहा / रही हूं", "telugu": "నేను మెచ్చుకుంటున్నాను", "hindiTransliteration": "नेनु मेच्चुकुन्टुन्नानु" }
+      ]},
+      { "id": 7, "hindi": "मदद करना", "telugu": "సహాయం చేయడం", "hindiTransliteration": "सहायम् चेयडम्", "category": "verb", "examples": [
+        { "hindi": "मैं मदद कर रहा / रही हूं", "telugu": "నేను సహాయం చేస్తున్నాను", "hindiTransliteration": "नेनु सहायम् चेस्तुन्नानु" }
+      ]},
+      { "id": 8, "hindi": "धोखा देना", "telugu": "మోసం చేయడం", "hindiTransliteration": "मोसम् चेयडम्", "category": "verb", "examples": [
+        { "hindi": "मैं धोखा दे रहा / रही हूं", "telugu": "నేను మోసం చేస్తున్నాను", "hindiTransliteration": "नेनु मोसम् चेस्तुन्नानु" }
+      ]},
+      { "id": 9, "hindi": "कपड़े धोना", "telugu": "బట్టలు ఉతకడం", "hindiTransliteration": "बट्टलु उतकडम्", "category": "verb", "examples": [
+        { "hindi": "मैं कपड़े धो रहा / रही हूं", "telugu": "నేను బట్టలు ఉతుకుతున్నాను", "hindiTransliteration": "नेनु बट्टलु उतुकुतुन्नानु" }
+      ]},
+      { "id": 10, "hindi": "पकाना", "telugu": "వండడం", "hindiTransliteration": "वन्डडम्", "category": "verb", "examples": [
+        { "hindi": "मैं पका रहा / रही हूं", "telugu": "నేను వండుతున్నాను", "hindiTransliteration": "नेनु वन्डुतुन्नानु" }
+      ]},
+      { "id": 11, "hindi": "झूठ बोलना", "telugu": "అబద్ధం చెప్పడం", "hindiTransliteration": "अब्बदम् चेप्पडम्", "category": "verb", "examples": [
+        { "hindi": "मैं झूठ बोल रहा / रही हूं", "telugu": "నేను అబద్ధం చెప్పుతున్నాను", "hindiTransliteration": "नेनु अब्बदम् चेप्पुतुन्नानु" }
+      ]},
+      { "id": 12, "hindi": "नहाना", "telugu": "స్నానం చేయడం", "hindiTransliteration": "स्नानम् चेयडम्", "category": "verb", "examples": [
+        { "hindi": "मैं नहा रहा / रही हूं", "telugu": "నేను స్నానం చేస్తున్నాను", "hindiTransliteration": "नेनु स्नानम् चेस्तुन्नानु" }
+      ]},
+      { "id": 13, "hindi": "होना", "telugu": "అవ్వడం", "hindiTransliteration": "अव्वडम्", "category": "verb", "examples": [
+        { "hindi": "हो रहा / रही है", "telugu": "అవుతుంది", "hindiTransliteration": "अवुतुन्दि" }
+      ]},
+      { "id": 14, "hindi": "जागना", "telugu": "నిద్ర లేవడం", "hindiTransliteration": "निद्र लेवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं जाग रहा / रही हूं", "telugu": "నేను నిద్ర లేస్తున్నాను", "hindiTransliteration": "नेनु निद्र लेस्तुन्नानु" }
+      ]},
+      { "id": 15, "hindi": "इंतजार करना", "telugu": "వేచి ఉండటం", "hindiTransliteration": "वेचि उन्डडम्", "category": "verb", "examples": [
+        { "hindi": "मैं इंतजार कर रहा / रही हूं", "telugu": "నేను వేచి ఉన్నాను", "hindiTransliteration": "नेनु वेचि उन्नानु" }
+      ]},
+      { "id": 16, "hindi": "परेशान करना", "telugu": "ఇబ్బంది పెట్టడం", "hindiTransliteration": "इब्बन्दि पेटडम्", "category": "verb", "examples": [
+        { "hindi": "मैं परेशान कर रहा / रही हूं", "telugu": "నేను ఇబ్బంది పెడుతున్నాను", "hindiTransliteration": "नेनु इब्बन्दि पेडुतुन्नानु" }
+      ]},
+      { "id": 17, "hindi": "शुरू करना", "telugu": "ప్రారంభించడం", "hindiTransliteration": "प्रारंभिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं शुरू कर रहा / रही हूं", "telugu": "నేను ప్రారంభిస్తున్నాను", "hindiTransliteration": "नेनु प्रारंभिस्तुन्नानु" }
+      ]},
+      { "id": 18, "hindi": "पैदा होना", "telugu": "పుట్టడం", "hindiTransliteration": "पुट्टडम्", "category": "verb", "examples": [
+        { "hindi": "बच्चा पैदा हुआ है", "telugu": "పిల్లవాడు పుట్టాడు", "hindiTransliteration": "पिल्लवाडु पुट्टाड्डु" }
+      ]},
+      { "id": 19, "hindi": "मरना", "telugu": "చనిపోవడం", "hindiTransliteration": "चनिपोवडम्", "category": "verb", "examples": [
+        { "hindi": "कोई मर गए हैं", "telugu": "ఎవరో చనిపోయారు", "hindiTransliteration": "एवरो चनिपोयारु" }
+      ]},
+      { "id": 20, "hindi": "छूना", "telugu": "తాకడం", "hindiTransliteration": "ताकडम्", "category": "verb", "examples": [
+        { "hindi": "मैं छू रहा / रही हूं", "telugu": "నేను తాకుతున్నాను", "hindiTransliteration": "नेनु ताकुतुन्नानु" }
+      ]},
+      { "id": 21, "hindi": "फेंकना", "telugu": "విసరడం", "hindiTransliteration": "विसरडम्", "category": "verb", "examples": [
+        { "hindi": "मैं फेंक रहा / रही हूं", "telugu": "నేను విసురుతున్నాను", "hindiTransliteration": "नेनु विसुरुतुन्नानु" }
+      ]},
+      { "id": 22, "hindi": "रोकना", "telugu": "ఆపడం", "hindiTransliteration": "आपडम्", "category": "verb", "examples": [
+        { "hindi": "मैं रोक रहा / रही हूं", "telugu": "నేను ఆపుతున్నాను", "hindiTransliteration": "नेनु आपुतुन्नानु" }
+      ]},
+      { "id": 23, "hindi": "पीटना", "telugu": "కొట్టడం", "hindiTransliteration": "कोट्टडम्", "category": "verb", "examples": [
+        { "hindi": "मैं पीट रहा / रही हूं", "telugu": "నేను కొడుతున్నాను", "hindiTransliteration": "नेनु कोडुतुन्नानु" }
+      ]},
+      { "id": 24, "hindi": "खड़ा होना", "telugu": "నిలబడడం", "hindiTransliteration": "निलबड्डुम्", "category": "verb", "examples": [
+        { "hindi": "मैं खड़ा / खड़ी हूं", "telugu": "నేను నిలబడుతున్నాను", "hindiTransliteration": "नेनु निलबड्डुतुन्नानु" }
+      ]},
+      { "id": 25, "hindi": "ढूंढना", "telugu": "వెతకడం", "hindiTransliteration": "वेतकडम्", "category": "verb", "examples": [
+        { "hindi": "मैं ढूंढ रहा / रही हूं", "telugu": "నేను వెతుకుతున్నాను", "hindiTransliteration": "नेनु वेतुकुतुन्नानु" }
+      ]},
+      { "id": 26, "hindi": "पहुंचना", "telugu": "చేరుకోవడం", "hindiTransliteration": "चेरुकोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं पहुंच रहा / रही हूं", "telugu": "నేను చేరుకుంటున్నాను", "hindiTransliteration": "नेनु चेरुकुन्टुन्नानु" }
+      ]},
+      { "id": 27, "hindi": "झुकना", "telugu": "వంగడం", "hindiTransliteration": "वन्गडम्", "category": "verb", "examples": [
+        { "hindi": "मैं झुक रहा / रही हूं", "telugu": "నేను వంగుతున్నాను", "hindiTransliteration": "नेनु वन्गुतुन्नानु" }
+      ]},
+      { "id": 28, "hindi": "बताना", "telugu": "తెలియ చేయడం", "hindiTransliteration": "तेलिय चेयडम्", "category": "verb", "examples": [
+        { "hindi": "मैं बता रहा / रही हूं", "telugu": "నేను తెలియ చేస్తున్నాను", "hindiTransliteration": "नेनु तेलिय चेस्तुन्नानु" }
+      ]},
+      { "id": 29, "hindi": "रखना", "telugu": "ఉంచడం", "hindiTransliteration": "उन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं रख रहा / रही हूं", "telugu": "నేను ఉంచుతున్నాను", "hindiTransliteration": "नेनु उन्चुतुन्नानु" }
+      ]},
+      { "id": 30, "hindi": "बुलाना", "telugu": "పిలవడం", "hindiTransliteration": "पिलवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं बुला रहा / रही हूं", "telugu": "నేను పిలుస్తున్నాను", "hindiTransliteration": "नेनु पिलुस्तुन्नानु" }
+      ]},
+      { "id": 31, "hindi": "कल्पना करना", "telugu": "ఊహించడం", "hindiTransliteration": "उहिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं कल्पना कर रहा / रही हूं", "telugu": "నేను ఊహిస్తున్నాను", "hindiTransliteration": "नेनु उहिस्तुन्नानु" }
+      ]},
+      { "id": 32, "hindi": "मुस्कुराना", "telugu": "చిరునవ్వు నవ్వడం", "hindiTransliteration": "चिरुनव्वु नव्वडम्", "category": "verb", "examples": [
+        { "hindi": "मैं मुस्कुरा रहा / रही हूं", "telugu": "నేను చిరునవ్వు నవ్వుతున్నాను", "hindiTransliteration": "नेनु चिरुनव्वु नव्वुतुन्नानु" }
+      ]},
+      { "id": 33, "hindi": "मिलना", "telugu": "కలవడం", "hindiTransliteration": "कलवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं मिल रहा / रही हूं", "telugu": "నేను కలుస్తున్నాను", "hindiTransliteration": "नेनु कलुस्तुन्नानु" }
+      ]},
+      { "id": 34, "hindi": "देर होना", "telugu": "ఆలస్యం అవ్వడం", "hindiTransliteration": "आलस्यम् अव्वडम्", "category": "verb", "examples": [
+        { "hindi": "मुझे देर हो रही है", "telugu": "నాకు ఆలస్యం అవుతుంది", "hindiTransliteration": "नाकु आलस्यम् अवुतुन्दि" }
+      ]},
+      { "id": 35, "hindi": "हासिल करना", "telugu": "సాధించడం", "hindiTransliteration": "साधिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं हासिल करूंगा / करूंगी", "telugu": "నేను సాధిస్తాను", "hindiTransliteration": "नेनु साधिस्तानु" }
+      ]},
+      { "id": 36, "hindi": "सोना", "telugu": "పడుకోవడం", "hindiTransliteration": "पडुकोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं सो रहा / रही हूं", "telugu": "నేను పడుకుంటున్నాను", "hindiTransliteration": "नेनु पडुकुन्टुन्नानु" }
+      ]},
+      { "id": 37, "hindi": "सहमत होना", "telugu": "అంగీకరించడం", "hindiTransliteration": "अन्गिकरिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं सहमत हूं", "telugu": "నేను అంగీకరిస్తున్నాను", "hindiTransliteration": "नेनु अन्गिकरिस्तुन्नानु" }
+      ]},
+      { "id": 38, "hindi": "गलती करना", "telugu": "తప్పు చేయడం", "hindiTransliteration": "तप्पु चेयडम्", "category": "verb", "examples": [
+        { "hindi": "तुम गलती कर रहे / रही हो", "telugu": "నువ్వు తప్పు చేస్తున్నావు", "hindiTransliteration": "नुव्वु तप्पु चेस्तुन्नावु" }
+      ]},
+      { "id": 39, "hindi": "पूरा करना", "telugu": "పూర్తి చేయడం", "hindiTransliteration": "पूर्ति चेयडम्", "category": "verb", "examples": [
+        { "hindi": "काम पूरा करो", "telugu": "పని పూర్తి చెయ్యు", "hindiTransliteration": "पनि पूर्ति चेय्यु" }
+      ]},
+      { "id": 40, "hindi": "उड़ना", "telugu": "ఎగరడం", "hindiTransliteration": "एगरडम्", "category": "verb", "examples": [
+        { "hindi": "पक्षी उड़ रहे हैं", "telugu": "పక్షులు ఎగురుతున్నాయి", "hindiTransliteration": "पक्षुलु एगुरुतुन्नायी" }
+      ]},
+      { "id": 41, "hindi": "भेजना", "telugu": "పంపించడం / పంపడం", "hindiTransliteration": "पम्पिन्चडम् / पम्पडम्", "category": "verb", "examples": [
+        { "hindi": "मैं भेज रहा / रही हूं", "telugu": "నేను పంపిస్తున్నాను / పంపుతున్నాను", "hindiTransliteration": "नेनु पम्पिस्तुन्नानु / पम्पुतुन्नानु" }
+      ]},
+      { "id": 42, "hindi": "नफरत करना", "telugu": "ద్వేషించడం", "hindiTransliteration": "द्वेषिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "नफरत नहीं करना चाहिए", "telugu": "ద్వేషించకూడదు", "hindiTransliteration": "द्वेषिन्चकुडदु" }
+      ]},
+      { "id": 43, "hindi": "नापसंद करना", "telugu": "ఇష్టపడకపోవడం", "hindiTransliteration": "इष्ट पड़कपोवडम्", "category": "verb", "examples": [
+        { "hindi": "वह मुझे नापसंद है", "telugu": "అది నాకు ఇష్టం లేదు", "hindiTransliteration": "अदि नाकु इष्टम् लेदु" }
+      ]},
+      { "id": 44, "hindi": "पसंद करना", "telugu": "ఇష్టపడడం", "hindiTransliteration": "इष्ट पडडम्", "category": "verb", "examples": [
+        { "hindi": "वह मुझे पसंद है", "telugu": "అది నాకు ఇష్టం", "hindiTransliteration": "अदि नाकु इष्टम्" }
+      ]},
+      { "id": 45, "hindi": "तैरना", "telugu": "ఈదడం", "hindiTransliteration": "ईदडम्", "category": "verb", "examples": [
+        { "hindi": "मैं तैर रहा / रही हूं", "telugu": "నేను ఈదుతున్నాను", "hindiTransliteration": "नेनु ईदुतुन्नानु" }
+      ]},
+      { "id": 46, "hindi": "गलती मानना", "telugu": "తప్పు ఒప్పుకోవడం", "hindiTransliteration": "तप्पु ओप्पुकोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं गलती मान रहा / रही हूं", "telugu": "నేను తప్పు ఒప్పుకుంటున్నాను", "hindiTransliteration": "नेनु तप्पु ओप्पुकुन्टुन्नानु" }
+      ]},
+      { "id": 47, "hindi": "पाना", "telugu": "అందుకోవడం", "hindiTransliteration": "अन्दुकोवडम्", "category": "verb", "examples": [
+        { "hindi": "मैं पा रहा / रही हूं", "telugu": "నేను అందుకుంటున్నాను", "hindiTransliteration": "नेनु अन्दुकुन्टुन्नानु" }
+      ]},
+      { "id": 48, "hindi": "मनाना", "telugu": "ఒప్పించడం", "hindiTransliteration": "ओप्पिन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं मना रहा / रही हूं", "telugu": "నేను ఒప్పిస్తున్నాను", "hindiTransliteration": "नेनु ओप्पिस्तुन्नानु" }
+      ]},
+      { "id": 49, "hindi": "डरना", "telugu": "భయపడడం", "hindiTransliteration": "भयपड्डुम्", "category": "verb", "examples": [
+        { "hindi": "मैं डर रहा / रही हूं", "telugu": "నేను భయపడుతున్నాను", "hindiTransliteration": "नेनु भयपडुतुन्नानु" }
+      ]},
+      { "id": 50, "hindi": "सबक सिखाना", "telugu": "గుణపాఠం చెప్పడం", "hindiTransliteration": "गुणपाठम् चेप्पडम्", "category": "verb", "examples": [
+        { "hindi": "मैं सबक सिखा रहा / रही हूं", "telugu": "నేను గుణపాఠం చెప్తున్నాను", "hindiTransliteration": "नेनु गुणपाठम् चेप्तुन्नानु" }
+      ]},
+      { "id": 51, "hindi": "मांझना", "telugu": "తోమడం", "hindiTransliteration": "तोमडम्", "category": "verb", "examples": [
+        { "hindi": "मैं बर्तन मांझ रहा / रही हूं", "telugu": "నేను అంట్లు / గిన్నెలు తోముతున్నాను", "hindiTransliteration": "नेनु अन्ट्लु / गिन्नेलु तोमुतुन्नानु" }
+      ]},
+      { "id": 52, "hindi": "मिलाना", "telugu": "కలపడం", "hindiTransliteration": "कलपडम्", "category": "verb", "examples": [
+        { "hindi": "मैं मिला रहा / रही हूं", "telugu": "నేను కలుపుతున్నాను", "hindiTransliteration": "नेनु कलुपुतुन्नानु" }
+      ]},
+      { "id": 53, "hindi": "कोशिश करना", "telugu": "ప్రయత్నించడం", "hindiTransliteration": "प्रयत्निन्चडम्", "category": "verb", "examples": [
+        { "hindi": "मैं कोशिश कर रहा / रही हूं", "telugu": "నేను ప్రయత్నిస్తున్నాను", "hindiTransliteration": "नेनु प्रयत्निस्तुन्नानु" }
       ]}
     ],
     "7": {
