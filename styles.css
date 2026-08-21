@@ -28,11 +28,11 @@ button{font:inherit}
   -webkit-overflow-scrolling:touch;
   position:relative;
 }
-.topbar{height:54px;background:#fff;display:flex;align-items:center;padding:10px 22px;gap:13px}
-.back{border:0;background:transparent;font-size:31px;line-height:1;cursor:pointer;color:#18213a;padding:0 4px}
+.topbar{height:58px;background:#fff;display:flex;align-items:center;padding:0 18px;gap:10px;border-bottom:1px solid #eef0f6;position:sticky;top:0;z-index:10}
+.back{border:0;background:#f0f2f8;font-size:20px;line-height:1;cursor:pointer;color:#18213a;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;flex-shrink:0}
 .top-info{flex:1;min-width:0}
-.top-title{font-size:16px;font-weight:850;white-space:nowrap}
-.top-sub{font-size:11px;color:#a0a9ba;margin-top:2px}
+.top-title{font-size:15px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.top-sub{font-size:11px;color:#a0a9ba;margin-top:1px}
 .moon{font-size:18px}
 .streak{font-size:12px;font-weight:800;color:#d9901c;background:#fff9ed;padding:8px 10px;border-radius:15px;white-space:nowrap}
 .progress-wrap{padding:10px 22px 0;background:#fff}
@@ -392,8 +392,8 @@ button{font:inherit}
 }
 
 /* ---- Section tabs (Words / Theory) ---- */
-.section-tabs{display:flex;gap:8px;padding:10px 22px;background:#fff;border-bottom:1px solid #e7eaf1}
-.section-tab{flex:1;border:0;background:#f0f2f8;border-radius:12px;padding:9px 0;font-size:13px;font-weight:750;color:#7880a0;cursor:pointer;transition:background .15s,color .15s}
+.section-tabs{display:flex;gap:6px;padding:8px 18px;background:#fff;border-bottom:1px solid #eef0f6;position:sticky;top:58px;z-index:9}
+.section-tab{flex:1;border:0;background:#f0f2f8;border-radius:10px;padding:9px 0;font-size:13px;font-weight:750;color:#7880a0;cursor:pointer;transition:background .15s,color .15s}
 .section-tab.active{background:var(--primary);color:#fff}
 
 /* ---- Theory view ---- */
@@ -401,39 +401,9 @@ button{font:inherit}
 .theory-inner{padding:0 22px}
 .theory-intro{margin:20px 0 18px;font-size:14px;font-weight:750;color:#3a4a60;background:#eef0ff;border-radius:14px;padding:12px 16px;text-align:center}
 
-.tense-card{background:#fff;border-radius:22px;box-shadow:0 6px 20px rgba(26,40,77,.07);padding:18px;margin-bottom:18px}
-.tense-header{margin-bottom:12px}
-.tense-title{font-size:17px;font-weight:850;color:var(--ink)}
-.tense-sub{font-size:13px;font-weight:600;color:#7880a0}
-.tense-telugu-title{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:13px;color:#7880a0;margin-top:2px}
-.tense-formula{display:inline-block;margin-top:8px;background:#eef0ff;color:var(--primary);border-radius:10px;padding:5px 10px;font-size:12px;font-weight:750}
-
-.conj-verb-label{font-size:11px;font-weight:800;letter-spacing:1.2px;color:#9ba5b6;text-transform:uppercase;margin-bottom:8px}
-.conj-table-wrap{overflow-x:auto;border-radius:12px;background:#f8f9fc;margin-bottom:10px}
-.conj-table{width:100%;border-collapse:collapse;font-size:12px}
-.conj-table th{background:#eef0f8;color:#7880a0;font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase;padding:8px 10px;text-align:left;border-bottom:1px solid #e4e7f0;white-space:nowrap}
-.conj-table td{padding:8px 10px;border-bottom:1px solid #eef0f5;vertical-align:top}
-.conj-table tr:last-child td{border-bottom:none}
-.tc-hindi{color:#44516a;font-size:12px}
-.tc-pronoun{color:var(--primary);font-weight:800;white-space:nowrap}
-.tc-ending{color:#e9a02a;font-weight:800;background:#fff9ed;border-radius:6px;text-align:center}
-.tc-full{font-weight:750;color:#111a32}
-.tc-telugu{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:14px;color:#333}
-.conj-compact .tc-pronoun{width:40%}
-.conj-compact .tc-full{color:#111a32;font-weight:750}
-
-.theory-note{display:flex;gap:8px;align-items:flex-start;background:#eef6ff;border:1px solid #c3defe;border-radius:12px;padding:10px 12px;font-size:12px;color:#3a5a8a;line-height:1.5;margin-bottom:8px}
-.theory-highlights{display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 2px}
-.theory-highlight{background:#f0f2ff;color:var(--primary);border-radius:10px;padding:5px 11px;font-size:12px;font-weight:750}
-
-.shortcut-box{background:linear-gradient(135deg,#625cf4 0%,#8b55ee 100%);border-radius:20px;padding:18px;color:#fff;margin-top:8px}
-.shortcut-label{font-size:10px;font-weight:900;letter-spacing:1.8px;opacity:.85;margin-bottom:10px}
-.shortcut-row{font-size:13px;line-height:1.7;opacity:.95}
-.shortcut-row strong{font-weight:850}
-
-/* theory section label and example 2 wrapper */
-.theory-section-label{font-size:11px;font-weight:900;letter-spacing:1.4px;color:#7880a0;text-transform:uppercase;margin-bottom:10px}
-.ex2-wrap{margin-top:14px;padding-top:14px;border-top:1px solid #eef0f5}
+.sent-section{background:#eef0ff;border-radius:12px;padding:11px 14px;margin:14px 0 8px}
+.sent-section-title{font-size:13px;font-weight:800;color:var(--primary)}
+.sent-section-sub{font-size:11px;color:#7880a0;margin-top:3px}
 
 /* Sentence cards (Chapter 8 type) */
 .theory-telugu-title{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:13px;color:#7880a0;text-align:center;margin:-12px 0 18px}
@@ -467,24 +437,8 @@ body[data-theme="dark"] .sent-chip-te{color:#9d9ef8}
 body[data-theme="dark"] .sent-alt{border-color:#2d3048}
 body[data-theme="dark"] .sent-alt-hindi{color:#8fa3c0}
 body[data-theme="dark"] .sent-note{background:#1f2c40;color:#7a9bbf}
-.conj-card{background:#f8f9fc;border-radius:14px;padding:13px 14px;margin-bottom:10px;border-left:3px solid var(--primary)}
-.conj-card-sentence{font-size:14px;font-weight:750;color:#3a4a60;margin-bottom:7px}
-.conj-card-main{display:flex;align-items:center;gap:8px;margin-bottom:4px}
-.conj-card-pronoun{color:var(--primary);font-weight:850;font-size:14px}
-.conj-card-full{font-weight:750;font-size:14px;color:#111a32}
-.conj-card-breakdown{font-size:12px;color:#9ba5b6;margin-bottom:4px}
-.conj-card-telugu{font-family:"Noto Sans Telugu","Nirmala UI",sans-serif;font-size:17px;font-weight:700;color:#333;margin-bottom:2px}
-.conj-card-roman{font-size:12px;color:#7b879e;font-style:italic;margin-bottom:6px}
-.conj-card-explanation{font-size:11px;color:#5a7a9a;background:#eef6ff;border-radius:8px;padding:5px 8px;line-height:1.4}
-.conj-card-ex2{background:#f5f7fa;border-left-color:#63c68b}
-.conj-card-ex2 .conj-card-sentence{font-size:13px;color:#4a5a70;margin-bottom:4px}
-
-/* Concept box (formula shown after first example) */
-.concept-box{background:#eef0ff;border-radius:12px;padding:11px 14px;margin:2px 0 8px}
-.concept-formula{font-size:12px;font-weight:750;color:var(--primary)}
-
 /* Theme toggle button */
-.theme-toggle{border:0;background:transparent;font-size:19px;cursor:pointer;padding:4px 6px;border-radius:8px;line-height:1;margin-left:2px;flex-shrink:0}
+.theme-toggle{border:0;background:#f0f2f8;font-size:17px;cursor:pointer;padding:0;width:36px;height:36px;border-radius:10px;display:grid;place-items:center;line-height:1;flex-shrink:0}
 
 /* ---- Dark theme ---- */
 body[data-theme="dark"]{background:#111320}
@@ -493,7 +447,8 @@ body[data-theme="dark"] .topbar,
 body[data-theme="dark"] .progress-wrap,
 body[data-theme="dark"] .steps{background:#1e2030}
 body[data-theme="dark"] .top-title,
-body[data-theme="dark"] .back{color:#c0caf5}
+body[data-theme="dark"] .back{background:#252840;color:#c0caf5}
+body[data-theme="dark"] .theme-toggle{background:#252840}
 body[data-theme="dark"] .top-sub,
 body[data-theme="dark"] .step{color:#565f89}
 body[data-theme="dark"] .card,
@@ -514,31 +469,15 @@ body[data-theme="dark"] .how-row{background:#1e2030}
 body[data-theme="dark"] .how-text{color:#c0caf5}
 body[data-theme="dark"] .section-title{color:#c0caf5}
 body[data-theme="dark"] .dashboard{background:#1a1b26}
-body[data-theme="dark"] .tense-card{background:#1e2030}
-body[data-theme="dark"] .tense-title{color:#c0caf5}
-body[data-theme="dark"] .conj-card{background:#252840;border-left-color:#7c7af0}
-body[data-theme="dark"] .conj-card-sentence{color:#8fa3c0}
-body[data-theme="dark"] .conj-card-full{color:#c0caf5}
-body[data-theme="dark"] .conj-card-breakdown{color:#565f89}
-body[data-theme="dark"] .conj-card-telugu{color:#a9b8e0}
-body[data-theme="dark"] .conj-card-roman{color:#565f89}
-body[data-theme="dark"] .conj-card-explanation{background:#1f2c40;color:#7a9bbf}
-body[data-theme="dark"] .conj-card-ex2{background:#1e2530;border-left-color:#4caf7a}
-body[data-theme="dark"] .conj-card-ex2 .conj-card-sentence{color:#6a8a9a}
-body[data-theme="dark"] .concept-box{background:#2d2f50}
-body[data-theme="dark"] .concept-formula{color:#9d9ef8}
-body[data-theme="dark"] .conj-table-wrap,
 body[data-theme="dark"] .all-words-table-wrap{background:#252840}
-body[data-theme="dark"] .conj-table th,
 body[data-theme="dark"] .all-words-table th{background:#1e2030;color:#565f89}
-body[data-theme="dark"] .conj-table td,
 body[data-theme="dark"] .all-words-table td{border-color:#2d3048;color:#c0caf5}
 body[data-theme="dark"] .tbl-hindi,
 body[data-theme="dark"] .tbl-translit{color:#8fa3c0}
-body[data-theme="dark"] .theory-note{background:#1f2c40;border-color:#2d4a6a;color:#7aabbf}
-body[data-theme="dark"] .theory-highlight{background:#2d2f50;color:#9d9ef8}
 body[data-theme="dark"] .theory-intro{background:#2d2f50;color:#a0aee8}
-body[data-theme="dark"] .section-tabs{background:#1e2030;border-color:#2d3048}
+body[data-theme="dark"] .sent-section{background:#2d2f50}
+body[data-theme="dark"] .sent-section-sub{color:#565f89}
+body[data-theme="dark"] .section-tabs{background:#1a1b26;border-color:#2d3048}
 body[data-theme="dark"] .section-tab{background:#252840;color:#565f89}
 body[data-theme="dark"] .section-tab.active{background:#7c7af0;color:#fff}
 body[data-theme="dark"] .lesson-tab{color:#565f89}
@@ -547,10 +486,4 @@ body[data-theme="dark"] .option{background:#1e2030;border-color:#2d3048;color:#c
 body[data-theme="dark"] .progress{background:#2d3048}
 body[data-theme="dark"] .word-notes{background:#1f2c40;border-color:#2d4a6a}
 body[data-theme="dark"] .notes-text{color:#7aabbf}
-body[data-theme="dark"] .instruction,
-body[data-theme="dark"] .eyebrow+h1{color:#c0caf5}
 body[data-theme="dark"] h1{color:#c0caf5}
-body[data-theme="dark"] .ex2-wrap{border-color:#2d3048}
-body[data-theme="dark"] .shortcut-box{background:linear-gradient(135deg,#5450cc 0%,#7040c8 100%)}
-body[data-theme="dark"] .conj-verb-label{color:#565f89}
-body[data-theme="dark"] .streak{background:#2a2010;color:#c8903b}

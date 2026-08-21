@@ -188,6 +188,19 @@ window.APP_DATA = {
         "Final quiz"
       ],
       "lessonCount": 20
+    },
+    {
+      "id": 37,
+      "number": 37,
+      "title": "Family Relations",
+      "displayTitle": "रिश्तों के नाम",
+      "description": "तेलुगु में 42 पारिवारिक रिश्तों के नाम सीखें",
+      "themeIcon": "👨‍👩‍👧‍👦",
+      "status": "available",
+      "progress": 0,
+      "viewMode": "table",
+      "sections": ["Words"],
+      "lessonCount": 42
     }
   ],
   "howItWorks": [
@@ -1080,104 +1093,59 @@ window.APP_DATA = {
         { "id": 7, "hindi": "वे", "telugu": "వారు", "hindiTransliteration": "वारु", "category": "pronoun" }
       ],
       "theory": {
+        "type": "sentences",
         "intro": "तेलुगु में सर्वनाम का अंतिम अक्षर = क्रिया का अंत।",
-        "tenses": [
-          {
-            "id": "present",
-            "title": "वर्तमान काल",
-            "subtitle": "Present Tense",
-            "teluguTitle": "వర్తమాన కాలం",
-            "formula": "क्रिया-मूल + तुन्न + प्रत्यय",
-            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
-            "conjugations": [
-              { "hindi": "मैं", "pronoun": "नेनु", "ending": "नु", "full": "आडुतुन्नानु", "telugu": "నేను ఆడుతున్నాను", "hindiSentence": "मैं खेल रहा / रही हूं", "breakdown": "आडु + तुन्नानु", "roman": "Nenu aadutunnanu" },
-              { "hindi": "हम", "pronoun": "मेमु", "ending": "मु", "full": "आडुतुन्नामु", "telugu": "మేము ఆడుతున్నాము", "hindiSentence": "हम खेल रहे / रही हैं", "breakdown": "आडु + तुन्नामु", "roman": "Memu aadutunnamu" },
-              { "hindi": "तुम", "pronoun": "नुव्वु", "ending": "वु", "full": "आडुतुन्नावु", "telugu": "నువ్వు ఆడుతున్నావు", "hindiSentence": "तुम खेल रहे / रही हो", "breakdown": "आडु + तुन्नावु", "roman": "Nuvvu aadutunnavu" },
-              { "hindi": "आप", "pronoun": "मीरु", "ending": "रु", "full": "आडुतुन्नारु", "telugu": "మీరు ఆడుతున్నారు", "hindiSentence": "आप खेल रहे / रही हैं", "breakdown": "आडु + तुन्नारु", "roman": "Meeru aadutunnaru" },
-              { "hindi": "वह (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडुतुन्नाडु", "telugu": "అతడు ఆడుతున్నాడు", "hindiSentence": "वह खेल रहा है", "breakdown": "आडु + तुन्नाडु", "roman": "Atadu aadutunnaadu" },
-              { "hindi": "वह (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडुतुन्दि", "telugu": "ఆమె ఆడుతుంది", "hindiSentence": "वह खेल रही है", "breakdown": "आडु + तुन्दि", "roman": "Aame aadutundi" },
-              { "hindi": "वे", "pronoun": "वारु", "ending": "रु", "full": "आडुतुन्नारु", "telugu": "వారు ఆడుతున్నారు", "hindiSentence": "वे खेल रहे / रही हैं", "breakdown": "आडु + तुन्नारु", "roman": "Vaaru aadutunnaru" }
-            ],
-            "example2": {
-              "verb": "जाना", "root": "वेल्लु",
-              "rows": [
-                { "pronoun": "नेनु", "full": "वेल्लुतुन्नानु", "hindiSentence": "मैं जा रहा / रही हूं" },
-                { "pronoun": "मेमु", "full": "वेल्लुतुन्नामु", "hindiSentence": "हम जा रहे / रही हैं" },
-                { "pronoun": "मीरु", "full": "वेल्लुतुन्नारु", "hindiSentence": "आप जा रहे / रही हैं" },
-                { "pronoun": "नुव्वु", "full": "वेल्लुतुन्नावु", "hindiSentence": "तुम जा रहे / रही हो" },
-                { "pronoun": "अतडु", "full": "वेल्लुतुन्नाडु", "hindiSentence": "वह जा रहा है" },
-                { "pronoun": "आमे", "full": "वेल्लुतुन्दि", "hindiSentence": "वह जा रही है" },
-                { "pronoun": "वारु", "full": "वेल्लुतुन्नारु", "hindiSentence": "वे जा रहे / रही हैं" }
-              ]
-            },
-            "notes": ["बोलचाल की भाषा में वह (स्त्री) के लिए अदि का उपयोग न करें।"],
-            "highlights": ["क्रिया-मूल + तुन्न + प्रत्यय"],
-            "shortcut": "नेनु→नु · मेमु→मु · नुव्वु→वु · मीरु/वारु→रु · अतडु→डु · आमे→दि"
-          },
-          {
-            "id": "past",
-            "title": "भूतकाल",
-            "subtitle": "Past Tense",
-            "teluguTitle": "",
-            "formula": "क्रिया-मूल(आ) + प्रत्यय  |  आमे: अलग stem + न्दि",
-            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
-            "conjugations": [
-              { "hindi": "मैंने", "pronoun": "नेनु", "ending": "नु", "full": "आडानु", "telugu": "నేను ఆడాను", "hindiSentence": "मैंने खेला / खेली", "breakdown": "आडा + नु", "roman": "Nenu aadaanu" },
-              { "hindi": "हमने", "pronoun": "मेमु", "ending": "मु", "full": "आडामु", "telugu": "మేము ఆడాము", "hindiSentence": "हमने खेला / खेली", "breakdown": "आडा + मु", "roman": "Memu aadaamu" },
-              { "hindi": "तुमने", "pronoun": "नुव्वु", "ending": "वु", "full": "आडावु", "telugu": "నువ్వు ఆడావు", "hindiSentence": "तुमने खेला / खेली", "breakdown": "आडा + वु", "roman": "Nuvvu aadaavu" },
-              { "hindi": "आपने", "pronoun": "मीरु", "ending": "रु", "full": "आडारु", "telugu": "మీరు ఆడారు", "hindiSentence": "आपने खेला / खेली", "breakdown": "आडा + रु", "roman": "Meeru aadaaru" },
-              { "hindi": "उसने (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडाडु", "telugu": "అతడు ఆడాడు", "hindiSentence": "उसने खेला", "breakdown": "आडा + डु", "roman": "Atadu aadaadu" },
-              { "hindi": "उसने (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडिन्दि ⚠️", "telugu": "ఆమె ఆడింది", "hindiSentence": "उसने खेली", "breakdown": "आडि + न्दि", "roman": "Aame aadindi" },
-              { "hindi": "उन्होंने", "pronoun": "वारु", "ending": "रु", "full": "आडारु", "telugu": "వారు ఆడారు", "hindiSentence": "उन्होंने खेला / खेली", "breakdown": "आडा + रु", "roman": "Vaaru aadaaru" }
-            ],
-            "example2": {
-              "verb": "जाना", "root": "वेल्ला / वेल्लि",
-              "rows": [
-                { "pronoun": "नेनु", "full": "वेल्लानु", "hindiSentence": "मैं गया / गई" },
-                { "pronoun": "मेमु", "full": "वेल्लामु", "hindiSentence": "हम गए / गईं" },
-                { "pronoun": "मीरु", "full": "वेल्लारु", "hindiSentence": "आप गए / गईं" },
-                { "pronoun": "नुव्वु", "full": "वेल्लावु", "hindiSentence": "तुम गए / गई" },
-                { "pronoun": "अतडु", "full": "वेल्लाडु", "hindiSentence": "वह गया" },
-                { "pronoun": "आमे", "full": "वेल्लिन्दि ⚠️", "hindiSentence": "वह गई" },
-                { "pronoun": "वारु", "full": "वेल्लारु", "hindiSentence": "वे गए / गईं" }
-              ]
-            },
-            "notes": ["आमे/अदि के भूतकाल में stem बदलता है: आडा→आडि, वेल्ला→वेल्लि।", "बोलचाल में अदि का उपयोग न करें।"],
-            "highlights": ["6 सर्वनाम: मूल(आ) + प्रत्यय", "आमे: अलग stem + न्दि"],
-            "shortcut": "⚠️ आमे भूतकाल में stem बदलता है — आडा→आडि, वेल्ला→वेल्लि"
-          },
-          {
-            "id": "future",
-            "title": "भविष्य काल",
-            "subtitle": "Future Tense",
-            "teluguTitle": "భవిష్యత్ కాలం",
-            "formula": "क्रिया-मूल + ता + प्रत्यय",
-            "exampleVerb": { "hindi": "खेलना", "transliteration": "आडडम्" },
-            "conjugations": [
-              { "hindi": "मैं", "pronoun": "नेनु", "ending": "नु", "full": "आडतानु", "telugu": "నేను ఆడతాను", "hindiSentence": "मैं खेलूंगा / खेलूंगी", "breakdown": "आड + तानु", "roman": "Nenu aadataanu" },
-              { "hindi": "हम", "pronoun": "मेमु", "ending": "मु", "full": "आडतामु", "telugu": "మేము ఆడతాము", "hindiSentence": "हम खेलेंगे / खेलेंगी", "breakdown": "आड + तामु", "roman": "Memu aadataamu" },
-              { "hindi": "तुम", "pronoun": "नुव्वु", "ending": "वु", "full": "आडतावु", "telugu": "నువ్వు ఆడతావు", "hindiSentence": "तुम खेलोगे / खेलोगी", "breakdown": "आड + तावु", "roman": "Nuvvu aadataavu" },
-              { "hindi": "आप", "pronoun": "मीरु", "ending": "रु", "full": "आडतारु", "telugu": "మీరు ఆడతారు", "hindiSentence": "आप खेलेंगे / खेलेंगी", "breakdown": "आड + तारु", "roman": "Meeru aadataaru" },
-              { "hindi": "वह (पुं)", "pronoun": "अतडु", "ending": "डु", "full": "आडताडु", "telugu": "అతడు ఆడతాడు", "hindiSentence": "वह खेलेगा", "breakdown": "आड + ताडु", "roman": "Atadu aadataadu" },
-              { "hindi": "वह (स्त्री)", "pronoun": "आमे", "ending": "दि", "full": "आडतादि", "telugu": "ఆమె ఆడతాది", "hindiSentence": "वह खेलेगी", "breakdown": "आड + तादि", "roman": "Aame aadataadi" },
-              { "hindi": "वे", "pronoun": "वारु", "ending": "रु", "full": "आडतारु", "telugu": "వారు ఆడతారు", "hindiSentence": "वे खेलेंगे / खेलेंगी", "breakdown": "आड + तारु", "roman": "Vaaru aadataaru" }
-            ],
-            "example2": {
-              "verb": "जाना", "root": "वेल्ल",
-              "rows": [
-                { "pronoun": "नेनु", "full": "वेल्लतानु", "hindiSentence": "मैं जाऊंगा / जाऊंगी" },
-                { "pronoun": "मेमु", "full": "वेल्लतामु", "hindiSentence": "हम जाएंगे / जाएंगी" },
-                { "pronoun": "मीरु", "full": "वेल्लतारु", "hindiSentence": "आप जाएंगे / जाएंगी" },
-                { "pronoun": "नुव्वु", "full": "वेल्लतावु", "hindiSentence": "तुम जाओगे / जाओगी" },
-                { "pronoun": "अतडु", "full": "वेल्लताडु", "hindiSentence": "वह जाएगा" },
-                { "pronoun": "आमे", "full": "वेल्लतादि", "hindiSentence": "वह जाएगी" },
-                { "pronoun": "वारु", "full": "वेल्लतारु", "hindiSentence": "वे जाएंगे / जाएंगी" }
-              ]
-            },
-            "notes": ["बोलचाल में अदि का उपयोग न करें।"],
-            "highlights": ["तीनों कालों में प्रत्यय एक ही रहते हैं!"],
-            "shortcut": "भविष्य काल सबसे आसान — कोई stem बदलाव नहीं"
-          }
+        "sentences": [
+          {"id":1,"sectionLabel":"वर्तमान काल · Present Tense","sectionSub":"क्रिया-मूल + तुन्न + प्रत्यय  |  खेलना (आडडम्)"},
+          {"id":2,"hindi":"मैं खेल रहा / रही हूं","transliteration":"नेनु आडुतुन्नानु","telugu":"నేను ఆడుతున్నాను","roman":"Nenu aadutunnanu","note":"नेनु → अंत: नु"},
+          {"id":3,"hindi":"हम खेल रहे / रही हैं","transliteration":"मेमु आडुतुन्नामु","telugu":"మేము ఆడుతున్నాము","roman":"Memu aadutunnamu","note":"मेमु → अंत: मु"},
+          {"id":4,"hindi":"तुम खेल रहे / रही हो","transliteration":"नुव्वु आडुतुन्नावु","telugu":"నువ్వు ఆడుతున్నావు","roman":"Nuvvu aadutunnavu","note":"नुव्वु → अंत: वु"},
+          {"id":5,"hindi":"आप खेल रहे / रही हैं","transliteration":"मीरु आडुतुन्नारु","telugu":"మీరు ఆడుతున్నారు","roman":"Meeru aadutunnaru","note":"मीरु → अंत: रु"},
+          {"id":6,"hindi":"वह खेल रहा है","transliteration":"अतडु आडुतुन्नाडु","telugu":"అతడు ఆడుతున్నాడు","roman":"Atadu aadutunnaadu","note":"अतडु → अंत: डु"},
+          {"id":7,"hindi":"वह खेल रही है","transliteration":"आमे आडुतुन्दि","telugu":"ఆమె ఆడుతుంది","roman":"Aame aadutundi","note":"आमे → अंत: दि  ⚠️ बोलचाल में अदि का उपयोग न करें"},
+          {"id":8,"hindi":"वे खेल रहे / रही हैं","transliteration":"वारु आडुतुन्नारु","telugu":"వారు ఆడుతున్నారు","roman":"Vaaru aadutunnaru","note":"वारु → अंत: रु"},
+          {"id":9,"sectionLabel":"दूसरा उदाहरण: जाना (वेल्लु)"},
+          {"id":10,"hindi":"मैं जा रहा / रही हूं","transliteration":"नेनु वेल्लुतुन्नानु","telugu":"నేను వెళ్తున్నాను","roman":"Nenu veltunnanu"},
+          {"id":11,"hindi":"हम जा रहे / रही हैं","transliteration":"मेमु वेल्लुतुन्नामु","telugu":"మేము వెళ్తున్నాము"},
+          {"id":12,"hindi":"तुम जा रहे / रही हो","transliteration":"नुव्वु वेल्लुतुन्नावु","telugu":"నువ్వు వెళ్తున్నావు"},
+          {"id":13,"hindi":"आप जा रहे / रही हैं","transliteration":"मीरु वेल्लुतुन्नारु","telugu":"మీరు వెళ్తున్నారు"},
+          {"id":14,"hindi":"वह जा रहा है","transliteration":"अतडु वेल्लुतुन्नाडु","telugu":"అతడు వెళ్తున్నాడు"},
+          {"id":15,"hindi":"वह जा रही है","transliteration":"आमे वेल्लुतुन्दि","telugu":"ఆమె వెళ్తుంది"},
+          {"id":16,"hindi":"वे जा रहे / रही हैं","transliteration":"वारु वेल्लुतुन्नारु","telugu":"వారు వెళ్తున్నారు"},
+          {"id":17,"sectionLabel":"भूतकाल · Past Tense","sectionSub":"क्रिया-मूल(आ) + प्रत्यय  |  खेलना (आडडम्)"},
+          {"id":18,"hindi":"मैंने खेला / खेली","transliteration":"नेनु आडानु","telugu":"నేను ఆడాను","roman":"Nenu aadaanu","note":"आडा + नु"},
+          {"id":19,"hindi":"हमने खेला / खेली","transliteration":"मेमु आडामु","telugu":"మేము ఆడాము","roman":"Memu aadaamu","note":"आडा + मु"},
+          {"id":20,"hindi":"तुमने खेला / खेली","transliteration":"नुव्वु आडावु","telugu":"నువ్వు ఆడావు","roman":"Nuvvu aadaavu","note":"आडा + वु"},
+          {"id":21,"hindi":"आपने खेला / खेली","transliteration":"मीरु आडारु","telugu":"మీరు ఆడారు","roman":"Meeru aadaaru","note":"आडा + रु"},
+          {"id":22,"hindi":"उसने खेला","transliteration":"अतडु आडाडु","telugu":"అతడు ఆడాడు","roman":"Atadu aadaadu","note":"आडा + डु"},
+          {"id":23,"hindi":"उसने खेली","transliteration":"आमे आडिन्दि","telugu":"ఆమె ఆడింది","roman":"Aame aadindi","note":"⚠️ आमे: stem बदलता है → आडा → आडि + न्दि"},
+          {"id":24,"hindi":"उन्होंने खेला / खेली","transliteration":"वारु आडारु","telugu":"వారు ఆడారు","roman":"Vaaru aadaaru","note":"आडा + रु"},
+          {"id":25,"sectionLabel":"दूसरा उदाहरण: जाना (वेल्ला / वेल्लि)"},
+          {"id":26,"hindi":"मैं गया / गई","transliteration":"नेनु वेल्लानु","telugu":"నేను వెళ్ళాను"},
+          {"id":27,"hindi":"हम गए / गईं","transliteration":"मेमु वेल्लामु","telugu":"మేము వెళ్ళాము"},
+          {"id":28,"hindi":"तुम गए / गई","transliteration":"नुव्वु वेल्लावु","telugu":"నువ్వు వెళ్ళావు"},
+          {"id":29,"hindi":"आप गए / गईं","transliteration":"मीरु वेल्लारु","telugu":"మీరు వెళ్ళారు"},
+          {"id":30,"hindi":"वह गया","transliteration":"अतडु वेल्लाडु","telugu":"అతడు వెళ్ళాడు"},
+          {"id":31,"hindi":"वह गई","transliteration":"आमे वेल्लिन्दि","telugu":"ఆమె వెళ్ళింది","note":"⚠️ stem बदलता है: वेल्ला → वेल्लि + न्दि"},
+          {"id":32,"hindi":"वे गए / गईं","transliteration":"वारु वेल्लारु","telugu":"వారు వెళ్ళారు"},
+          {"id":33,"sectionLabel":"भविष्य काल · Future Tense","sectionSub":"क्रिया-मूल + ता + प्रत्यय  |  खेलना (आडडम्)"},
+          {"id":34,"hindi":"मैं खेलूंगा / खेलूंगी","transliteration":"नेनु आडतानु","telugu":"నేను ఆడతాను","roman":"Nenu aadataanu","note":"आड + तानु"},
+          {"id":35,"hindi":"हम खेलेंगे / खेलेंगी","transliteration":"मेमु आडतामु","telugu":"మేము ఆడతాము","roman":"Memu aadataamu","note":"आड + तामु"},
+          {"id":36,"hindi":"तुम खेलोगे / खेलोगी","transliteration":"नुव्वु आडतावु","telugu":"నువ్వు ఆడతావు","roman":"Nuvvu aadataavu","note":"आड + तावु"},
+          {"id":37,"hindi":"आप खेलेंगे / खेलेंगी","transliteration":"मीरु आडतारु","telugu":"మీరు ఆడతారు","roman":"Meeru aadataaru","note":"आड + तारु"},
+          {"id":38,"hindi":"वह खेलेगा","transliteration":"अतडु आडताडु","telugu":"అతడు ఆడతాడు","roman":"Atadu aadataadu","note":"आड + ताडु"},
+          {"id":39,"hindi":"वह खेलेगी","transliteration":"आमे आडतादि","telugu":"ఆమె ఆడతాది","roman":"Aame aadataadi","note":"आड + तादि"},
+          {"id":40,"hindi":"वे खेलेंगे / खेलेंगी","transliteration":"वारु आडतारु","telugu":"వారు ఆడతారు","roman":"Vaaru aadataaru","note":"आड + तारु"},
+          {"id":41,"sectionLabel":"दूसरा उदाहरण: जाना (वेल्ल)"},
+          {"id":42,"hindi":"मैं जाऊंगा / जाऊंगी","transliteration":"नेनु वेल्लतानु","telugu":"నేను వెళ్తాను"},
+          {"id":43,"hindi":"हम जाएंगे / जाएंगी","transliteration":"मेमु वेल्लतामु","telugu":"మేము వెళ్తాము"},
+          {"id":44,"hindi":"तुम जाओगे / जाओगी","transliteration":"नुव्वु वेल्लतावु","telugu":"నువ్వు వెళ్తావు"},
+          {"id":45,"hindi":"आप जाएंगे / जाएंगी","transliteration":"मीरु वेल्लतारु","telugu":"మీరు వెళ్తారు"},
+          {"id":46,"hindi":"वह जाएगा","transliteration":"अतडु वेल्लताडु","telugu":"అతడు వెళ్తాడు"},
+          {"id":47,"hindi":"वह जाएगी","transliteration":"आमे वेल्लतादि","telugu":"ఆమె వెళ్తాది"},
+          {"id":48,"hindi":"वे जाएंगे / जाएंगी","transliteration":"वारु वेल्लतारु","telugu":"వారు వెళ్తారు"},
+          {"id":49,"sectionLabel":"⚡ Shortcut — याद रखें","sectionSub":"नेनु→नु · मेमु→मु · नुव्वु→वु · मीरु/वारु→रु · अतडु→डु · आमे→दि"},
+          {"id":50,"sectionLabel":"📌 भूतकाल में आमे का stem बदलता है","sectionSub":"आडा→आडि, वेल्ला→वेल्लि — अंत में न्दि"}
         ]
       }
     },
@@ -1754,6 +1722,50 @@ window.APP_DATA = {
           }
         ]
       }
+    ],
+    "37": [
+      {"id":1,"hindi":"मां","telugu":"అమ్మ / తల్లి","hindiTransliteration":"अम्मा / तल्लि","category":"relation"},
+      {"id":2,"hindi":"पिता","telugu":"నాన్న / తండ్రి","hindiTransliteration":"नान्ना / तन्ड्रि","category":"relation"},
+      {"id":3,"hindi":"बेटा","telugu":"కొడుకు","hindiTransliteration":"कोडुकु","category":"relation"},
+      {"id":4,"hindi":"बेटी","telugu":"కూతురు","hindiTransliteration":"कूतुरु","category":"relation"},
+      {"id":5,"hindi":"दादा","telugu":"తాతయ్య / తాత","hindiTransliteration":"तातय्या / ताता","category":"relation"},
+      {"id":6,"hindi":"दादी","telugu":"నానమ్మ","hindiTransliteration":"नानम्मा","category":"relation"},
+      {"id":7,"hindi":"नाना","telugu":"తాతయ్య / తాత","hindiTransliteration":"तातय्या / ताता","category":"relation","notes":"तेलुगु में दादा और नाना दोनों के लिए तातय्या/ताता कहते हैं"},
+      {"id":8,"hindi":"नानी","telugu":"అమ్మమ్మ","hindiTransliteration":"अमम्मा","category":"relation"},
+      {"id":9,"hindi":"पति","telugu":"భర్త","hindiTransliteration":"भर्त्ता","category":"relation"},
+      {"id":10,"hindi":"पत्नी","telugu":"భార్య","hindiTransliteration":"भार्या","category":"relation"},
+      {"id":11,"hindi":"बड़ा भाई","telugu":"అన్నయ్య","hindiTransliteration":"अन्नय्या","category":"relation"},
+      {"id":12,"hindi":"छोटा भाई","telugu":"తమ్ముడు","hindiTransliteration":"तम्मुडु","category":"relation"},
+      {"id":13,"hindi":"बड़ी बहन","telugu":"అక్క","hindiTransliteration":"अक्का","category":"relation"},
+      {"id":14,"hindi":"छोटी बहन","telugu":"చెల్లి","hindiTransliteration":"चेल्लि","category":"relation"},
+      {"id":15,"hindi":"भाभी","telugu":"వదిన","hindiTransliteration":"वदिना","category":"relation"},
+      {"id":16,"hindi":"जीजा","telugu":"బావ","hindiTransliteration":"बावा","category":"relation"},
+      {"id":17,"hindi":"दामाद","telugu":"అల్లుడు","hindiTransliteration":"अल्लुडु","category":"relation"},
+      {"id":18,"hindi":"बहू","telugu":"కోడలు","hindiTransliteration":"कोडलु","category":"relation"},
+      {"id":19,"hindi":"साला","telugu":"బావమరిది","hindiTransliteration":"बावमरिदि","category":"relation"},
+      {"id":20,"hindi":"साली","telugu":"మరదలు","hindiTransliteration":"मरदलु","category":"relation"},
+      {"id":21,"hindi":"चाचा","telugu":"బాబాయి / చిన్నాన్న","hindiTransliteration":"बाबयि / चिन्नानान्ना","category":"relation"},
+      {"id":22,"hindi":"चाची","telugu":"పిన్ని / చిన్నమ్మ","hindiTransliteration":"पिन्नी / चिन्नम्मा","category":"relation"},
+      {"id":23,"hindi":"मौसा","telugu":"బాబాయి / చిన్నాన్న","hindiTransliteration":"बाबयि / चिन्नानान्ना","category":"relation","notes":"तेलुगु में चाचा और मौसा दोनों के लिए बाबयि/चिन्नानान्ना"},
+      {"id":24,"hindi":"मौसी","telugu":"పిన్ని / చిన్నమ్మ","hindiTransliteration":"पिन्नी / चिन्नम्मा","category":"relation","notes":"तेलुगु में चाची और मौसी दोनों के लिए पिन्नी/चिन्नम्मा"},
+      {"id":25,"hindi":"बुआ","telugu":"మేన అత్త","hindiTransliteration":"मेन अत्ता","category":"relation"},
+      {"id":26,"hindi":"फूफा","telugu":"మామయ్య / మామ","hindiTransliteration":"मामय्या / मामा","category":"relation"},
+      {"id":27,"hindi":"मामा","telugu":"మేన మామయ్య / మేన మామ","hindiTransliteration":"मेन मामय्या / मेन मामा","category":"relation"},
+      {"id":28,"hindi":"मामी","telugu":"అత్త","hindiTransliteration":"अत्ता","category":"relation"},
+      {"id":29,"hindi":"सास","telugu":"అత్త","hindiTransliteration":"अत्ता","category":"relation","notes":"तेलुगु में मामी और सास दोनों के लिए अत्ता"},
+      {"id":30,"hindi":"ससुर","telugu":"మామయ్య / మామ","hindiTransliteration":"मामय्या / मामा","category":"relation","notes":"तेलुगु में ससुर और फूफा दोनों के लिए मामय्या"},
+      {"id":31,"hindi":"ननद","telugu":"ఆడపడుచు","hindiTransliteration":"आडपडुचु","category":"relation"},
+      {"id":32,"hindi":"ननदोई","telugu":"అన్నయ్య / తమ్ముడు","hindiTransliteration":"अन्नय्या / तम्मुड्डु","category":"relation"},
+      {"id":33,"hindi":"देवर","telugu":"మరిది","hindiTransliteration":"मरिदि","category":"relation"},
+      {"id":34,"hindi":"जेठ","telugu":"బావ","hindiTransliteration":"बावा","category":"relation"},
+      {"id":35,"hindi":"देवरानी","telugu":"చిన్న తోడి కోడలు","hindiTransliteration":"चिन्ना तोडि कोडलु","category":"relation"},
+      {"id":36,"hindi":"जेठानी","telugu":"పెద్ద తోడి కోడలు","hindiTransliteration":"पेद्दा तोडि कोडलु","category":"relation"},
+      {"id":37,"hindi":"भगना","telugu":"మేన అల్లుడు","hindiTransliteration":"मेन अल्लुडु","category":"relation"},
+      {"id":38,"hindi":"भगनी","telugu":"మేన కోడలు","hindiTransliteration":"मेन कोडलु","category":"relation"},
+      {"id":39,"hindi":"समधी","telugu":"వియ్యంకుడు","hindiTransliteration":"विय्यंकडु","category":"relation"},
+      {"id":40,"hindi":"समधन","telugu":"వియ్యంకురాలు","hindiTransliteration":"विय्यंकुरालु","category":"relation"},
+      {"id":41,"hindi":"भतीजा","telugu":"కొడుకు","hindiTransliteration":"कोडुकु","category":"relation","notes":"भतीजा और बेटा दोनों के लिए कोडुकु — context से पहचानें"},
+      {"id":42,"hindi":"भतीजी","telugu":"కూతురు","hindiTransliteration":"कूतुरु","category":"relation","notes":"भतीजी और बेटी दोनों के लिए कूतुरु — context से पहचानें"}
     ]
   }
 };

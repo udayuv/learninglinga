@@ -25,7 +25,6 @@ function renderDashboard() {
   currentChapter = chapter;
 
   $("courseTitle").textContent = `Telugu / Day ${chapter.id}`;
-  $("streak").textContent = `🔥 ${DATA.app.streakDays} day`;
 
   $("heroTitle").textContent = `Day ${chapter.id}: ${chapter.displayTitle}`;
   $("heroDescription").textContent = chapter.description;
@@ -72,10 +71,6 @@ function openChapter(id) {
   $("sectionTabs").style.display = "none";
 
   $("courseTitle").textContent = `Telugu / Day ${id}`;
-  $("lessonChapter").textContent = `DAY ${id} · ${currentChapter.title.toUpperCase()}`;
-  $("lessonTitle").textContent = currentChapter.displayTitle;
-  $("lessonInstruction").textContent =
-    `आज ${currentChapter.lessonCount} शब्द/रूप सीखें और फिर recall quiz दें।`;
 
   if (getTheoryContent()) {
     $("lesson").style.display = "none";
@@ -84,9 +79,13 @@ function openChapter(id) {
   } else {
     $("lesson").style.display = "block";
     $("theory").style.display = "none";
-    switchTab('current');
-    renderWord();
-    renderAllWordsTable();
+    if (currentChapter.viewMode === 'table') {
+      switchTab('all');
+    } else {
+      switchTab('current');
+      renderWord();
+      renderAllWordsTable();
+    }
   }
 }
 
@@ -121,7 +120,19 @@ function renderAllWordsTable() {
 
 function getCurrentItems() {
   const content = DATA.chapterContent[String(currentChapter.id)];
-  return Array.isArray(content) ? content : (content?.words || []);
+  if (Array.isArray(content)) return content;
+  if (content?.words?.length) return content.words;
+  if (content?.theory?.sentences?.length) {
+    return content.theory.sentences
+      .filter(s => !s.sectionLabel)
+      .map(s => ({
+        id: s.id,
+        hindi: s.hindi,
+        telugu: s.telugu,
+        hindiTransliteration: s.transliteration
+      }));
+  }
+  return [];
 }
 
 function getTheoryContent() {
@@ -151,6 +162,13 @@ function renderTheory() {
 
   if (theory.type === 'sentences') {
     const sentHtml = theory.sentences.map(s => {
+      if (s.sectionLabel) {
+        return `
+          <div class="sent-section">
+            <div class="sent-section-title">${escapeHtml(s.sectionLabel)}</div>
+            ${s.sectionSub ? `<div class="sent-section-sub">${escapeHtml(s.sectionSub)}</div>` : ""}
+          </div>`;
+      }
       const bd = (arr) => (arr || []).map(w =>
         `<span class="sent-chip"><span class="sent-chip-hi">${escapeHtml(w.hindi)}</span><span class="sent-chip-sep">→</span><span class="sent-chip-te">${escapeHtml(w.telugu)}</span></span>`
       ).join("");
@@ -185,96 +203,10 @@ function renderTheory() {
         <div class="theory-intro">${escapeHtml(theory.intro)}</div>
         ${theory.teluguTitle ? `<div class="theory-telugu-title">${escapeHtml(theory.teluguTitle)}</div>` : ""}
         ${sentHtml}
+        <button class="primary" onclick="startQuiz()">Recall Quiz लें →</button>
       </div>`;
     return;
   }
-
-  const words = getCurrentItems();
-
-  const wordsRows = words.map((w, i) => `
-    <tr>
-      <td>${i + 1}</td>
-      <td class="tbl-hindi">${escapeHtml(w.hindi)}</td>
-      <td class="tbl-telugu">${escapeHtml(w.telugu)}</td>
-      <td class="tbl-translit">${escapeHtml(w.hindiTransliteration)}</td>
-    </tr>`).join("");
-
-  const tensesHtml = theory.tenses.map(t => {
-    const conjCards = t.conjugations.map((c, i) => {
-      const explanation = `${escapeHtml(c.pronoun)} के अंत में "${escapeHtml(c.ending)}" → क्रिया का अंत भी "${escapeHtml(c.ending)}"`;
-      const card = `
-        <div class="conj-card">
-          <div class="conj-card-sentence">${escapeHtml(c.hindiSentence)}</div>
-          <div class="conj-card-main">
-            <span class="conj-card-pronoun">${escapeHtml(c.pronoun)}</span>
-            <span class="conj-card-full">${escapeHtml(c.full)}</span>
-          </div>
-          <div class="conj-card-breakdown">(${escapeHtml(c.breakdown)})</div>
-          <div class="conj-card-telugu">${escapeHtml(c.telugu)}</div>
-          <div class="conj-card-roman">${escapeHtml(c.roman)}</div>
-          <div class="conj-card-explanation">${explanation}</div>
-        </div>`;
-      if (i === 0) return card + `<div class="concept-box"><span class="concept-formula">📌 ${escapeHtml(t.formula)}</span></div>`;
-      return card;
-    }).join("");
-
-    const ex2Rows = t.example2.rows.map(r => `
-      <tr>
-        <td class="tc-hindi">${escapeHtml(r.hindiSentence)}</td>
-        <td class="tc-pronoun">${escapeHtml(r.pronoun)} ${escapeHtml(r.full)}</td>
-      </tr>`).join("");
-
-    const ex2Html = `
-      <div class="conj-table-wrap">
-        <table class="conj-table">
-          <thead><tr><th>हिंदी</th><th>तेलुगु उच्चारण</th></tr></thead>
-          <tbody>${ex2Rows}</tbody>
-        </table>
-      </div>`;
-
-    const notesHtml = (t.notes || []).map(n =>
-      `<div class="theory-note">ℹ️ ${escapeHtml(n)}</div>`).join("");
-
-    const highlightsHtml = (t.highlights || []).map(h =>
-      `<span class="theory-highlight">${escapeHtml(h)}</span>`).join("");
-
-    return `
-      <div class="tense-card">
-        <div class="tense-header">
-          <div class="tense-title">${escapeHtml(t.title)} <span class="tense-sub">· ${escapeHtml(t.subtitle)}</span></div>
-          ${t.teluguTitle ? `<div class="tense-telugu-title">${escapeHtml(t.teluguTitle)}</div>` : ""}
-        </div>
-        ${conjCards}
-        ${notesHtml}
-        ${highlightsHtml ? `<div class="theory-highlights">${highlightsHtml}</div>` : ""}
-        <div class="ex2-wrap">
-          <div class="conj-verb-label">दूसरा उदाहरण: जाना (${escapeHtml(t.example2.root)})</div>
-          ${ex2Html}
-        </div>
-      </div>`;
-  }).join("");
-
-  const shortcutsHtml = theory.tenses.filter(t => t.shortcut).map(t =>
-    `<div class="shortcut-row"><strong>${escapeHtml(t.title)}:</strong> ${escapeHtml(t.shortcut)}</div>`
-  ).join("");
-
-  view.innerHTML = `
-    <div class="theory-inner">
-      <div class="theory-intro">${escapeHtml(theory.intro)}</div>
-      <div class="theory-section-label">सर्वनाम — Pronouns</div>
-      <div class="conj-table-wrap" style="margin-bottom:22px">
-        <table class="conj-table">
-          <thead><tr><th>#</th><th>हिंदी</th><th>तेलुगु</th><th>उच्चारण</th></tr></thead>
-          <tbody>${wordsRows}</tbody>
-        </table>
-      </div>
-      ${tensesHtml}
-      <div class="shortcut-box">
-        <div class="shortcut-label">⚡ SHORTCUT — याद रखें</div>
-        ${shortcutsHtml}
-      </div>
-      ${words.length ? `<button class="primary" onclick="startQuiz()">Recall Quiz लें →</button>` : ""}
-    </div>`;
 }
 
 function toggleTheme() {
@@ -375,6 +307,7 @@ function startQuiz() {
   score = 0;
 
   $("lesson").style.display = "none";
+  $("theory").style.display = "none";
   $("quiz").style.display = "block";
   $("finish").style.display = "none";
   $("sectionTabs").style.display = "none";
