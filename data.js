@@ -1159,7 +1159,7 @@ window.APP_DATA = {
         { "hindi": "मैं बोल रहा / रही हूं", "telugu": "నేను చెప్పుతున్నాను", "hindiTransliteration": "नेनु चेप्पुतुन्नानु / चेबुतुन्नानु" }
       ]},
       { "id": 6, "hindi": "बात करना", "telugu": "మాట్లాడడం", "hindiTransliteration": "माट्लाडडम्", "category": "verb", "examples": [
-        { "hindi": "मैं बात कर रहा / रही हूं", "telugu": "నేను మాట్లాడుతున్నాను", "hindiTransliteration": "नेनु मालाडुतुन्नानु" }
+        { "hindi": "मैं बात कर रहा / रही हूं", "telugu": "నేను మాట్లాడుతున్నాను", "hindiTransliteration": "नेनु माट्लाडुतुन्नानु" }
       ]},
       { "id": 7, "hindi": "पूछना", "telugu": "అడగడం", "hindiTransliteration": "अडगडम्", "category": "verb", "examples": [
         { "hindi": "मैं पूछ रहा / रही हूं", "telugu": "నేను అడుగుతున్నాను", "hindiTransliteration": "नेनु अडुगुतुन्नानु" }
@@ -1168,7 +1168,7 @@ window.APP_DATA = {
         { "hindi": "मैं देख रहा / रही हूं", "telugu": "నేను చూస్తున్నాను", "hindiTransliteration": "नेनु चूस्तुन्नानु" }
       ]},
       { "id": 9, "hindi": "सुनना", "telugu": "వినడం", "hindiTransliteration": "विनडम्", "category": "verb", "examples": [
-        { "hindi": "मैं सुन रहा / रही हूं", "telugu": "నేను వింటున్నాను", "hindiTransliteration": "नेनु विन्दुन्नानु" }
+        { "hindi": "मैं सुन रहा / रही हूं", "telugu": "నేను వింటున్నాను", "hindiTransliteration": "नेनु विन्टुन्नानु" }
       ]},
       { "id": 10, "hindi": "चढ़ना", "telugu": "ఎక్కడం", "hindiTransliteration": "एक्कडम्", "category": "verb", "examples": [
         { "hindi": "मैं चढ़ रहा / रही हूं", "telugu": "నేను ఎక్కుతున్నాను", "hindiTransliteration": "नेनु एक्कुतुन्नानु" }
