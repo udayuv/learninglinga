@@ -248,6 +248,42 @@ window.APP_DATA = {
       "lessonCount": 30
     },
     {
+      "id": 14, "number": 14,
+      "title": "Want & Don't Want",
+      "displayTitle": "चाहिए और नहीं चाहिए",
+      "description": "तेलुगु में कावालि, वद्दु, कावाला, वद्दा — प्रश्न और वक्तव्य",
+      "themeIcon": "🙋",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 16
+    },
+    {
+      "id": 15, "number": 15,
+      "title": "Could & Couldn't",
+      "displayTitle": "सका और नहीं सका (भूतकाल)",
+      "description": "तेलुगु में भूतकाल में सका (गलिगानु) और नहीं सका (लेकपोयानु)",
+      "themeIcon": "⏪",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 20
+    },
+    {
+      "id": 16, "number": 16,
+      "title": "To Be & Not To Be",
+      "displayTitle": "हूं/हैं और नहीं हूं/हैं",
+      "description": "तेलुगु में होना और न होना — उन्नानु, लेनु और सभी सर्वनाम",
+      "themeIcon": "🏠",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 12
+    },
+    {
+      "id": 22, "number": 22,
+      "title": "Want To Do",
+      "displayTitle": "चाहना — करना चाहता हूं",
+      "description": "क्रिया-धातु + आलनि + अनुकुन्टुन्नानु — चाहना के वाक्य बनाएं",
+      "themeIcon": "🎯",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 12
+    },
+    {
       "id": 37,
       "number": 37,
       "title": "Family Relations",
@@ -2406,6 +2442,186 @@ window.APP_DATA = {
             "telugu": "అతడు ఎలా ఉన్నాడు", "roman": "Atadu ela unnadu",
             "note": "ठीक इसी प्रकार अन्य सर्वनामों के वाक्य बनेंगे — प्रत्यय तालिका देखें"
           }
+        ]
+      }
+    },
+    "14": {
+      "theory": {
+        "type": "sentences",
+        "intro": "चाहिए/नहीं चाहिए — प्रश्न और वक्तव्य दोनों के लिए अलग-अलग शब्द",
+        "shortcutTable": {
+          "title": "शॉर्टकट — चाहिए के 4 रूप",
+          "tableClass": "shortcut-table--ability",
+          "headers": ["", "प्रश्न (क्या?)", "वक्तव्य (चाहिए/नहीं)"],
+          "rows": [
+            ["चाहिए", "कावाला", "कावालि"],
+            ["नहीं चाहिए", "वद्दा", "वद्दु"]
+          ]
+        },
+        "sentences": [
+          { "id": 1, "sectionLabel": "चाय — टी (Tea)" },
+          { "id": 2, "hindi": "आपको चाय चाहिए क्या?", "transliteration": "मीकु टी कावाला?", "telugu": "మీకు టీ కావాలా?", "roman": "Meeku tea kavala?", "wordBreakdown": [{"hindi":"आपको","telugu":"मीकु"},{"hindi":"चाय","telugu":"टी"},{"hindi":"चाहिए क्या","telugu":"कावाला"}] },
+          { "id": 3, "hindi": "आपको चाय नहीं चाहिए क्या?", "transliteration": "मीकु टी वद्दा?", "telugu": "మీకు టీ వద్దా?", "roman": "Meeku tea vadda?" },
+          { "id": 4, "hindi": "मुझे चाय चाहिए।", "transliteration": "नाकु टी कावालि।", "telugu": "నాకు టీ కావాలి.", "roman": "Naaku tea kaavaali.", "wordBreakdown": [{"hindi":"मुझे","telugu":"नाकु"},{"hindi":"चाय","telugu":"टी"},{"hindi":"चाहिए","telugu":"कावालि"}] },
+          { "id": 5, "hindi": "मुझे चाय नहीं चाहिए।", "transliteration": "नाकु टी वद्दु।", "telugu": "నాకు టీ వద్దు.", "roman": "Naaku tea vaddu." },
+          { "id": 6, "sectionLabel": "किताब — पुस्तकम् (Book)" },
+          { "id": 7, "hindi": "आपको किताब चाहिए क्या?", "transliteration": "मीकु पुस्तकम् कावाला?", "telugu": "మీకు పుస్తకం కావాలా?", "roman": "Meeku pustakam kavala?" },
+          { "id": 8, "hindi": "आपको किताब नहीं चाहिए क्या?", "transliteration": "मीकु पुस्तकम् वद्दा?", "telugu": "మీకు పుస్తకం వద్దా?", "roman": "Meeku pustakam vadda?" },
+          { "id": 9, "hindi": "मुझे किताब चाहिए।", "transliteration": "नाकु पुस्तकम् कावालि।", "telugu": "నాకు పుస్తకం కావాలి.", "roman": "Naaku pustakam kavali." },
+          { "id": 10, "hindi": "मुझे किताब नहीं चाहिए।", "transliteration": "नाकु पुस्तकम् वद्दु।", "telugu": "నాకు పుస్తకం వద్దు." },
+          { "id": 11, "sectionLabel": "गाड़ी — बन्डि (Vehicle)" },
+          { "id": 12, "hindi": "आपको गाड़ी चाहिए क्या?", "transliteration": "मीकु बन्डि कावाला?", "telugu": "మీకు బండి కావాలా?", "roman": "Meeku bandi kavala?" },
+          { "id": 13, "hindi": "आपको गाड़ी नहीं चाहिए क्या?", "transliteration": "मीकु बन्डि वद्दा?", "telugu": "మీకు బండి వద్దా?", "roman": "Meeku bandi vadda?" },
+          { "id": 14, "hindi": "मुझे गाड़ी चाहिए।", "transliteration": "नाकु बन्डि कावालि।", "telugu": "నాకు బండి కావాలి.", "roman": "Naaku bandi kavali." },
+          { "id": 15, "hindi": "मुझे गाड़ी नहीं चाहिए।", "transliteration": "नाकु बन्डि वद्दु।", "telugu": "నాకు బండి వద్దు.", "roman": "Naaku bandi vaddu." },
+          { "id": 16, "sectionLabel": "और उदाहरण — अन्य सर्वनाम व संज्ञा" },
+          { "id": 17, "hindi": "तुम्हें भोजन चाहिए क्या?", "transliteration": "नीकु भोजनम् कावाला?", "telugu": "నీకు భోజనం కావాలా?", "note": "नीकु = तुम्हें" },
+          { "id": 18, "hindi": "मुझे भोजन चाहिए।", "transliteration": "नाकु भोजनम् कावालि।", "telugu": "నాకు భోజనం కావాలి.", "roman": "Naaku bhojanam kavali." },
+          { "id": 19, "hindi": "मोहित को पैसे नहीं चाहिए क्या?", "transliteration": "मोहित कि डब्बुलु वद्दा?", "telugu": "మోహిత్ కి డబ్బులు వద్దా?", "roman": "Mohit ki dabbulu vadda?", "wordBreakdown": [{"hindi":"मोहित को","telugu":"मोहित कि"},{"hindi":"पैसे","telugu":"डब्बुलु"},{"hindi":"नहीं चाहिए क्या","telugu":"वद्दा"}] },
+          { "id": 20, "hindi": "मोहित को पैसे नहीं चाहिए।", "transliteration": "मोहित कि डब्बुलु वद्दु।", "telugu": "మోహిత్ కి డబ్బులు వద్దు.", "roman": "Mohit ki dabbulu vaddu." }
+        ]
+      }
+    },
+    "15": {
+      "theory": {
+        "type": "sentences",
+        "intro": "भूतकाल में सका/नहीं सका — गलिगानु और लेकपोयानु का उपयोग",
+        "shortcutTable": {
+          "title": "शॉर्टकट — सर्वनाम प्रत्यय (भूतकाल)",
+          "tableClass": "shortcut-table--ability",
+          "headers": ["सर्वनाम", "अंत", "सका (गलिगा+)", "नहीं सका (लेकपोया+)"],
+          "rows": [
+            ["मैं — नेनु", "नु", "गलिगानु", "लेकपोयानु"],
+            ["हम — मेमु", "मु", "गलिगामु", "लेकपोयामु"],
+            ["तुम — नुव्वु", "वु", "गलिगावु", "लेकपोयावु"],
+            ["आप — मीरु", "रु", "गलिगारु", "लेकपोयारु"],
+            ["वह (पुं) — अतडु", "डु", "गलिगाड्डु", "लेकपोयाड्डु"],
+            ["वह (स्त्री) — आमे", "न्दि", "गलिगिन्दि", "लेकपोयिन्दि"],
+            ["वे — वारु", "रु", "गलिगारु", "लेकपोयारु"]
+          ]
+        },
+        "sentences": [
+          { "id": 1, "sectionLabel": "पढ़ना — चदवडम् (Read)" },
+          { "id": 2, "hindi": "मैं पढ़ सका / सकी", "transliteration": "नेनु चदव गलिगानु", "telugu": "నేను చదవ గలిగాను", "roman": "Nenu chadav galiganu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"पढ़","telugu":"चदव"},{"hindi":"सका/सकी","telugu":"गलिगानु"}], "note": "नेनु → अंत: नु → गलिगानु" },
+          { "id": 3, "hindi": "तुम पढ़ सके / सकी", "transliteration": "नुव्वु चदव गलिगावु", "telugu": "నువ్వు చదవ గలిగావు", "note": "नुव्वु → अंत: वु → गलिगावु" },
+          { "id": 4, "hindi": "मैं कल नहीं पढ़ सका / सकी", "transliteration": "नेनु निन्ना चदव लेकपोयानु", "telugu": "నేను నిన్న చదవలేకపోయాను", "roman": "Nenu ninna chadavlekpoyanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"कल","telugu":"निन्ना"},{"hindi":"पढ़","telugu":"चदव"},{"hindi":"नहीं सका","telugu":"लेकपोयानु"}] },
+          { "id": 5, "hindi": "तुम कल नहीं पढ़ सके / सकी", "transliteration": "नुव्वु निन्ना चदव लेकपोयावु", "telugu": "నువ్వు నిన్న చదవలేకపోయావు", "note": "नुव्वु → अंत: वु → लेकपोयावु" },
+          { "id": 6, "sectionLabel": "तेलुगु बोलना — माट्लाडडम् (Speak Telugu)" },
+          { "id": 7, "hindi": "आपके कारण मैं तेलुगु बोल सका / सकी", "transliteration": "मी वल्ला नेनु तेलुगु माट्लाडगलिगानु", "telugu": "మీ వల్ల నేను తెలుగు మాట్లాడగలిగాను", "roman": "Nenu Telugu matladgaliganu", "wordBreakdown": [{"hindi":"आपके कारण","telugu":"मी वल्ला"},{"hindi":"मैं","telugu":"नेनु"},{"hindi":"बोल","telugu":"माट्लाड"},{"hindi":"सका/सकी","telugu":"गलिगानु"}] },
+          { "id": 8, "hindi": "तुम तेलुगु बोल सके / सकी", "transliteration": "नुव्वु तेलुगु माट्लाडगलिगावु", "telugu": "నువ్వు తెలుగు మాట్లాడగలిగావు", "note": "नुव्वु → अंत: वु → गलिगावु" },
+          { "id": 9, "hindi": "आप तेलुगु बोल सके / सकीं", "transliteration": "मीरु तेलुगु माट्लाडगलिगारु", "telugu": "మీరు తెలుగు మాట్లాడగలిగారు", "note": "मीरु → अंत: रु → गलिगारु" },
+          { "id": 10, "hindi": "आपके कारण मैं तेलुगु नहीं बोल सका / सकी", "transliteration": "मी वल्ला नेनु तेलुगु माट्लाडलेकपोयानु", "telugu": "మీ వల్ల నేను తెలుగు మాట్లాడలేకపోయాను" },
+          { "id": 11, "hindi": "तुम तेलुगु नहीं बोल सके / सकी", "transliteration": "नुव्वु तेलुगु माट्लाडलेकपोयावु", "telugu": "నువ్వు తెలుగు మాట్లాడలేకపోయావు", "roman": "Nuvvu telugu matladlekpoyavu" },
+          { "id": 12, "hindi": "आप तेलुगु नहीं बोल सकें / सकीं", "transliteration": "मीरु तेलुगु माट्लाडलेकपोयारु", "telugu": "మీరు తెలుగు మాట్లాడలేకపోయారు" },
+          { "id": 13, "sectionLabel": "खाना बनाना — वन्ट चेयडम् (Cook)" },
+          { "id": 14, "hindi": "मैं खाना बना सका / सकी", "transliteration": "नेनु वन्ट चेय गलिगानु", "telugu": "నేను వంట చేయగలిగాను", "roman": "Nenu vant cheyagaliganu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"खाना बनाना","telugu":"वन्ट चेयडम्"},{"hindi":"सका/सकी","telugu":"गलिगानु"}] },
+          { "id": 15, "hindi": "तुम खाना बना सके / सकी", "transliteration": "नुव्वु वन्ट चेयगलिगावु", "telugu": "నువ్వు వంట చేయగలిగావు" },
+          { "id": 16, "hindi": "आप खाना बना सके / सकीं", "transliteration": "मीरु वन्ट चेयगलिगारु", "telugu": "మీరు వంట చేయగలిగారు" },
+          { "id": 17, "hindi": "मैं खाना नहीं बना सका / सकी", "transliteration": "नेनु वन्ट चेयलेकपोयानु", "telugu": "నేను వంట చేయలేకపోయాను", "roman": "Nenu vant cheylekpoyanu" },
+          { "id": 18, "hindi": "तुम खाना नहीं बना सके / सकी", "transliteration": "नुव्वु वन्ट चेयलेकपोयावु", "telugu": "నువ్వు వంట చేయలేకపోయావు" },
+          { "id": 19, "hindi": "आप खाना नहीं बना सकें / सकीं", "transliteration": "मीरु वन्ट चेयलेकपोयारु", "telugu": "మీరు వంట చేయలేకపోయారు" },
+          { "id": 20, "sectionLabel": "वह काम — आ पनि (That Work)" },
+          { "id": 21, "hindi": "मैं वह काम कर सका / सकी", "transliteration": "नेनु आ पनि चेयगलिगानु", "telugu": "నేను ఆ పని చేయగలిగాను", "roman": "Nenu aa pani cheygaliganu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"वह काम","telugu":"आ पनि"},{"hindi":"कर","telugu":"चेय"},{"hindi":"सका/सकी","telugu":"गलिगानु"}] },
+          { "id": 22, "hindi": "आप वह काम कर सकें / सकीं", "transliteration": "मीरु आ पनि चेयगलिगारु", "telugu": "మీరు ఆ పని చేయగలిగారు" },
+          { "id": 23, "hindi": "राम वह काम कर सका", "transliteration": "राम आ पनि चेयगलिगाड्डु", "telugu": "రామ్ ఆ పని చేయగలిగాడు", "note": "दोस्त/छोटे → अतडु (डु) → गलिगाड्डु" },
+          { "id": 24, "hindi": "राव जी वह काम कर सकें", "transliteration": "राव गारु आ पनि चेयगलिगारु", "telugu": "రావు గారు ఆ పని చేయగలిగారు", "note": "बड़े/आदर → वारु (रु) → गलिगारु" },
+          { "id": 25, "hindi": "मैं वह काम नहीं कर सका / सकी", "transliteration": "नेनु आ पनि चेयलेकपोयानु", "telugu": "నేను ఆ పని చేయలేకపోయాను" },
+          { "id": 26, "hindi": "आप वह काम नहीं कर सकें / सकीं", "transliteration": "मीरु आ पनि चेयलेकपोयारु", "telugu": "మీరు ఆ పని చేయలేకపోయారు" },
+          { "id": 27, "sectionLabel": "कल आना — निन्ना रावडम् (Come Yesterday)" },
+          { "id": 28, "hindi": "मैं कल आ सका / सकी", "transliteration": "नेनु निन्ना रागलिगानु", "telugu": "నేను నిన్న రాగలిగాను", "roman": "Nenu ninna raagaliganu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"कल","telugu":"निन्ना"},{"hindi":"आ","telugu":"रा"},{"hindi":"सका/सकी","telugu":"गलिगानु"}] },
+          { "id": 29, "hindi": "वह कल आ सका", "transliteration": "अतड्डु निन्ना रागलिगाड्डु", "telugu": "అతడు నిన్న రాగలిగాడు", "roman": "Atadu ninna raagaligadu", "note": "अतडु → अंत: डु → गलिगाड्डु" },
+          { "id": 30, "hindi": "मैं कल नहीं आ सका / सकी", "transliteration": "नेनु निन्ना रालेकपोयानु", "telugu": "నేను నిన్న రాలేకపోయాను", "roman": "Nenu ninna ralekpoyanu" },
+          { "id": 31, "hindi": "वह कल नहीं आ सका", "transliteration": "अतड्डु निन्ना रालेकपोयाड्डु", "telugu": "అతడు నిన్న రాలేకపోయాడు", "roman": "Atadu ninna raalekpoyadu", "note": "अतडु → अंत: डु → लेकपोयाड्डु" }
+        ]
+      }
+    },
+    "16": {
+      "theory": {
+        "type": "sentences",
+        "intro": "होना और न होना — उन्नानु (हूं/हैं) और लेनु (नहीं हूं/हैं) — स्थान के बाद लो (में)",
+        "shortcutTable": {
+          "title": "शॉर्टकट — सर्वनाम प्रत्यय",
+          "tableClass": "shortcut-table--ability",
+          "headers": ["सर्वनाम", "हूं/हैं (उन्न+)", "नहीं हूं/हैं (ले+)"],
+          "rows": [
+            ["मैं — नेनु", "उन्नानु", "लेनु"],
+            ["हम — मेमु/मनमु", "उन्नामु", "लेमु"],
+            ["आप — मीरु", "उन्नारु", "लेरु"],
+            ["तुम — नुव्वु", "उन्नावु", "लेवु"],
+            ["वह (पुं) — अतडु", "उन्नाडु", "लेडु"],
+            ["वह (स्त्री) — आमे", "उन्दि", "लेदु"],
+            ["वे — वारु", "उन्नारु", "लेरु"]
+          ]
+        },
+        "sentences": [
+          { "id": 1, "sectionLabel": "घर — इंटि (Home)", "sectionSub": "⚠️ इल्लु → इंटि (जब कारक चिन्ह आए); में = लो" },
+          { "id": 2, "hindi": "मैं घर में हूं", "transliteration": "नेनु इंटिलो उन्नानु", "telugu": "నేను ఇంటిలో ఉన్నాను", "roman": "Nenu intilo unnanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"घर में","telugu":"इंटिलो"},{"hindi":"हूं","telugu":"उन्नानु"}] },
+          { "id": 3, "hindi": "मैं घर में नहीं हूं", "transliteration": "नेनु इंटिलो लेनु", "telugu": "నేను ఇంటిలో లేను", "roman": "Nenu intilo lenu" },
+          { "id": 4, "sectionLabel": "हैदराबाद में — हैदराबाद लो" },
+          { "id": 5, "hindi": "हम हैदराबाद में हैं", "transliteration": "मेमु / मनमु हैदराबाद लो उन्नामु", "telugu": "మేము / మనము హైదరాబాద్ లో ఉన్నాము", "roman": "Memu/Manmu Hyderabaad lo unnamu", "note": "मेमु = हम (तुम शामिल नहीं); मनमु = हम सब (तुम भी शामिल)" },
+          { "id": 6, "hindi": "हम हैदराबाद में नहीं हैं", "transliteration": "मेमु / मनमु हैदराबाद लो लेमु", "telugu": "మేము / మనము హైదరాబాద్ లో లేము" },
+          { "id": 7, "sectionLabel": "ऑफिस में — ऑफिस लो" },
+          { "id": 8, "hindi": "आप ऑफिस में हैं", "transliteration": "मीरु ऑफिस लो उन्नारु", "telugu": "మీరు ఆఫీసు లో ఉన్నారు", "roman": "Meeru office lo unnaru" },
+          { "id": 9, "hindi": "आप ऑफिस में नहीं हैं", "transliteration": "मीरु ऑफिस लो लेरु", "telugu": "మీరు ఆఫీసు లో లేరు", "roman": "Meeru office lo leru" },
+          { "id": 10, "sectionLabel": "खुश — संतोषम् गा (Happy)" },
+          { "id": 11, "hindi": "वह खुश है (पुं)", "transliteration": "अतडु संतोषम् गा उन्नाडु", "telugu": "అతడు సంతోషంగా ఉన్నాడు", "wordBreakdown": [{"hindi":"वह (पुं)","telugu":"अतडु"},{"hindi":"खुश","telugu":"संतोषम् गा"},{"hindi":"है","telugu":"उन्नाडु"}] },
+          { "id": 12, "hindi": "वह खुश नहीं है (पुं)", "transliteration": "अतडु संतोषम् गा लेड्डु", "telugu": "అతడు సంతోషంగా లేడు", "roman": "Atadu santosanga ledu" },
+          { "id": 13, "sectionLabel": "स्कूल में — स्कूल लो" },
+          { "id": 14, "hindi": "वह स्कूल में है (स्त्री)", "transliteration": "आमे स्कूल लो उन्दि", "telugu": "ఆమే స్కూల్ లో ఉంది", "roman": "Aame school lo undi" },
+          { "id": 15, "hindi": "वह स्कूल में नहीं है (स्त्री)", "transliteration": "आमे स्कूल लो लेदु", "telugu": "ఆమే స్కూల్ లో లేదు", "roman": "Aame school lo ledu" },
+          { "id": 16, "sectionLabel": "बाजार में — बाजार लो" },
+          { "id": 17, "hindi": "वे बाजार में हैं", "transliteration": "वारु बाजार लो उन्नारु", "telugu": "వారు బజార్ లో ఉన్నారు" },
+          { "id": 18, "hindi": "वे बाजार में नहीं हैं", "transliteration": "वारु बाजार लो लेरु", "telugu": "వారు బజార్ లో లేరు", "roman": "Vaaru bazaar lo leru" }
+        ]
+      }
+    },
+    "22": {
+      "theory": {
+        "type": "sentences",
+        "intro": "चाहना = क्रिया-धातु + आलनि + अनुकुन्टुन्नानु | चाहता हूं = 'सोच रहा हूं' के अर्थ में",
+        "shortcutTable": {
+          "title": "शॉर्टकट — अनुकुन्टुन्न+ प्रत्यय",
+          "tableClass": "shortcut-table--tense",
+          "headers": ["सर्वनाम", "चाहता/ती हूं (अनुकुन्टुन्न+)", "उदाहरण"],
+          "rows": [
+            ["मैं — नेनु", "अनुकुन्टुन्नानु", "तिनालनि अनुकुन्टुन्नानु"],
+            ["हम — मेमु", "अनुकुन्टुन्नामु", "वेल्लालनि अनुकुन्टुन्नामु"],
+            ["आप — मीरु", "अनुकुन्टुन्नारु", "नेर्चुकोवालनि अनुकुन्टुन्नारु"],
+            ["तुम — नुव्वु", "अनुकुन्टुन्नावु", "वेल्लालनि अनुकुन्टुन्नावु"],
+            ["वह (पुं) — अतडु", "अनुकुन्टुन्नाडु", "अव्वालनि अनुकुन्टुन्नाडु"],
+            ["वह (स्त्री) — आमे/अदि", "अनुकुन्टुन्दि", "वेल्लालनि अनुकुन्टुन्दि"],
+            ["वे — वारु", "अनुकुन्टुन्नारु", "रावालनि अनुकुन्टुन्नारु"]
+          ]
+        },
+        "sentences": [
+          { "id": 1, "sectionLabel": "सूत्र — Formula", "sectionSub": "क्रिया-धातु + आलनि + अनुकुन्टुन्नानु  |  तिन + आलनि = तिनालनि" },
+          { "id": 2, "sectionLabel": "सीखना — नेर्चुकोवडम्" },
+          {
+            "id": 3, "hindi": "आप क्या सीखना चाहते / चाहती हैं?",
+            "transliteration": "मीरु एमी नेर्चुकोवालनि अनुकुन्टुन्नारु?",
+            "telugu": "మీరు ఏమి నేర్చుకోవాలని అనుకుంటున్నారు?", "roman": "Meeru emi nerchukovalani anukuntunnaru?",
+            "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"क्या","telugu":"एमी"},{"hindi":"सीखने की","telugu":"नेर्चुकोवालनि"},{"hindi":"सोचते हैं","telugu":"अनुकुन्टुन्नारु"}]
+          },
+          {
+            "id": 4, "hindi": "मैं तेलुगु सीखना चाहता / चाहती हूं",
+            "transliteration": "नेनु तेलुगु नेर्चुकोवालनि अनुकुन्टुन्नानु",
+            "telugu": "నేను తెలుగు నేర్చుకోవాలని అనుకుంటున్నాను", "roman": "Nenu Telugu nerchukovalani anukuntunnanu",
+            "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"तेलुगु सीखने की","telugu":"तेलुगु नेर्चुकोवालनि"},{"hindi":"सोच रहा हूं","telugu":"अनुकुन्टुन्नानु"}]
+          },
+          { "id": 5, "sectionLabel": "बनना — अव्वडम्" },
+          { "id": 6, "hindi": "राम क्या बनना चाहता है?", "transliteration": "राम एमी अव्वालनि अनुकुन्टुन्नाडु?", "telugu": "రామ్ ఏమి అవ్వాలని అనుకుంటున్నాడు?", "roman": "Ram emi avvalani anukuntunnadu?" },
+          { "id": 7, "hindi": "राम डॉक्टर बनना चाहता है", "transliteration": "राम डॉक्टर अव्वालनि अनुकुन्टुन्नाडु", "telugu": "రామ్ డాక్టర్ అవ్వాలని అనుకుంటున్నాడు", "roman": "Ram doctor avvalani anukuntunnadu", "wordBreakdown": [{"hindi":"बनने की","telugu":"अव्वालनि"},{"hindi":"सोच रहा है","telugu":"अनुकुन्टुन्नाडु"}] },
+          { "id": 8, "sectionLabel": "जाना — वेल्लडम्" },
+          { "id": 9, "hindi": "तुम कहां जाना चाहते / चाहती हो?", "transliteration": "नुव्वु एक्कडिकि वेल्लालनि अनुकुन्टुन्नावु?", "telugu": "నువ్వు ఎక్కడికి వెళ్లాలని అనుకుంటున్నావు?", "roman": "Nuvvu ekkadiki vellalani anukuntunnavu?", "wordBreakdown": [{"hindi":"तुम","telugu":"नुव्वु"},{"hindi":"कहां को","telugu":"एक्कडिकि"},{"hindi":"जाने की","telugu":"वेल्लालनि"},{"hindi":"सोच रहे हो","telugu":"अनुकुन्टुन्नावु"}] },
+          { "id": 10, "hindi": "मैं सिनेमा / मूवी देखने जाना चाहता / चाहती हूं", "transliteration": "नेनु सिनेमा कि / मूवि कि वेल्लालनि अनुकुन्टुन्नानु", "telugu": "నేను సినిమాకి / మూవీకి వెళ్లాలని అనుకుంటున్నాను", "roman": "Nenu cinema ki/movie ki vellalani anukuntunnanu" },
+          { "id": 11, "hindi": "सीता कैसे जाना चाहती है?", "transliteration": "सीता एला वेल्लालनि अनुकुन्टुन्दि?", "telugu": "సీత ఎలా వెళ్లాలని అనుకుంటుంది?", "roman": "Sita ela vellalani anukuntundi?", "wordBreakdown": [{"hindi":"कैसे","telugu":"एला"},{"hindi":"सोच रही है","telugu":"अनुकुन्टुन्दि"}] },
+          { "id": 12, "hindi": "सीता कार में जाना चाहती है", "transliteration": "सीता कार लो वेल्लालनि अनुकुन्टुन्दि", "telugu": "సీత కార్ లో వెళ్లాలని అనుకుంటుంది", "note": "कार में = कार लो" },
+          { "id": 13, "sectionLabel": "आना — रावडम्" },
+          { "id": 14, "hindi": "वह कब आना चाहता है?", "transliteration": "अतडु एप्पुडु रावालनि अनुकुन्टुन्नाडु?", "telugu": "అతడు ఎప్పుడు రావాలని అనుకుంటున్నాడు?", "roman": "Atadu eppudu raavalani anukuntunnadu?", "wordBreakdown": [{"hindi":"कब","telugu":"एप्पुडु"},{"hindi":"आने की","telugu":"रावालनि"},{"hindi":"सोच रहा है","telugu":"अनुकुन्टुन्नाडु"}] },
+          { "id": 15, "hindi": "वह दो दिन बाद आना चाहता है", "transliteration": "अतडु रेन्डु रोजुलु तरुवाता रावालनि अनुकुन्टुन्नाडु", "telugu": "అతడు రెండు రోజులు తర్వాత రావాలని అనుకుంటున్నాడు", "roman": "Atadu rendu rojulu taruvata raavalani anukuntunnadu", "wordBreakdown": [{"hindi":"दो दिन","telugu":"रेन्डु रोजुलु"},{"hindi":"बाद","telugu":"तरुवाता"},{"hindi":"आने की","telugu":"रावालनि"}] },
+          { "id": 16, "sectionLabel": "सोना — पडुकोवडम्" },
+          { "id": 17, "hindi": "आप कितने बजे सोना चाहते / चाहती हैं?", "transliteration": "मीरु एन्नि गन्टलकि पडुकोवालनि अनुकुन्टुन्नारु?", "telugu": "మీరు ఎన్ని గంటలకి పడుకోవాలని అనుకుంటున్నారు?", "roman": "Meeru enni gantalki padukovalani anukuntunnaru?", "wordBreakdown": [{"hindi":"कितने बजे","telugu":"एन्नि गन्टलकि"},{"hindi":"सोने की","telugu":"पडुकोवालनि"}] },
+          { "id": 18, "hindi": "मैं दस (10) बजे सोना चाहता / चाहती हूं", "transliteration": "नेनु पदि (10) गन्टलकि पडुकोवालनि अनुकुन्टुन्नानु", "telugu": "నేను పది (10) గంటలకి పడుకోవాలని అనుకుంటున్నాను", "roman": "Nenu padi gantalki padukovalani anukuntunnanu", "wordBreakdown": [{"hindi":"दस बजे","telugu":"पदि गन्टलकि"},{"hindi":"सोने की","telugu":"पडुकोवालनि"},{"hindi":"सोच रहा हूं","telugu":"अनुकुन्टुन्नानु"}] }
         ]
       }
     },
