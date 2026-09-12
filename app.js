@@ -68,7 +68,6 @@ function openChapter(id) {
   $("dashboard").style.display = "none";
   $("quiz").style.display = "none";
   $("finish").style.display = "none";
-  $("sectionTabs").style.display = "none";
 
   $("courseTitle").textContent = `Telugu / Day ${id}`;
 
@@ -140,20 +139,6 @@ function getTheoryContent() {
   return Array.isArray(content) ? null : (content?.theory || null);
 }
 
-function switchSectionTab(tab) {
-  if (tab === "words") {
-    $("lesson").style.display = "block";
-    $("theory").style.display = "none";
-    $("tabSectionWords").classList.add("active");
-    $("tabSectionTheory").classList.remove("active");
-  } else {
-    $("lesson").style.display = "none";
-    $("theory").style.display = "block";
-    $("tabSectionWords").classList.remove("active");
-    $("tabSectionTheory").classList.add("active");
-    renderTheory();
-  }
-}
 
 function renderTheory() {
   const theory = getTheoryContent();
@@ -318,7 +303,6 @@ function startQuiz() {
   $("theory").style.display = "none";
   $("quiz").style.display = "block";
   $("finish").style.display = "none";
-  $("sectionTabs").style.display = "none";
 
   renderQuiz();
 }
@@ -422,7 +406,6 @@ function returnToDashboard() {
   $("quiz").style.display = "none";
   $("finish").style.display = "none";
   $("theory").style.display = "none";
-  $("sectionTabs").style.display = "none";
   renderDashboard();
 }
 
@@ -550,18 +533,15 @@ $("backBtn").addEventListener("click", returnToDashboard);
 
 $("backFromQuiz").addEventListener("click", () => {
   $("quiz").style.display = "none";
-  $("lesson").style.display = "block";
-  if (getTheoryContent()) $("sectionTabs").style.display = "flex";
+  if (getTheoryContent()) {
+    $("theory").style.display = "block";
+  } else {
+    $("lesson").style.display = "block";
+  }
 });
 
 $("nextQuiz").addEventListener("click", nextQuizQuestion);
 
-$("restart").addEventListener("click", () => {
-  $("finish").style.display = "none";
-  $("lesson").style.display = "block";
-  if (getTheoryContent()) $("sectionTabs").style.display = "flex";
-  currentWord = 0;
-  renderWord();
-});
+$("restart").addEventListener("click", startQuiz);
 
 document.addEventListener("DOMContentLoaded", initApp);
