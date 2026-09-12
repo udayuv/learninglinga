@@ -559,3 +559,7 @@ $("nextQuiz").addEventListener("click", nextQuizQuestion);
 $("restart").addEventListener("click", startQuiz);
 
 document.addEventListener("DOMContentLoaded", initApp);
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
