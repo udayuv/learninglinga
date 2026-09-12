@@ -7,6 +7,21 @@ let currentWord = 0;
 let quizItems = [];
 let quizIndex = 0;
 let score = 0;
+let _historyNav = false;
+
+window.addEventListener('popstate', (e) => {
+  _historyNav = true;
+  const s = e.state;
+  if (!s || s.view === 'dashboard') {
+    returnToDashboard();
+  } else if (s.view === 'chapter') {
+    openChapter(s.id);
+  } else if (s.view === 'quiz') {
+    currentChapter = DATA.chapters.find(c => c.id === s.chapterId);
+    startQuiz();
+  }
+  _historyNav = false;
+});
 
 const $ = (id) => document.getElementById(id);
 
@@ -17,6 +32,7 @@ function initApp() {
   }
   const btn = $('themeToggle');
   if (btn) btn.textContent = document.body.dataset.theme === 'dark' ? '☀️' : '🌙';
+  history.replaceState({ view: 'dashboard' }, '');
   renderDashboard();
 }
 
@@ -86,6 +102,7 @@ function openChapter(id) {
       renderAllWordsTable();
     }
   }
+  if (!_historyNav) history.pushState({ view: 'chapter', id }, '');
 }
 
 function switchTab(tab) {
@@ -305,6 +322,7 @@ function startQuiz() {
   $("finish").style.display = "none";
 
   renderQuiz();
+  if (!_historyNav) history.pushState({ view: 'quiz', chapterId: currentChapter.id }, '');
 }
 
 function renderQuiz() {
@@ -406,6 +424,7 @@ function returnToDashboard() {
   $("quiz").style.display = "none";
   $("finish").style.display = "none";
   $("theory").style.display = "none";
+  history.replaceState({ view: 'dashboard' }, '');
   renderDashboard();
 }
 
@@ -444,6 +463,8 @@ function previousWord() {
     currentWord--;
     animateCard("prev");
     renderWord();
+  } else {
+    history.back();
   }
 }
 
@@ -531,14 +552,7 @@ document.addEventListener("keydown", (event) => {
 $("audioBtn").addEventListener("click", playAudio);
 $("backBtn").addEventListener("click", returnToDashboard);
 
-$("backFromQuiz").addEventListener("click", () => {
-  $("quiz").style.display = "none";
-  if (getTheoryContent()) {
-    $("theory").style.display = "block";
-  } else {
-    $("lesson").style.display = "block";
-  }
-});
+$("backFromQuiz").addEventListener("click", () => history.back());
 
 $("nextQuiz").addEventListener("click", nextQuizQuestion);
 
