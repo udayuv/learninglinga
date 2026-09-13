@@ -128,7 +128,6 @@ function renderAllWordsTable() {
     <tr>
       <td>${i + 1}</td>
       <td class="tbl-hindi">${escapeHtml(item.hindi)}</td>
-      <!-- <td class="tbl-telugu">${escapeHtml(item.telugu)}</td> -->
       <td class="tbl-translit">${escapeHtml(item.hindiTransliteration)}</td>
     </tr>
   `).join("");
