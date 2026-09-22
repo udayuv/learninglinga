@@ -374,6 +374,60 @@ window.APP_DATA = {
       "sections": ["Theory"], "lessonCount": 10
     },
     {
+      "id": 28, "number": 28,
+      "title": "General Talk",
+      "displayTitle": "सामान्य बातचीत",
+      "description": "रहना, बात करना और आना-जाना — रोज़मर्रा की बातचीत",
+      "themeIcon": "🗣️",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 11
+    },
+    {
+      "id": 29, "number": 29,
+      "title": "Can You Do It",
+      "displayTitle": "आता है — वच्चु / रादु",
+      "description": "कौशल के लिए वच्चु / रादु — खाना बनाना, तेलुगु बोलना, ठीक करना",
+      "themeIcon": "🎯",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 12
+    },
+    {
+      "id": 30, "number": 30,
+      "title": "Used to Do",
+      "displayTitle": "किया करता था — वाडिनि/वारु",
+      "description": "पुरानी आदतें — धातु + ए + वाडिनि/वारु/वाडिवि/दि",
+      "themeIcon": "🔁",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 12
+    },
+    {
+      "id": 31, "number": 31,
+      "title": "Key Words",
+      "displayTitle": "उपयोगी शब्द — कुछ, बहुत, बिना...",
+      "description": "कोनि, चाला, स्वयंगा, लेकुन्डा, बहुशा, कोसम् — उदाहरण सहित",
+      "themeIcon": "🔑",
+      "status": "available", "progress": 0,
+      "sections": ["Words"], "lessonCount": 6
+    },
+    {
+      "id": 32, "number": 32,
+      "title": "Without Doing",
+      "displayTitle": "बिना — कुन्डा / कुन्डाने",
+      "description": "किए बिना और किए बिना ही — क्रिया धातु + कुन्डा / कुन्डाने",
+      "themeIcon": "🚫",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 11
+    },
+    {
+      "id": 33, "number": 33,
+      "title": "Daily Sentences",
+      "displayTitle": "दैनिक वाक्य",
+      "description": "रोज़मर्रा के उपयोगी तेलुगु वाक्य — मिलना, भूलना, सोचना",
+      "themeIcon": "📋",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 10
+    },
+    {
       "id": 34, "number": 34,
       "title": "Adverbs & Particles",
       "displayTitle": "क्रियाविशेषण और अव्यय",
@@ -390,6 +444,15 @@ window.APP_DATA = {
       "themeIcon": "🔗",
       "status": "available", "progress": 0,
       "sections": ["Words"], "lessonCount": 30
+    },
+    {
+      "id": 36, "number": 36,
+      "title": "Everyday Phrases",
+      "displayTitle": "रोज़मर्रा के वाक्य",
+      "description": "फोन करना, भूलना, मिलना, हंसना — 10 उपयोगी वाक्य",
+      "themeIcon": "💬",
+      "status": "available", "progress": 0,
+      "sections": ["Theory"], "lessonCount": 10
     },
     {
       "id": 37,
@@ -3401,6 +3464,173 @@ window.APP_DATA = {
             "roman": "Nannagaru bayatiki vellalsi vachindi",
             "note": "पिताजी को → सिर्फ नान्नगारु (नान्नगारु कि नहीं)",
             "wordBreakdown": [{"hindi":"पिताजी","telugu":"नान्नगारु"},{"hindi":"बाहर को","telugu":"बयटिकि"},{"hindi":"जाना पड़ा","telugu":"वेल्लाल्सि वच्चिन्दि"}] }
+        ]
+      }
+    },
+    "28": {
+      "theory": {
+        "type": "sentences",
+        "intro": "सामान्य बातचीत | रहना, बात करना, आना-जाना",
+        "sentences": [
+          { "sectionLabel": "रहना", "sectionSub": "Where You Live" },
+          { "id": 1, "hindi": "आप कहां रहते / रहती हैं?", "transliteration": "मीरु एक्कड उन्टारु", "telugu": "మీరు ఎక్కడ ఉంటారు", "roman": "Meeru ekkad untaru", "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"कहां","telugu":"एक्कड"},{"hindi":"रहते/रहती हैं","telugu":"उन्टारु"}] },
+          { "id": 2, "hindi": "मैं मुंबई में रहता / रहती हूं", "transliteration": "नेनु मुंबई लो उन्टानु", "telugu": "నేను ముంబైలో ఉంటాను", "roman": "Nenu mumbai lo untanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"में","telugu":"लो"},{"hindi":"रहता/रहती हूं","telugu":"उन्टानु"}] },
+          { "id": 3, "hindi": "आप यहां कितने साल से रह रहे / रही हैं?", "transliteration": "मीरु इक्कड एन्नि संवत्सरालुगा उन्टुन्नारु", "telugu": "మీరు ఇక్కడ ఎన్ని సంవత్సరాలుగా ఉంటున్నారు", "roman": "Meeru ikkad enni samvatsaraluga untunnaru", "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"यहां","telugu":"इक्कड"},{"hindi":"कितने","telugu":"एन्नि"},{"hindi":"साल से","telugu":"संवत्सरालुगा"},{"hindi":"रह रहे हैं","telugu":"उन्टुन्नारु"}] },
+          { "id": 4, "hindi": "मैं यहां दो साल से रह रहा / रही हूं", "transliteration": "नेनु इक्कड रेन्डु संवत्सरालुगा उन्दुन्नानु", "telugu": "నేను ఇక్కడ రెండు సంవత్సరాలుగా ఉంటున్నాను", "roman": "Nenu ikkad rendu samvatsaraluga untunnanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"यहां","telugu":"इक्कड"},{"hindi":"दो","telugu":"रेन्डु"},{"hindi":"साल से","telugu":"संवत्सरालुगा"},{"hindi":"रह रहा/रही हूं","telugu":"उन्दुन्नानु"}] },
+          { "sectionLabel": "बात करना", "sectionSub": "Conversation" },
+          { "id": 5, "hindi": "मैं आपसे बात करना चाहता / चाहती हूं", "transliteration": "नेनु मीतो माट्लाडालनुकुन्टुन्नानु", "telugu": "నేను మీతో మాట్లాడాలనుకుంటున్నాను", "roman": "Nenu meeto maatladaalanu kuntunnanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"आपसे","telugu":"मीतो"},{"hindi":"बात करना","telugu":"माट्लाडम्"},{"hindi":"चाहता/चाहती हूं","telugu":"अनुकुन्टुन्नानु"}] },
+          { "id": 6, "hindi": "क्या बात है? बताओ", "transliteration": "विषयम् एन्टि? चेप्पु", "telugu": "విషయం ఏంటి? చెప్పు", "roman": "Vishayam enti? Cheppu", "wordBreakdown": [{"hindi":"बात","telugu":"विषयम्"},{"hindi":"क्या","telugu":"एन्टि"},{"hindi":"बताओ","telugu":"चेप्पु"}] },
+          { "sectionLabel": "आना-जाना", "sectionSub": "Coming & Going" },
+          { "id": 7, "hindi": "आप कल कहां को गए थे?", "transliteration": "मीरु निन्ना एक्कडिकि वेल्लारु", "telugu": "మీరు నిన్న ఎక్కడికి వెళ్లారు", "roman": "Meeru ninna ekkadiki vellaru", "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"कल (बीता)","telugu":"निन्ना"},{"hindi":"कहां को","telugu":"एक्कडिकि"},{"hindi":"गए थे","telugu":"वेल्लारु"}] },
+          { "id": 8, "hindi": "मैं कल मेरे दोस्त को मिलने गया था", "transliteration": "नेनु निन्ना ना स्नेहितुडिनि कलवडानिकि वेल्लानु", "telugu": "నేను నిన్న నా స్నేహితుడిని కలవడానికి వెళ్లాను", "roman": "Nenu ninna naa snehitudini kalavdaniki vellanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"कल","telugu":"निन्ना"},{"hindi":"मेरे","telugu":"ना"},{"hindi":"दोस्त को","telugu":"स्नेहितुडिनि"},{"hindi":"मिलने","telugu":"कलवडानिकि"},{"hindi":"गया था","telugu":"वेल्लानु"}] },
+          { "id": 9, "hindi": "मैंने बहुत समय से उसे नहीं देखा है", "transliteration": "नेनु चाला कालम् गा अतन्नि चूडलेदु", "telugu": "నేను చాలా కాలంగా అతన్ని చూడలేదు", "roman": "Nenu chaala kaalamga atanni choodaledu", "wordBreakdown": [{"hindi":"मैंने","telugu":"नेनु"},{"hindi":"बहुत","telugu":"चाला"},{"hindi":"समय से","telugu":"कालम् गा"},{"hindi":"उसे","telugu":"अतन्नि"},{"hindi":"नहीं देखा","telugu":"चूडलेदु"}] },
+          { "id": 10, "hindi": "वह किसी काम से बाहर गया था", "transliteration": "अतड्डु एदो पनि मीदा बयटकि वेल्लाडु", "telugu": "అతడు ఏదో పనిమీద బయటికి వెళ్ళాడు", "roman": "Atadu edo pani meeda bayatiki velladu", "note": "तेलुगु में 'किसी काम से' = 'कोई काम पर' (एदो पनि मीदा)", "wordBreakdown": [{"hindi":"वह","telugu":"अतड्डु"},{"hindi":"किसी काम पर","telugu":"एदो पनि मीदा"},{"hindi":"बाहर को","telugu":"बयटकि"},{"hindi":"गया था","telugu":"वेल्लाडु"}] },
+          { "id": 11, "hindi": "मैं कल अपने भाई से मिलने गया था", "transliteration": "नेनु निन्ना ना तम्मुडिनि / अन्नयनि कलवडानिकि वेल्लानु", "telugu": "నేను నిన్న నా తమ్ముడిని / అన్నయ్యని కలవడానికి వెళ్లాను", "roman": "Nenu ninna naa tammudini / annayani kalavdaniki vellanu", "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"छोटे भाई को","telugu":"तम्मुडिनि"},{"hindi":"बड़े भाई को","telugu":"अन्नयनि"},{"hindi":"मिलने","telugu":"कलवडानिकि"},{"hindi":"गया था","telugu":"वेल्लानु"}] }
+        ]
+      }
+    },
+    "29": {
+      "theory": {
+        "type": "sentences",
+        "intro": "आता है | वच्चु / रादु — वच्चा / रादा (प्रश्न)",
+        "shortcutTable": {
+          "title": "आता है / नहीं आता — वच्चु / रादु",
+          "tableClass": "shortcut-table--skill",
+          "headers": ["रूप", "तेलुगु", "उदाहरण"],
+          "rows": [
+            ["कथन: आता है", "वच्चु", "नाकु वंट वच्चु"],
+            ["कथन: नहीं आता", "रादु", "नाकु वंट रादु"],
+            ["प्रश्न: आता है क्या?", "वच्चा", "नीकु वंट वच्चा"],
+            ["प्रश्न: नहीं आता क्या?", "रादा", "नीकु वंट रादा"]
+          ]
+        },
+        "sentences": [
+          { "sectionLabel": "खाना बनाना", "sectionSub": "Cooking" },
+          { "id": 1, "hindi": "क्या तुम्हें खाना बनाना आता है?", "transliteration": "नीकु वंट चेयडम् वच्चा", "telugu": "నీకు వంట చేయడం వచ్చా", "roman": "Neeku vant cheydam vachha", "wordBreakdown": [{"hindi":"तुम्हें","telugu":"नीकु"},{"hindi":"खाना बनाना","telugu":"वंट चेयडम्"},{"hindi":"आता है क्या","telugu":"वच्चा"}] },
+          { "id": 2, "hindi": "मुझे खाना बनाना आता है", "transliteration": "नाकु वंट चेयडम् वच्चु", "telugu": "నాకు వంట చేయడం వచ్చు", "roman": "Naaku vant cheydam vachhu", "wordBreakdown": [{"hindi":"मुझे","telugu":"नाकु"},{"hindi":"आता है","telugu":"वच्चु"}] },
+          { "id": 3, "hindi": "क्या तुम्हें खाना बनाना नहीं आता?", "transliteration": "नीकु वंट चेयडम् रादा", "telugu": "నీకు వంట చేయడం రాదా", "roman": "Neeku vant cheydam raada", "wordBreakdown": [{"hindi":"नहीं आता क्या","telugu":"रादा"}] },
+          { "id": 4, "hindi": "मुझे खाना बनाना नहीं आता", "transliteration": "नाकु वंट चेयडम् रादु", "telugu": "నాకు వంట చేయడం రాదు", "roman": "Naaku vant cheydam raadu", "wordBreakdown": [{"hindi":"नहीं आता","telugu":"रादु"}] },
+          { "sectionLabel": "तेलुगु बोलना", "sectionSub": "Speaking Telugu" },
+          { "id": 5, "hindi": "क्या आपको तेलुगु बोलना आता है?", "transliteration": "मीकु तेलुगु माट्लाडम् वच्चा", "telugu": "మీకు తెలుగు మాట్లాడటం వచ్చా", "roman": "Meeku telugu maatladam vachha", "wordBreakdown": [{"hindi":"आपको","telugu":"मीकु"},{"hindi":"तेलुगु बोलना","telugu":"माट्लाडम्"},{"hindi":"आता है क्या","telugu":"वच्चा"}] },
+          { "id": 6, "hindi": "मुझे तेलुगु बोलना आता है", "transliteration": "नाकु तेलुगु माट्लाडम् वच्चु", "telugu": "నాకు తెలుగు మాట్లాడటం వచ్చు", "roman": "Naaku telugu maatladam vachhu" },
+          { "id": 7, "hindi": "क्या आपको तेलुगु बोलना नहीं आता?", "transliteration": "मीकु तेलुगु माट्लाडम् रादा", "telugu": "మీకు తెలుగు మాట్లాడటం రాదా", "roman": "Meeku telugu maatladam raada" },
+          { "id": 8, "hindi": "मुझे तेलुगु बोलना नहीं आता", "transliteration": "नाकु तेलुगु माट्लाडम् रादु", "telugu": "నాకు తెలుగు మాట్లాడటం రాదు", "roman": "Naaku telugu maatladam raadu" },
+          { "sectionLabel": "कार ठीक करना", "sectionSub": "Car Repair" },
+          { "id": 9,  "hindi": "क्या आपको कार ठीक (रिपेयर) करनी आती है?", "transliteration": "मीकु कार बागु (रिपेर) चेयडम् वच्चा", "telugu": "మీకు కార్ బాగు (రిపేర్) చేయడం వచ్చా", "roman": "Meeku car baagu (repair) cheydam vachha" },
+          { "id": 10, "hindi": "मुझे कार ठीक (रिपेयर) करनी आती है", "transliteration": "नाकु कार बागु (रिपेर) चेयडम् वच्चु", "telugu": "నాకు కార్ బాగు (రిపేర్) చేయడం వచ్చు", "roman": "Naaku car baagu (repair) cheydam vachhu" },
+          { "id": 11, "hindi": "क्या आपको कार ठीक (रिपेयर) करनी नहीं आती?", "transliteration": "मीकु कार बागु (रिपेर) चेयडम् रादा", "telugu": "మీకు కార్ బాగు (రిపేర్) చేయడం రాదా", "roman": "Meeku car baagu (repair) cheydam raada" },
+          { "id": 12, "hindi": "मुझे कार ठीक (रिपेयर) करनी नहीं आती", "transliteration": "नाकु कार बागु (रिपेर) चेयडम् रादु", "telugu": "నాకు కార్ బాగు (రిపేర్) చేయడం రాదు", "roman": "Naaku car baagu (repair) cheydam raadu" }
+        ]
+      }
+    },
+    "30": {
+      "theory": {
+        "type": "sentences",
+        "intro": "किया करता था | धातु + ए + वाडिनि/वारु/वाडिवि/दि",
+        "shortcutTable": {
+          "title": "किया करता था — धातु + ए + प्रत्यय",
+          "tableClass": "shortcut-table--habit",
+          "headers": ["सर्वनाम", "प्रत्यय (+ ए +)", "नकारात्मक (+ कादु)"],
+          "rows": [
+            ["मैं (पुं) — नेनु", "वाडिनि", "वाडिनि कादु"],
+            ["तुम — नुव्वु", "वाडिवि", "वाडिवि कादु"],
+            ["आप / वे — मीरु / वारु", "वारु", "वारु कादु"],
+            ["वह (पुं) — अतडु", "वाडु", "वाडु कादु"],
+            ["वह (स्त्री) — आमे", "दि", "दि कादु"]
+          ]
+        },
+        "sentences": [
+          { "sectionLabel": "किया करता था — पुरानी आदतें", "sectionSub": "Used to Do (Past Habit)" },
+          { "id": 1,  "hindi": "मैं उससे बात किया करता था",          "transliteration": "नेनु अतनितो माट्लाडेवाडिनि",        "telugu": "నేను అతనితో మాట్లాడేవాడిని",       "roman": "Nenu atanito maatladevadini",       "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"उससे","telugu":"अतनितो"},{"hindi":"बात किया करता था","telugu":"माट्लाडेवाडिनि"}] },
+          { "id": 2,  "hindi": "मैं उससे बात नहीं किया करता था",     "transliteration": "नेनु अतनितो माट्लाडेवाडिनि कादु",  "telugu": "నేను అతనితో మాట్లాడేవాడిని కాదు", "roman": "Nenu atanito maatladevadini kaadu" },
+          { "id": 3,  "hindi": "आप तेलुगु बात किया करते / करती थें", "transliteration": "मीरु तेलुगु माट्लाडेवारु",          "telugu": "మీరు తెలుగు మాట్లాడేవారు",          "roman": "Meeru telugu maatlaadevaaru",        "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"बात किया करते थे","telugu":"माट्लाडेवारु"}] },
+          { "id": 4,  "hindi": "आप तेलुगु बात नहीं किया करते थें",  "transliteration": "मीरु तेलुगु माट्लाडेवारु कादु",    "telugu": "మీరు తెలుగు మాట్లాడేవారు కాదు",   "roman": "Meeru telugu maatlaadevaaru kaadu" },
+          { "id": 5,  "hindi": "तुम वहां काम किया करते थे",          "transliteration": "नुव्वु अक्कड पनि चेसे वाडिवि",     "telugu": "నువ్వు అక్కడ పని చేసే వాడివి",    "roman": "Nuvvu akkad pani chese vaadivi",   "wordBreakdown": [{"hindi":"तुम","telugu":"नुव्वु"},{"hindi":"वहां","telugu":"अक्कड"},{"hindi":"काम","telugu":"पनि"},{"hindi":"किया करते थे","telugu":"चेसे वाडिवि"}] },
+          { "id": 6,  "hindi": "तुम वहां काम नहीं किया करते थे",    "transliteration": "नुव्वु अक्कड पनि चेसे वाडिवि कादु", "telugu": "నువ్వు అక్కడ పని చేసే వాడివి కాదు", "roman": "Nuvvu akkad pani chese vaadivi kaadu" },
+          { "id": 7,  "hindi": "वह पहले मुंबई में रहा करता था",      "transliteration": "अतनु / अतड्डु मुन्दु मुंबई लो उन्डेवाडु", "telugu": "అతడు / అతను ముందు ముంబైలో ఉండేవాడు", "roman": "Atadu / Atanu mundu mumbai lo undevaadu", "wordBreakdown": [{"hindi":"वह (पुं)","telugu":"अतनु / अतड्डु"},{"hindi":"पहले","telugu":"मुन्दु"},{"hindi":"में","telugu":"लो"},{"hindi":"रहा करता था","telugu":"उन्डेवाडु"}] },
+          { "id": 8,  "hindi": "वह पहले मुंबई में नहीं रहा करता था", "transliteration": "अतनु / अतड्डु मुन्दु मुंबई लो उन्डेवाडु कादु", "telugu": "అతడు / అతను ముందు ముంబైలో ఉండేవాడు కాదు", "roman": "Atadu mundu mumbai lo undevaadu kaadu" },
+          { "id": 9,  "hindi": "वह यहां काम किया करती थी",           "transliteration": "आमे इक्कड पनि चेसेदि",              "telugu": "ఆమె ఇక్కడ పని చేసేది",              "roman": "Aame ikkad pani chesedi",           "wordBreakdown": [{"hindi":"वह (स्त्री)","telugu":"आमे"},{"hindi":"यहां","telugu":"इक्कड"},{"hindi":"काम किया करती थी","telugu":"चेसेदि"}] },
+          { "id": 10, "hindi": "वह यहां काम नहीं किया करती थी",     "transliteration": "आमे इक्कड पनि चेसेदि कादु",        "telugu": "ఆమె ఇక్కడ పని చేసేది కాదు",       "roman": "Aame ikkad pani chesedi kaadu" },
+          { "id": 11, "hindi": "वे साथ रहते थे",                      "transliteration": "वारु कलसि उन्डेवारु",               "telugu": "వారు కలిసి ఉండేవారు",               "roman": "Vaaru kalisi undevaaru",            "wordBreakdown": [{"hindi":"वे","telugu":"वारु"},{"hindi":"साथ","telugu":"कलसि"},{"hindi":"रहते थे","telugu":"उन्डेवारु"}] },
+          { "id": 12, "hindi": "वे साथ नहीं रहते थे",                 "transliteration": "वारु कलसि उन्डेवारु कादु",          "telugu": "వారు కలిసి ఉండేవారు కాదు",          "roman": "Vaaru kalisi undevaaru kaadu" }
+        ]
+      }
+    },
+    "31": [
+      { "id": 1, "hindi": "कुछ",      "telugu": "కొన్ని",    "hindiTransliteration": "कोनि",      "roman": "Konni",    "category": "adverb", "examples": [{"hindi":"मेरे पास कुछ किताबें हैं","telugu":"నా దగ్గర కొన్ని పుస్తకాలు ఉన్నాయి","hindiTransliteration":"ना दग्गर कोन्नि पुस्तकालु उन्नायी"},{"hindi":"मोहित के पास कुछ पैसे हैं","telugu":"మోహిత్ దగ్గర కొన్ని డబ్బులు ఉన్నాయి","hindiTransliteration":"मोहित दग्गर कोन्नि डब्बुलु उन्नायी"}] },
+      { "id": 2, "hindi": "बहुत",     "telugu": "చాలా",     "hindiTransliteration": "चाला",      "roman": "Chaala",   "category": "adverb", "examples": [{"hindi":"आपका घर बहुत अच्छा है","telugu":"మీ ఇల్లు చాలా బాగుంది","hindiTransliteration":"मी इल्लु चाला बागुन्दि"},{"hindi":"चाय बहुत गर्म है","telugu":"టీ చాలా వేడిగా ఉంది","hindiTransliteration":"टी चाला वेडिगा उन्दि"}] },
+      { "id": 3, "hindi": "खुद से",   "telugu": "స్వయంగా", "hindiTransliteration": "स्वयंगा",   "roman": "Swayanga", "category": "adverb", "examples": [{"hindi":"मैं खुद से खाना बना सकता/सकती हूं","telugu":"నేను స్వయంగా వంట చేయగలను","hindiTransliteration":"नेनु स्वयंगा वंट चेयगलनु"},{"hindi":"राम खुद से पढ़ता है","telugu":"రామ్ స్వయంగా చదువుతాడు","hindiTransliteration":"राम स्वयंगा चदुवुताडु"}] },
+      { "id": 4, "hindi": "बिना",     "telugu": "లేకుండా", "hindiTransliteration": "लेकुन्डा",  "roman": "Lekunda",  "category": "adverb", "examples": [{"hindi":"तुम्हारे बिना मैं नहीं जाऊंगा/जाऊंगी","telugu":"నువ్వు లేకుండా నేను వెళ్ళను","hindiTransliteration":"नुव्वु लेकुन्डा नेनु वेल्लनु"},{"hindi":"वे बिना चीनी के चाय पीते हैं","telugu":"వారు చక్కెర లేకుండా టీ తాగుతారు","hindiTransliteration":"वारु चक्केर लेकुन्डा टी तागुतारु"}] },
+      { "id": 5, "hindi": "शायद",     "telugu": "బహుశా",   "hindiTransliteration": "बहुशा",     "roman": "Bahusha",  "category": "adverb", "examples": [{"hindi":"शायद आज बारिश हो सकती है","telugu":"బహుశా ఈ రోజు వర్షం పడవచ్చు","hindiTransliteration":"बहुशा ई रोजु वर्षम् पडवच्चु"},{"hindi":"शायद मैं कल बाहर को जा सकती हूं","telugu":"బహుశా నేను రేపు బయటికి వెళ్ళవచ్చు","hindiTransliteration":"बहुशा नेनु रेपु बयटिकि वेल्लवच्चु"}] },
+      { "id": 6, "hindi": "के लिए",   "telugu": "కోసం",    "hindiTransliteration": "कोसम्",     "roman": "Kosam",    "category": "adverb", "examples": [{"hindi":"तुम यह किताब किसके लिए लाए हो?","telugu":"నువ్వు ఈ పుస్తకం ఎవరికోసం తెచ్చావు","hindiTransliteration":"नुव्वु ई पुस्तकम् एवरि कोसम् तेच्चावु"},{"hindi":"मैं यह पुस्तक आपके लिए लाया/लाई हूं","telugu":"నేను ఈ పుస్తకం మీకోసం తెచ్చాను","hindiTransliteration":"नेनु ई पुस्तकम् मी कोसम् तेच्चानु"}] }
+    ],
+    "32": {
+      "theory": {
+        "type": "sentences",
+        "intro": "किए बिना | क्रिया धातु + कुन्डा (बिना) / कुन्डाने (बिना ही)",
+        "shortcutTable": {
+          "title": "बिना — कुन्डा / कुन्डाने / लेकुन्डा",
+          "tableClass": "shortcut-table--without",
+          "headers": ["रूप", "तेलुगु प्रत्यय", "अर्थ"],
+          "rows": [
+            ["क्रिया + कुन्डा", "तिन + कुन्डा = तिनकुन्डा", "खाए बिना"],
+            ["क्रिया + कुन्डाने", "तिन + कुन्डाने = तिनकुन्डाने", "खाए बिना ही (जोर)"],
+            ["नाम + लेकुन्डा", "पालु लेकुन्डा", "दूध के बिना (संज्ञा)"]
+          ]
+        },
+        "sentences": [
+          { "sectionLabel": "किए बिना ही — कुन्डाने", "sectionSub": "Without Even Doing" },
+          { "id": 1,  "hindi": "राहुल खाए बिना ही ऑफिस को चला गया",          "transliteration": "राहुल तिनकुन्डाने ऑफिस कि वेल्लिपोयाड्डु",           "telugu": "రాహుల్ తినకుండానే ఆఫీస్ కి వెళ్ళిపోయాడు",   "roman": "Rahul tinkudane office ki vellipoyadu",      "wordBreakdown": [{"hindi":"खाए","telugu":"तिन"},{"hindi":"बिना ही","telugu":"कुन्डाने"},{"hindi":"चला गया","telugu":"वेल्लिपोयाड्डु"}] },
+          { "id": 2,  "hindi": "राधा काम किए बिना ही टीवी देख रही है",         "transliteration": "राधा पनि चेयकुन्डाने टीवी चुस्तुन्दि",                "telugu": "రాధా పనిచేయకుండానే టీవీ చూస్తుంది",          "roman": "Radha pani cheykundane TV chustundi",        "wordBreakdown": [{"hindi":"काम","telugu":"पनि"},{"hindi":"किए","telugu":"चेय"},{"hindi":"बिना ही","telugu":"कुन्डाने"},{"hindi":"देख रही है","telugu":"चुस्तुन्दि"}] },
+          { "id": 3,  "hindi": "वह (पुं) मुझसे बात किए बिना ही चला गया",       "transliteration": "नातो माट्लाडकुन्डाने अतडु वेल्लिपोयाड्डु",            "telugu": "అతను నాతో మాట్లాడకుండానే వెళ్ళిపోయాడు",     "roman": "Atanu naato maatladkundane vellipoyadu",     "wordBreakdown": [{"hindi":"मुझसे","telugu":"नातो"},{"hindi":"बात किए","telugu":"माट्लाड"},{"hindi":"बिना ही","telugu":"कुन्डाने"},{"hindi":"चला गया","telugu":"वेल्लिपोयाड्डु"}] },
+          { "id": 4,  "hindi": "वह (स्त्री) मुझसे कहे बिना ही बाहर चली गई",   "transliteration": "आमे नातो चेप्पकुन्डाने बयटिकि वेल्लिपोयिन्दि",         "telugu": "ఆమె నాతో చెప్పకుండానే బయటికి వెళ్ళిపోయింది", "roman": "Aame naato cheppkundane bayatiki vellipoyindi","wordBreakdown": [{"hindi":"मुझसे","telugu":"नातो"},{"hindi":"कहना","telugu":"चेप्पडम्"},{"hindi":"बिना ही","telugu":"कुन्डाने"},{"hindi":"बाहर को","telugu":"बयटिकि"},{"hindi":"चली गई","telugu":"वेल्लिपोयिन्दि"}] },
+          { "id": 5,  "hindi": "वे कुछ खाए बिना ही चले गए",                   "transliteration": "वारु एमी तिनकुन्डाने वेल्लिपोयारु",                   "telugu": "వారు ఏమి తినకుండానే వెళ్ళిపోయారు",            "roman": "Vaaru emi tinkudane vellipoyaru",            "note": "तेलुगु में 'कुछ खाए बिना' = 'क्या खाए बिना' (एमी)" },
+          { "id": 6,  "hindi": "मैं उनसे मिले बिना ही लौट आया / आई",          "transliteration": "नेनु अतन्नि कलवकुन्डाने तिरिगि वच्चेसानु",            "telugu": "నేను అతన్ని కలవకుండానే తిరిగి వచ్చేసాను",   "roman": "Nenu atanni kalavkundane tirigi vachhesanu",  "wordBreakdown": [{"hindi":"उनसे","telugu":"अतन्नि"},{"hindi":"मिले","telugu":"कलव"},{"hindi":"बिना ही","telugu":"कुन्डाने"},{"hindi":"वापस लौट आया/आई","telugu":"तिरिगि वच्चेसानु"}] },
+          { "sectionLabel": "किए बिना — कुन्डा", "sectionSub": "Without Doing" },
+          { "id": 7,  "hindi": "वह ₹200 लिए बिना काम नहीं करेगा",             "transliteration": "अतड्डु रेन्डु वन्दलु रूपायलु तीसुकोकुन्डा पनि चेयडु", "telugu": "అతడు రెండు వందల రూపాయలు తీసుకోకుండా పని చేయడు","roman": "Atadu rendu vandalu rupaayalu teesukokunda pani cheyadu", "wordBreakdown": [{"hindi":"लिए","telugu":"तीसुको"},{"hindi":"बिना","telugu":"कुन्डा"},{"hindi":"नहीं करेगा","telugu":"चेयडु"}] },
+          { "id": 8,  "hindi": "मैं चाय पिए बिना नहीं रह सकता / सकती",        "transliteration": "नेनु टी तागकुन्डा उन्डलेनु",                           "telugu": "నేను టీ తాగకుండా ఉండలేను",                     "roman": "Nenu tea taagkunda undalenu",                "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"चाय","telugu":"टी"},{"hindi":"पिए","telugu":"ताग"},{"hindi":"बिना","telugu":"कुन्डा"},{"hindi":"नहीं रह सकता","telugu":"उन्डलेनु"}] },
+          { "id": 9,  "hindi": "आप खाए बिना नहीं रह सकते / सकतीं",            "transliteration": "मीरु तिनकुन्डा उन्डलेरु",                              "telugu": "మీరు తినకుండా ఉండలేరు",                        "roman": "Meeru tinkunda undaleru",                    "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"खाए","telugu":"तिन"},{"hindi":"बिना","telugu":"कुन्डा"},{"hindi":"नहीं रह सकते","telugu":"उन्डलेरु"}] },
+          { "id": 10, "hindi": "मैं मूवी देखे बिना घर को वापस नहीं जाऊंगा / जाऊंगी", "transliteration": "नेनु मूवि चूडकुन्डा इन्टिकि तिरिगि वेल्लनु",  "telugu": "నేను మూవీ చూడకుండా ఇంటికి తిరిగి వెళ్ళను",  "roman": "Nenu movie choodakunda intiki tirigi vellanu","wordBreakdown": [{"hindi":"देखे","telugu":"चूड"},{"hindi":"बिना","telugu":"कुन्डा"},{"hindi":"घर को","telugu":"इन्टिकि"},{"hindi":"वापस","telugu":"तिरिगि"},{"hindi":"नहीं जाऊंगा","telugu":"वेल्लनु"}] },
+          { "sectionLabel": "नाम + लेकुन्डा", "sectionSub": "Noun + Without" },
+          { "id": 11, "hindi": "दूध के बिना मैं चाय नहीं बना सकता / सकती",   "transliteration": "पालु लेकुन्डा नेनु टी चेयलेनु",                       "telugu": "పాలు లేకుండా నేను టీ చేయలేను",               "roman": "Paalu lekunda nenu tea cheylenu",            "note": "संज्ञा के बिना = संज्ञा + लेकुन्डा", "wordBreakdown": [{"hindi":"दूध","telugu":"पालु"},{"hindi":"के बिना","telugu":"लेकुन्डा"},{"hindi":"चाय","telugu":"टी"},{"hindi":"नहीं बना सकता","telugu":"चेयलेनु"}] }
+        ]
+      }
+    },
+    "33": {
+      "theory": {
+        "type": "sentences",
+        "intro": "दैनिक वाक्य | मिलना, भूलना, सोचना — उपयोगी वाक्य",
+        "sentences": [
+          { "sectionLabel": "दैनिक वाक्य", "sectionSub": "Everyday Sentences" },
+          { "id": 1,  "hindi": "मैं अपने दोस्त से मिलने जा रहा / रही हूं",   "transliteration": "नेनु ना स्नेहितुडिनि कलवडानिकि वेलुतुन्नानु",     "telugu": "నేను నా స్నేహితుడిని కలవడానికి వెళుతున్నాను", "roman": "Nenu naa snehitudini kalavdaniki veltunnanu",  "wordBreakdown": [{"hindi":"मेरे (अपने)","telugu":"ना"},{"hindi":"दोस्त से","telugu":"स्नेहितुडिनि"},{"hindi":"मिलने","telugu":"कलवडानिकि"},{"hindi":"जा रहा/रही हूं","telugu":"वेलुतुन्नानु"}] },
+          { "id": 2,  "hindi": "मैं तुम्हें बताना भूल गया / गई",              "transliteration": "नेनु नीकु चेप्पडम् मर्चिपोयानु",               "telugu": "నేను నీకు చెప్పడం మర్చిపోయాను",               "roman": "Nenu neeku cheppadam marchipoyanu",           "wordBreakdown": [{"hindi":"तुम्हें","telugu":"नीकु"},{"hindi":"बताना","telugu":"चेप्पडम्"},{"hindi":"भूल गया/गई","telugu":"मर्चिपोयानु"}] },
+          { "id": 3,  "hindi": "मैं मोबाइल का उपयोग नहीं कर रहा / रही हूं",  "transliteration": "नेनु मोबाइल वाडडम् लेदु",                        "telugu": "నేను మొబైల్ వాడడం లేదు",                       "roman": "Nenu mobile vadadam ledu",                   "wordBreakdown": [{"hindi":"उपयोग करना","telugu":"वाडडम्"},{"hindi":"नहीं","telugu":"लेदु"}] },
+          { "id": 4,  "hindi": "ऑफिस से आते (लौटते) समय सब्जियां लेकर आइए", "transliteration": "ऑफिस नुन्डि वच्चेटप्पुडु कूरगायलु तीसुकुरन्डि",   "telugu": "ఆఫీస్ నుండి వచ్చేటప్పుడు కూరగాయలు తీసుకురండి", "roman": "Office nundi vachhetappudu koorgaylu teesukurandi", "wordBreakdown": [{"hindi":"से","telugu":"नुन्डि"},{"hindi":"आते समय","telugu":"वच्चेटप्पुडु"},{"hindi":"सब्जियां","telugu":"कूरगायलु"},{"hindi":"लेकर आइए","telugu":"तीसुकुरन्डि"}] },
+          { "id": 5,  "hindi": "मैंने तुम्हें पहचाना नहीं",                   "transliteration": "नेनु निन्नु गुर्तुपट्ट लेदु",                    "telugu": "నేను నిన్ను గుర్తుపట్ట లేదు",                  "roman": "Nenu ninnu gurtupatta ledu",                 "wordBreakdown": [{"hindi":"तुम्हें","telugu":"निन्नु"},{"hindi":"पहचाना नहीं","telugu":"गुर्तुपट्ट लेदु"}] },
+          { "id": 6,  "hindi": "वह इस समय में ऑफिस में हो सकता है",           "transliteration": "अतडु ई समयम् लो ऑफिस लो उन्डोच्चु",              "telugu": "అతడు ఈ సమయంలో ఆఫీసులో ఉండొచ్చు",               "roman": "Atadu ee samayam lo office lo undochhu",       "note": "उन्ड + वच्चु = उन्डोच्चु (हो सकता है)", "wordBreakdown": [{"hindi":"वह","telugu":"अतडु"},{"hindi":"इस समय में","telugu":"ई समयम् लो"},{"hindi":"में","telugu":"लो"},{"hindi":"हो सकता है","telugu":"उन्डोच्चु"}] },
+          { "id": 7,  "hindi": "मुझे कुछ देर सोचने दो",                       "transliteration": "नाकु कासेपु आलोचिन्चनिव्वु",                    "telugu": "నాకు కాసేపు ఆలోచించనివ్వు",                    "roman": "Naaku kaasepu aalochinchanivu",               "wordBreakdown": [{"hindi":"मुझे","telugu":"नाकु"},{"hindi":"कुछ देर","telugu":"कासेपु"},{"hindi":"सोचने दो","telugu":"आलोचिन्चनिव्वु"}] },
+          { "id": 8,  "hindi": "मैं कोई भी काम सोचे बिना नहीं करता / करती हूं","transliteration": "नेनु ए पनि कूडा आलोचिन्चकुन्डा चेयनु",          "telugu": "నేను ఏ పని కూడా ఆలోచించకుండా చేయను",            "roman": "Nenu ae pani kooda aalochinchakunda cheyanu",  "wordBreakdown": [{"hindi":"कोई भी","telugu":"ए...कूडा"},{"hindi":"काम","telugu":"पनि"},{"hindi":"सोचे बिना","telugu":"आलोचिन्चकुन्डा"},{"hindi":"नहीं करता","telugu":"चेयनु"}] },
+          { "id": 9,  "hindi": "मुझे तुम्हारी मदद की कोई जरूरत नहीं है",     "transliteration": "नाकु नी सहायम् एमी अवसरम् लेदु",                  "telugu": "నాకు నీ సహాయం ఏమీ అవసరం లేదు",                 "roman": "Naaku nee sahayam emi avasaram ledu",          "note": "तेलुगु में 'कोई' = 'क्या/एमी'", "wordBreakdown": [{"hindi":"मुझे","telugu":"नाकु"},{"hindi":"तुम्हारी","telugu":"नी"},{"hindi":"मदद","telugu":"सहायम्"},{"hindi":"कोई जरूरत नहीं","telugu":"एमी अवसरम् लेदु"}] },
+          { "id": 10, "hindi": "वह किसी की परवाह नहीं करता है",               "transliteration": "अतडु एवरिनि पट्टिन्चकोडु",                       "telugu": "అతడు ఎవరిని పట్టించుకోడు",                      "roman": "Atadu evarini pattinchkodu",                  "note": "तेलुगु में 'किसी की' = 'किसे' (एवरिनि)", "wordBreakdown": [{"hindi":"वह","telugu":"अतडु"},{"hindi":"किसे (किसी की)","telugu":"एवरिनि"},{"hindi":"परवाह नहीं करता","telugu":"पट्टिन्चकोडु"}] }
+        ]
+      }
+    },
+    "36": {
+      "theory": {
+        "type": "sentences",
+        "intro": "रोज़मर्रा के वाक्य | फोन, मिलना, हंसना, बहस — 10 उपयोगी वाक्य",
+        "sentences": [
+          { "sectionLabel": "रोज़मर्रा के वाक्य", "sectionSub": "Everyday Phrases" },
+          { "id": 1,  "hindi": "मैं तुम्हें बताना भूल गया / गई",              "transliteration": "नेनु नीकु चेप्पडम् मर्चिपोयानु",               "telugu": "నేను నీకు చెప్పడం మర్చిపోయాను",               "roman": "Nenu neeku cheppadam marichipoyanu",          "wordBreakdown": [{"hindi":"तुम्हें","telugu":"नीकु"},{"hindi":"बताना","telugu":"चेप्पडम्"},{"hindi":"भूल गया/गई","telugu":"मर्चिपोयानु"}] },
+          { "id": 2,  "hindi": "मैं तुम्हें एक घंटे में बताता / बताती हूं",  "transliteration": "नेनु नीकु ओक्क गंट लो चेपतानु",                "telugu": "నేను నీకు ఒక గంటలో చెప్తాను",                   "roman": "Nenu neeku okka gantlo cheptanu",             "wordBreakdown": [{"hindi":"एक घंटे","telugu":"ओक्क गंट"},{"hindi":"में","telugu":"लो"},{"hindi":"बताता/बताती हूं","telugu":"चेपतानु"}] },
+          { "id": 3,  "hindi": "तुम मुझे कल फोन करो",                          "transliteration": "नुव्वु नाकु रेपु फोन चेय्यु",                   "telugu": "నువ్వు నాకు రేపు ఫోన్ చెయ్యు",                  "roman": "Nuvvu naaku repu phone cheyyu",               "wordBreakdown": [{"hindi":"तुम","telugu":"नुव्वु"},{"hindi":"मुझे","telugu":"नाकु"},{"hindi":"कल","telugu":"रेपु"},{"hindi":"करो","telugu":"चेय्यु"}] },
+          { "id": 4,  "hindi": "मैं अभी आ रहा / रही हूं",                     "transliteration": "नेनु इप्पुड्डु वस्तुन्नानु",                     "telugu": "నేను ఇప్పుడు వస్తున్నాను",                       "roman": "Nenu ippudu vastunnanu",                      "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"अभी","telugu":"इप्पुड्डु"},{"hindi":"आ रहा/रही हूं","telugu":"वस्तुन्नानु"}] },
+          { "id": 5,  "hindi": "क्या आप भोजन करेंगे?",                         "transliteration": "मीरु भोजनम् चेस्तारा",                          "telugu": "మీరు భోజనం చేస్తారా",                           "roman": "Meeru bhojnam chestara",                     "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"भोजन","telugu":"भोजनम्"},{"hindi":"करेंगे क्या","telugu":"चेस्तारा"}] },
+          { "id": 6,  "hindi": "तुम क्या काम करते हो?",                        "transliteration": "नुव्वु एम् पनि चेस्तावु",                       "telugu": "నువ్వు ఏం పని చేస్తావు",                          "roman": "Nuvvu em pani chestavu",                      "wordBreakdown": [{"hindi":"तुम","telugu":"नुव्वु"},{"hindi":"क्या","telugu":"एम्"},{"hindi":"काम","telugu":"पनि"},{"hindi":"करते हो","telugu":"चेस्तावु"}] },
+          { "id": 7,  "hindi": "मैं आपसे कल मिलूंगा / मिलूंगी",              "transliteration": "नेनु मीतो रेपु कलुस्तानु",                      "telugu": "నేను మీతో రేపు కలుస్తాను",                       "roman": "Nenu meeto repu kalustanu",                   "wordBreakdown": [{"hindi":"मैं","telugu":"नेनु"},{"hindi":"आपसे","telugu":"मीतो"},{"hindi":"कल (आगे)","telugu":"रेपु"},{"hindi":"मिलूंगा/मिलूंगी","telugu":"कलुस्तानु"}] },
+          { "id": 8,  "hindi": "तुम क्यों हंस रहे / रही हो?",                 "transliteration": "नुव्वु एन्दुकु नव्वुतुन्नावु",                   "telugu": "నువ్వు ఎందుకు నవ్వుతున్నావు",                    "roman": "Nuvvu enduku navvutunnavu",                   "wordBreakdown": [{"hindi":"तुम","telugu":"नुव्वु"},{"hindi":"क्यों","telugu":"एन्दुकु"},{"hindi":"हंस रहे/रही हो","telugu":"नव्वुतुन्नावु"}] },
+          { "id": 9,  "hindi": "आप कहां काम करते / करती हैं?",                "transliteration": "मीरु एक्कड पनि चेस्तारु",                       "telugu": "మీరు ఎక్కడ పని చేస్తారు",                        "roman": "Meeru ekkad pani chestaru",                   "wordBreakdown": [{"hindi":"आप","telugu":"मीरु"},{"hindi":"कहां","telugu":"एक्कड"},{"hindi":"काम","telugu":"पनि"},{"hindi":"करते/करती हैं","telugu":"चेस्तारु"}] },
+          { "id": 10, "hindi": "मुझसे बहस मत करो",                             "transliteration": "नातो वादिन्चकु",                                "telugu": "నాతో వాదించకు",                                  "roman": "Naato vaadinchku",                            "wordBreakdown": [{"hindi":"मुझसे","telugu":"नातो"},{"hindi":"बहस मत करो","telugu":"वादिन्चकु"}] }
         ]
       }
     },
