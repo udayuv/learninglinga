@@ -1324,7 +1324,7 @@ window.APP_DATA = {
         "id": 7,
         "hindi": "कहाँ",
         "telugu": "ఎక్కడ",
-        "hindiTransliteration": "एक्कड",
+        "hindiTransliteration": "एक्कडा",
         "category": "question",
         "examples": [
           {
@@ -1344,7 +1344,7 @@ window.APP_DATA = {
           {
             "hindi": "कहाँ तक जा रहे हो?",
             "telugu": "ఎక్కడ వరకు వెళ్తున్నావు? / ఎక్కడ దాకా వెళ్తున్నావు?",
-            "hindiTransliteration": "एक्कड वरकु वेल्तुन्नावु? / एक्कड दाका वेल्तुन्नावु?"
+            "hindiTransliteration": "एक्कड वरकु वेलुतुन्नावु? / एक्कड दाका वेलुतुन्नावु?"
           }
         ]
       },
@@ -1354,6 +1354,7 @@ window.APP_DATA = {
         "telugu": "ఎందులో",
         "hindiTransliteration": "एन्दुलो",
         "category": "question",
+        "notes":"तेलुगु में नमक कम है के बदले नमक कम सा है कहा जाता है",
         "examples": [
           {
             "hindi": "किसमें नमक कम है?",
@@ -1391,7 +1392,7 @@ window.APP_DATA = {
           {
             "hindi": "आप कब तक रहेंगे?",
             "telugu": "మీరు ఎప్పుడు వరకు ఉంటారు? / ఎప్పుడు దాకా ఉంటారు?",
-            "hindiTransliteration": "मीरु एप्पुडु वरकु उंटारु? / एप्पुडु दाका उंटारु?"
+            "hindiTransliteration": "मीरु एप्पुडु वरकु उंटारु? / मीरु एप्पुडु दाका उंटारु?"
           }
         ]
       },
@@ -1462,7 +1463,7 @@ window.APP_DATA = {
           {
             "hindi": "टाइम कितना हुआ है?",
             "telugu": "టైమ్ ఎంత అయింది?",
-            "hindiTransliteration": "टाइम एन्त अयिन्दि?"
+            "hindiTransliteration": "टाइम एन्त अइन्दि?"
           }
         ]
       },
@@ -1523,11 +1524,11 @@ window.APP_DATA = {
       { "id": 13, "hindi": "उठना", "telugu": "లేవడం", "hindiTransliteration": "लेवडम्", "category": "verb", "examples": [
         { "hindi": "मैं उठ रहा / रही हूं", "telugu": "నేను లేస్తున్నాను", "hindiTransliteration": "नेनु लेस्तुन्नानु" }
       ]},
-      { "id": 14, "hindi": "बैठना", "telugu": "కూర్చోడడం", "hindiTransliteration": "कूर्चीडम्", "category": "verb", "examples": [
-        { "hindi": "मैं बैठ रहा / रही हूं", "telugu": "నేను కూర్చుంటున్నాను", "hindiTransliteration": "नेनु कूर्चेन्टुन्नानु" }
+      { "id": 14, "hindi": "बैठना", "telugu": "కూర్చోడడం", "hindiTransliteration": "कूर्चोडम्", "category": "verb", "examples": [
+        { "hindi": "मैं बैठ रहा / रही हूं", "telugu": "నేను కూర్చుంటున్నాను", "hindiTransliteration": "नेनु कूर्चोन्टुन्नानु" }
       ]},
       { "id": 15, "hindi": "पकड़ना", "telugu": "పట్టుకోవడం", "hindiTransliteration": "पट्टुकोवडम्", "category": "verb", "examples": [
-        { "hindi": "मैं पकड़ रहा / रही हूं", "telugu": "నేను పట్టుకుంటున్నాను", "hindiTransliteration": "नेनु पटुकुन्टुन्नानु" }
+        { "hindi": "मैं पकड़ रहा / रही हूं", "telugu": "నేను పట్టుకుంటున్నాను", "hindiTransliteration": "नेनु पट्टुकुन्टुन्नानु" }
       ]},
       { "id": 16, "hindi": "छोड़ना", "telugu": "వదిలేయడం", "hindiTransliteration": "वदिलेयडम्", "category": "verb", "examples": [
         { "hindi": "मैं छोड़ रहा / रही हूं", "telugu": "నేను వదిలేస్తున్నాను", "hindiTransliteration": "नेनु वदिलेस्तुन्नानु" }
@@ -1673,7 +1674,7 @@ window.APP_DATA = {
         { "hindi": "मैं शुरू कर रहा / रही हूं", "telugu": "నేను ప్రారంభిస్తున్నాను", "hindiTransliteration": "नेनु प्रारंभिस्तुन्नानु" }
       ]},
       { "id": 18, "hindi": "पैदा होना", "telugu": "పుట్టడం", "hindiTransliteration": "पुट्टडम्", "category": "verb", "examples": [
-        { "hindi": "बच्चा पैदा हुआ है", "telugu": "పిల్లవాడు పుట్టాడు", "hindiTransliteration": "पिल्लवाडु पुट्टाड्डु" }
+        { "hindi": "बच्चा पैदा हुआ है", "telugu": "పిల్లవాడు పుట్టాడు", "hindiTransliteration": "पिल्लवाडु पुट्टाडु" }
       ]},
       { "id": 19, "hindi": "मरना", "telugu": "చనిపోవడం", "hindiTransliteration": "चनिपोवडम्", "category": "verb", "examples": [
         { "hindi": "कोई मर गए हैं", "telugu": "ఎవరో చనిపోయారు", "hindiTransliteration": "एवरो चनिपोयारु" }
@@ -1691,7 +1692,7 @@ window.APP_DATA = {
         { "hindi": "मैं पीट रहा / रही हूं", "telugu": "నేను కొడుతున్నాను", "hindiTransliteration": "नेनु कोडुतुन्नानु" }
       ]},
       { "id": 24, "hindi": "खड़ा होना", "telugu": "నిలబడడం", "hindiTransliteration": "निलबड्डुम्", "category": "verb", "examples": [
-        { "hindi": "मैं खड़ा / खड़ी हूं", "telugu": "నేను నిలబడుతున్నాను", "hindiTransliteration": "नेनु निलबड्डुतुन्नानु" }
+        { "hindi": "मैं खड़ा / खड़ी हूं", "telugu": "నేను నిలబడుతున్నాను", "hindiTransliteration": "नेनु निलबडुतुन्नानु" }
       ]},
       { "id": 25, "hindi": "ढूंढना", "telugu": "వెతకడం", "hindiTransliteration": "वेतकडम्", "category": "verb", "examples": [
         { "hindi": "मैं ढूंढ रहा / रही हूं", "telugu": "నేను వెతుకుతున్నాను", "hindiTransliteration": "नेनु वेतुकुतुन्नानु" }
@@ -1797,19 +1798,19 @@ window.APP_DATA = {
         "shortcutTable": {
           "title": "सर्वनाम प्रत्यय — तीनों काल",
           "tableClass": "shortcut-table--tense",
-          "headers": ["सर्वनाम", "वर्तमान (तुन्न+)", "भूत (आ+)", "भविष्य (त+)"],
+          "headers": ["सर्वनाम", "वर्तमान (तुन्ना+)", "भूत (आ+)", "भविष्य (ता+)"],
           "rows": [
             ["मैं — नेनु", "तुन्नानु", "आनु", "तानु"],
             ["हम — मेमु", "तुन्नामु", "आमु", "तामु"],
             ["तुम — नुव्वु", "तुन्नावु", "आवु", "तावु"],
             ["आप — मीरु", "तुन्नारु", "आरु", "तारु"],
             ["वह (पुं) — अतडु", "तुन्नाडु", "आडु", "ताडु"],
-            ["वह (स्त्री) — आमे", "तुन्दि", "इन्दि ⚠️", "तादि"],
+            ["वह (स्त्री) — आमे", "तुन्दि", "इन्दि", "तादि"],
             ["वे — वारु", "तुन्नारु", "आरु", "तारु"]
           ]
         },
         "sentences": [
-          {"id":1,"sectionLabel":"वर्तमान काल · Present Tense","sectionSub":"क्रिया-मूल + तुन्न + प्रत्यय  |  खेलना (आडडम्)"},
+          {"id":1,"sectionLabel":"वर्तमान काल · Present Tense","sectionSub":"क्रिया-मूल + तुन्ना + प्रत्यय  |  खेलना (आडडम्)"},
           {"id":2,"hindi":"मैं खेल रहा / रही हूं","transliteration":"नेनु आडुतुन्नानु","telugu":"నేను ఆడుతున్నాను","roman":"Nenu aadutunnanu","note":"नेनु → अंत: नु"},
           {"id":3,"hindi":"हम खेल रहे / रही हैं","transliteration":"मेमु आडुतुन्नामु","telugu":"మేము ఆడుతున్నాము","roman":"Memu aadutunnamu","note":"मेमु → अंत: मु"},
           {"id":4,"hindi":"तुम खेल रहे / रही हो","transliteration":"नुव्वु आडुतुन्नावु","telugu":"నువ్వు ఆడుతున్నావు","roman":"Nuvvu aadutunnavu","note":"नुव्वु → अंत: वु"},
